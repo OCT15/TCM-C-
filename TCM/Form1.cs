@@ -34,7 +34,6 @@ namespace TCM
         /// <returns></returns>  
         public Image SetImageOpacity(Image image, double opacity)
         {
-            MessageBox.Show(image.ToString());
             try
             {
                 //create a Bitmap the size of the image provided  
@@ -74,12 +73,16 @@ namespace TCM
             this.BackColor = Color.White;
             this.WindowState = FormWindowState.Maximized;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            resizeBackground();
+            Timer resizeTimer = new Timer();
+            resizeTimer.Interval = 200;
+            resizeTimer.Tick += resizeTimer_Tick;
+            resizeTimer.Start();
         }
 
-        private void txtLogin_TextChanged(object sender, EventArgs e)
+        void resizeTimer_Tick(object sender, EventArgs e)
         {
-
+            resizeBackground();
+            ((Timer)sender).Stop();
         }
 
         private void btnGo_Click(object sender, EventArgs e)
