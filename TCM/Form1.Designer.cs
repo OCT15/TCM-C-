@@ -1,6 +1,6 @@
-﻿namespace TCM
+﻿namespace csharp
 {
-    partial class Form1
+    partial class formMain
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,69 +28,108 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtLogin = new System.Windows.Forms.TextBox();
-            this.txtSenha = new System.Windows.Forms.TextBox();
-            this.lblLogin = new System.Windows.Forms.Label();
-            this.lblSenha = new System.Windows.Forms.Label();
-            this.btnGo = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formMain));
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.criarCadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logOffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.desconectarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pctLogo = new System.Windows.Forms.PictureBox();
+            this.btnAdm = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtLogin
+            // menuStrip1
             // 
-            this.txtLogin.Location = new System.Drawing.Point(65, 11);
-            this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(382, 20);
-            this.txtLogin.TabIndex = 1;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastrosToolStripMenuItem,
+            this.logOffToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1364, 24);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // txtSenha
+            // cadastrosToolStripMenuItem
             // 
-            this.txtSenha.Location = new System.Drawing.Point(65, 44);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(382, 20);
-            this.txtSenha.TabIndex = 2;
+            this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.criarCadastrosToolStripMenuItem,
+            this.btnAdm});
+            this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
+            this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.cadastrosToolStripMenuItem.Text = "Cadastros";
             // 
-            // lblLogin
+            // criarCadastrosToolStripMenuItem
             // 
-            this.lblLogin.AutoSize = true;
-            this.lblLogin.Location = new System.Drawing.Point(14, 14);
-            this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(46, 13);
-            this.lblLogin.TabIndex = 3;
-            this.lblLogin.Text = "Usuário:";
+            this.criarCadastrosToolStripMenuItem.Name = "criarCadastrosToolStripMenuItem";
+            this.criarCadastrosToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.criarCadastrosToolStripMenuItem.Text = "Criar Cadastros";
+            this.criarCadastrosToolStripMenuItem.Click += new System.EventHandler(this.criarCadastrosToolStripMenuItem_Click);
             // 
-            // lblSenha
+            // logOffToolStripMenuItem
             // 
-            this.lblSenha.AutoSize = true;
-            this.lblSenha.Location = new System.Drawing.Point(12, 46);
-            this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(41, 13);
-            this.lblSenha.TabIndex = 4;
-            this.lblSenha.Text = "Senha:";
+            this.logOffToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.desconectarToolStripMenuItem,
+            this.sairToolStripMenuItem});
+            this.logOffToolStripMenuItem.Name = "logOffToolStripMenuItem";
+            this.logOffToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.logOffToolStripMenuItem.Text = "LogOff";
+            this.logOffToolStripMenuItem.Click += new System.EventHandler(this.logOffToolStripMenuItem_Click);
             // 
-            // btnGo
+            // desconectarToolStripMenuItem
             // 
-            this.btnGo.Location = new System.Drawing.Point(195, 70);
-            this.btnGo.Name = "btnGo";
-            this.btnGo.Size = new System.Drawing.Size(104, 51);
-            this.btnGo.TabIndex = 5;
-            this.btnGo.Text = "Login";
-            this.btnGo.UseVisualStyleBackColor = true;
-            this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
+            this.desconectarToolStripMenuItem.Name = "desconectarToolStripMenuItem";
+            this.desconectarToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.desconectarToolStripMenuItem.Text = "Desconectar";
+            this.desconectarToolStripMenuItem.Click += new System.EventHandler(this.desconectarToolStripMenuItem_Click);
             // 
-            // Form1
+            // sairToolStripMenuItem
+            // 
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
+            // 
+            // pctLogo
+            // 
+            this.pctLogo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctLogo.Enabled = false;
+            this.pctLogo.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pctLogo.ErrorImage")));
+            this.pctLogo.Image = ((System.Drawing.Image)(resources.GetObject("pctLogo.Image")));
+            this.pctLogo.Location = new System.Drawing.Point(0, 24);
+            this.pctLogo.Name = "pctLogo";
+            this.pctLogo.Size = new System.Drawing.Size(1364, 726);
+            this.pctLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pctLogo.TabIndex = 3;
+            this.pctLogo.TabStop = false;
+            // 
+            // btnAdm
+            // 
+            this.btnAdm.Name = "btnAdm";
+            this.btnAdm.Size = new System.Drawing.Size(154, 22);
+            this.btnAdm.Text = "adm options";
+            this.btnAdm.Click += new System.EventHandler(this.btnAdm_Click);
+            // 
+            // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Thistle;
-            this.ClientSize = new System.Drawing.Size(461, 138);
-            this.Controls.Add(this.btnGo);
-            this.Controls.Add(this.lblSenha);
-            this.Controls.Add(this.lblLogin);
-            this.Controls.Add(this.txtSenha);
-            this.Controls.Add(this.txtLogin);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.ResizeEnd += new System.EventHandler(this.Form1_Resize);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1364, 750);
+            this.Controls.Add(this.pctLogo);
+            this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.IsMdiContainer = true;
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "formMain";
+            this.Text = "Menu";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.formMain_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -98,11 +137,14 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtLogin;
-        private System.Windows.Forms.TextBox txtSenha;
-        private System.Windows.Forms.Label lblLogin;
-        private System.Windows.Forms.Label lblSenha;
-        private System.Windows.Forms.Button btnGo;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem cadastrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logOffToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem desconectarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pctLogo;
+        private System.Windows.Forms.ToolStripMenuItem criarCadastrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem btnAdm;
     }
 }
 
