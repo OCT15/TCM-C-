@@ -1,18 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace csharp
 {
     public partial class frmLogin : Form
     {
-        ToolStripMenuItem bt;
+        private ToolStripMenuItem bt;
+
         public frmLogin(ToolStripMenuItem btnAdm)
         {
             bt = btnAdm;
@@ -33,7 +27,6 @@ namespace csharp
                 bt.Visible = true;
                 this.Close();
             }
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -45,7 +38,5 @@ namespace csharp
         {
             MessageBox.Show(" Um software da OTC - Corporação OsSemTera ");
         }
-
-
     }
 }

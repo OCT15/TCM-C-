@@ -13,36 +13,15 @@ namespace csharp
     
     public partial class formMain : Form
     {
-        int pos = 0;
-        int m = 0;
-        ContatosArray cts = new ContatosArray();
-        int posicao;
-       
-
         public formMain()
         {
             InitializeComponent();
-        }
-  
-
-        private void pessoaJuridicaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void pessoaFisicaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
 
         public void formMain_Load(object sender, EventArgs e)
         {
             frmLogin fg = new frmLogin(btnAdm);
             fg.ShowDialog(); /* .Show não trava a tela; .ShowDialog trava a tela até o form ( fg em questão ) ser fechado */
-        }
-
-        private void logOffToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-                                
         }
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
@@ -68,6 +47,9 @@ namespace csharp
             ap.Show();
         }
 
+        private void pctLogo_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
