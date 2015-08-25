@@ -3,7 +3,7 @@ Programa em C# do TCM/TCC
 
 #Licence
     TCM C#
-    Copyright (C) Grupo-E Gustavo, Guilherme Fagundes, Mariana, Elisa e Caio
+    Copyright (C) Grupo-E: Gustavo, Guilherme Fagundes, Mariana, Elisa e Caio
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
