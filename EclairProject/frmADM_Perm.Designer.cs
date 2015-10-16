@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmADM_Perm));
-            this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,19 +41,10 @@
             this.button7 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.PictureBox();
+            this.lblRetornar = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button4
-            // 
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(587, 0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(38, 38);
-            this.button4.TabIndex = 93;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button1
             // 
@@ -164,11 +154,39 @@
             this.button8.Text = "button8";
             this.button8.UseVisualStyleBackColor = true;
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
+            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBack.Location = new System.Drawing.Point(571, -8);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(60, 60);
+            this.btnBack.TabIndex = 109;
+            this.btnBack.TabStop = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.btnBack.MouseLeave += new System.EventHandler(this.btnBack_MouseLeave);
+            this.btnBack.MouseHover += new System.EventHandler(this.btnBack_MouseHover);
+            // 
+            // lblRetornar
+            // 
+            this.lblRetornar.AutoSize = true;
+            this.lblRetornar.BackColor = System.Drawing.Color.Transparent;
+            this.lblRetornar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblRetornar.Location = new System.Drawing.Point(521, 41);
+            this.lblRetornar.Name = "lblRetornar";
+            this.lblRetornar.Size = new System.Drawing.Size(48, 13);
+            this.lblRetornar.TabIndex = 110;
+            this.lblRetornar.Text = "Retornar";
+            this.lblRetornar.Visible = false;
+            // 
             // frmADM_Perm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(625, 417);
+            this.ClientSize = new System.Drawing.Size(630, 417);
+            this.Controls.Add(this.lblRetornar);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.label6);
@@ -181,10 +199,11 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.button4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmADM_Perm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "frmADM_Perm";
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,7 +211,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
@@ -205,5 +223,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.PictureBox btnBack;
+        private System.Windows.Forms.Label lblRetornar;
     }
 }

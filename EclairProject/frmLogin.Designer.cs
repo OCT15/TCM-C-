@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.txtUser = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
-            this.btnInv = new System.Windows.Forms.Button();
             this.btnLogar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.lblEclair = new System.Windows.Forms.Label();
@@ -55,20 +54,6 @@
             this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(212, 20);
             this.txtPass.TabIndex = 1;
-            // 
-            // btnInv
-            // 
-            this.btnInv.BackColor = System.Drawing.Color.Transparent;
-            this.btnInv.FlatAppearance.BorderSize = 0;
-            this.btnInv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInv.ForeColor = System.Drawing.Color.Transparent;
-            this.btnInv.Location = new System.Drawing.Point(321, 200);
-            this.btnInv.Margin = new System.Windows.Forms.Padding(0);
-            this.btnInv.Name = "btnInv";
-            this.btnInv.Size = new System.Drawing.Size(29, 25);
-            this.btnInv.TabIndex = 9;
-            this.btnInv.UseVisualStyleBackColor = false;
-            this.btnInv.Click += new System.EventHandler(this.btnInv_Click);
             // 
             // btnLogar
             // 
@@ -104,11 +89,12 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(230, 138);
+            this.pictureBox1.Location = new System.Drawing.Point(213, 119);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(88, 66);
+            this.pictureBox1.Size = new System.Drawing.Size(117, 94);
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
@@ -116,9 +102,9 @@
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(230, 219);
+            this.pictureBox2.Location = new System.Drawing.Point(220, 219);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(88, 66);
+            this.pictureBox2.Size = new System.Drawing.Size(105, 80);
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
             // 
@@ -134,7 +120,6 @@
             this.Controls.Add(this.lblEclair);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnLogar);
-            this.Controls.Add(this.btnInv);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtUser);
             this.DoubleBuffered = true;
@@ -153,7 +138,6 @@
 
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.TextBox txtPass;
-        private System.Windows.Forms.Button btnInv;
         private System.Windows.Forms.Button btnLogar;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Label lblEclair;

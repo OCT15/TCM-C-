@@ -8,6 +8,12 @@ namespace EclairProject
 {
     public static class ClasseValida
     {
+        public static bool Data(string data)
+        {
+            DateTime dt;
+            return DateTime.TryParse(data, out dt);
+        }
+
         public static bool IsCpf(string cpf)
             {
                  cpf = cpf.Replace(".", "").Replace("-", "");

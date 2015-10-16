@@ -60,10 +60,13 @@
             this.gpbBot = new System.Windows.Forms.GroupBox();
             this.gpbMid = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.PictureBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.gpbTop1.SuspendLayout();
             this.gpbTop2.SuspendLayout();
             this.gpbBot.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTelefone
@@ -357,11 +360,11 @@
             this.lblconsulta.BackColor = System.Drawing.Color.Transparent;
             this.lblconsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblconsulta.ForeColor = System.Drawing.Color.White;
-            this.lblconsulta.Location = new System.Drawing.Point(154, 26);
+            this.lblconsulta.Location = new System.Drawing.Point(97, 26);
             this.lblconsulta.Name = "lblconsulta";
-            this.lblconsulta.Size = new System.Drawing.Size(259, 35);
+            this.lblconsulta.Size = new System.Drawing.Size(241, 35);
             this.lblconsulta.TabIndex = 71;
-            this.lblconsulta.Text = "Consulta - Cliente";
+            this.lblconsulta.Text = "Consulta Cliente";
             // 
             // gpbBot
             // 
@@ -391,17 +394,44 @@
             this.panel1.Size = new System.Drawing.Size(804, 46);
             this.panel1.TabIndex = 89;
             // 
-            // button1
+            // btnBack
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(588, -1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(38, 38);
-            this.button1.TabIndex = 90;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
+            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBack.Location = new System.Drawing.Point(571, -8);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(60, 60);
+            this.btnBack.TabIndex = 110;
+            this.btnBack.TabStop = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.radioButton1.Location = new System.Drawing.Point(377, 28);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(92, 17);
+            this.radioButton1.TabIndex = 111;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Pessoa Física";
+            this.radioButton1.UseVisualStyleBackColor = false;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.radioButton2.Location = new System.Drawing.Point(377, 47);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(101, 17);
+            this.radioButton2.TabIndex = 112;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Pessoa Jurídica";
+            this.radioButton2.UseVisualStyleBackColor = false;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // frmCons_Cli
             // 
@@ -409,8 +439,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EclairProject.Properties.Resources.Logadaview;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(625, 417);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(630, 417);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.txtSenha);
@@ -427,7 +459,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCons_Cli";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "naosei";
             this.Load += new System.EventHandler(this.frmCons_Cli_Load);
             this.gpbTop1.ResumeLayout(false);
@@ -435,6 +467,7 @@
             this.gpbTop2.ResumeLayout(false);
             this.gpbTop2.PerformLayout();
             this.gpbBot.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -473,7 +506,9 @@
         private System.Windows.Forms.Label lblCPF;
         private System.Windows.Forms.GroupBox gpbMid;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox btnBack;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
 
     }
 }

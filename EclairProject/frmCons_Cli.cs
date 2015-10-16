@@ -33,7 +33,6 @@ namespace EclairProject
             {
                 txtNome.Text = ds.Tables[0].Rows[0]["nome"].ToString();
                 txtSenha.Text = ds.Tables[0].Rows[0]["senha"].ToString();
-                txtIdade.Text = ds.Tables[0].Rows[0]["idade"].ToString();
                 txtDate_nasc.Text = ds.Tables[0].Rows[0]["dt_nascim"].ToString();
                 txtEnd.Text = ds.Tables[0].Rows[0]["endereco"].ToString();
                 txtTelefone.Text = ds.Tables[0].Rows[0]["telefone"].ToString();
@@ -65,6 +64,16 @@ namespace EclairProject
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
 
       /*  private void btnPesquisar_cli_Click(object sender, EventArgs e)

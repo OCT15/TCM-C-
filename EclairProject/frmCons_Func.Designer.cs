@@ -65,17 +65,18 @@
             this.txtNM_Permissao = new System.Windows.Forms.TextBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.btnSair = new System.Windows.Forms.Button();
             this.lblNome = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblText = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
             // 
             // btnProximo
@@ -451,18 +452,6 @@
             this.groupBox9.TabIndex = 61;
             this.groupBox9.TabStop = false;
             // 
-            // btnSair
-            // 
-            this.btnSair.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSair.BackgroundImage")));
-            this.btnSair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSair.Location = new System.Drawing.Point(588, -1);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(38, 38);
-            this.btnSair.TabIndex = 87;
-            this.btnSair.UseVisualStyleBackColor = true;
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
-            // 
             // lblNome
             // 
             this.lblNome.AutoSize = true;
@@ -503,15 +492,27 @@
             this.lblText.TabIndex = 1;
             this.lblText.Text = "label1";
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
+            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBack.Location = new System.Drawing.Point(571, -8);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(60, 60);
+            this.btnBack.TabIndex = 110;
+            this.btnBack.TabStop = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // frmCons_Func
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(625, 417);
+            this.ClientSize = new System.Drawing.Size(630, 417);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -537,7 +538,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCons_Func";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "frmCons_Func";
             this.Load += new System.EventHandler(this.frmCons_Func_Load);
             this.groupBox1.ResumeLayout(false);
@@ -548,6 +549,7 @@
             this.groupBox9.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -591,10 +593,10 @@
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.TextBox txtNM_Permissao;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblText;
+        private System.Windows.Forms.PictureBox btnBack;
     }
 }

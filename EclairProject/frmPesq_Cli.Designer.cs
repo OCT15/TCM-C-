@@ -34,8 +34,9 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
             this.lblconsulta = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -86,17 +87,17 @@
             this.lblconsulta.TabIndex = 40;
             this.lblconsulta.Text = "Pesquisa - Cliente";
             // 
-            // button3
+            // btnBack
             // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(588, -1);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(38, 38);
-            this.button3.TabIndex = 91;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
+            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBack.Location = new System.Drawing.Point(571, -8);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(60, 60);
+            this.btnBack.TabIndex = 110;
+            this.btnBack.TabStop = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // frmPesq_Cli
             // 
@@ -104,8 +105,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EclairProject.Properties.Resources.Logadaview;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(625, 417);
-            this.Controls.Add(this.button3);
+            this.ClientSize = new System.Drawing.Size(630, 417);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblconsulta);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
@@ -114,8 +115,10 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmPesq_Cli";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Teste";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -128,6 +131,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lblconsulta;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.PictureBox btnBack;
     }
 }

@@ -36,7 +36,6 @@ namespace EclairProject
                 txtID_Cli.Text = ds.Tables[0].Rows[0]["id_cliente"].ToString();
                 txtNome.Text = ds.Tables[0].Rows[0]["nome"].ToString();
                 txtSenha.Text = ds.Tables[0].Rows[0]["senha"].ToString();
-                txtIdade.Text = ds.Tables[0].Rows[0]["idade"].ToString();
                 txtDate_nasc.Text = ds.Tables[0].Rows[0]["dt_nascim"].ToString();
                 txtEnd.Text = ds.Tables[0].Rows[0]["endereco"].ToString();
                 txtTelefone.Text = ds.Tables[0].Rows[0]["telefone"].ToString();
@@ -160,6 +159,11 @@ namespace EclairProject
             {
                 MessageBox.Show("Operação Cancelada");
             }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
         }
     }

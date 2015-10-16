@@ -29,24 +29,25 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmETQ_Perm));
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCons_Estq = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnRelat_Estq = new System.Windows.Forms.Button();
+            this.btnCompra_Estq = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.PictureBox();
+            this.lblRetornar = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnCons_Estq
             // 
-            this.button1.Location = new System.Drawing.Point(117, 135);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(60, 60);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnCons_Estq.Location = new System.Drawing.Point(117, 135);
+            this.btnCons_Estq.Name = "btnCons_Estq";
+            this.btnCons_Estq.Size = new System.Drawing.Size(60, 60);
+            this.btnCons_Estq.TabIndex = 0;
+            this.btnCons_Estq.UseVisualStyleBackColor = true;
+            this.btnCons_Estq.Click += new System.EventHandler(this.btnCons_Estq_Click);
             // 
             // label1
             // 
@@ -57,23 +58,23 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Consultar Estoque";
             // 
-            // button2
+            // btnRelat_Estq
             // 
-            this.button2.Location = new System.Drawing.Point(278, 135);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(60, 60);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnRelat_Estq.Location = new System.Drawing.Point(278, 135);
+            this.btnRelat_Estq.Name = "btnRelat_Estq";
+            this.btnRelat_Estq.Size = new System.Drawing.Size(60, 60);
+            this.btnRelat_Estq.TabIndex = 2;
+            this.btnRelat_Estq.UseVisualStyleBackColor = true;
+            this.btnRelat_Estq.Click += new System.EventHandler(this.btnRelat_Estq_Click);
             // 
-            // button3
+            // btnCompra_Estq
             // 
-            this.button3.Location = new System.Drawing.Point(434, 135);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(60, 60);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnCompra_Estq.Location = new System.Drawing.Point(434, 135);
+            this.btnCompra_Estq.Name = "btnCompra_Estq";
+            this.btnCompra_Estq.Size = new System.Drawing.Size(60, 60);
+            this.btnCompra_Estq.TabIndex = 3;
+            this.btnCompra_Estq.UseVisualStyleBackColor = true;
+            this.btnCompra_Estq.Click += new System.EventHandler(this.btnCompra_Estq_Click);
             // 
             // label2
             // 
@@ -82,7 +83,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 13);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Reletório de Estoque";
+            this.label2.Text = "Relatório de Estoque";
             // 
             // label3
             // 
@@ -93,34 +94,50 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Compra de Estoque";
             // 
-            // button4
+            // btnBack
             // 
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(587, 0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(38, 38);
-            this.button4.TabIndex = 91;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
+            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBack.Location = new System.Drawing.Point(571, -8);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(60, 60);
+            this.btnBack.TabIndex = 110;
+            this.btnBack.TabStop = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.btnBack.MouseLeave += new System.EventHandler(this.btnBack_MouseLeave);
+            this.btnBack.MouseHover += new System.EventHandler(this.btnBack_MouseHover);
+            // 
+            // lblRetornar
+            // 
+            this.lblRetornar.AutoSize = true;
+            this.lblRetornar.BackColor = System.Drawing.Color.Transparent;
+            this.lblRetornar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblRetornar.Location = new System.Drawing.Point(521, 41);
+            this.lblRetornar.Name = "lblRetornar";
+            this.lblRetornar.Size = new System.Drawing.Size(48, 13);
+            this.lblRetornar.TabIndex = 111;
+            this.lblRetornar.Text = "Retornar";
+            this.lblRetornar.Visible = false;
             // 
             // frmETQ_Perm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(625, 417);
-            this.Controls.Add(this.button4);
+            this.ClientSize = new System.Drawing.Size(630, 417);
+            this.Controls.Add(this.lblRetornar);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnCompra_Estq);
+            this.Controls.Add(this.btnRelat_Estq);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCons_Estq);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmETQ_Perm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "frmETQ_Perm";
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -128,12 +145,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCons_Estq;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnRelat_Estq;
+        private System.Windows.Forms.Button btnCompra_Estq;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.PictureBox btnBack;
+        private System.Windows.Forms.Label lblRetornar;
     }
 }

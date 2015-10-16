@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClasseAcento.cs" />
     <Compile Include="ClasseConexao.cs" />
     <Compile Include="ClasseSplash.cs" />
     <Compile Include="ClasseValida.cs" />
@@ -58,6 +59,18 @@
     </Compile>
     <Compile Include="frmATD_Perm.Designer.cs">
       <DependentUpon>frmATD_Perm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCompra_Estq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCompra_Estq.Designer.cs">
+      <DependentUpon>frmCompra_Estq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCons_Estq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCons_Estq.Designer.cs">
+      <DependentUpon>frmCons_Estq.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCons_Func.cs">
       <SubType>Form</SubType>
@@ -94,6 +107,12 @@
     </Compile>
     <Compile Include="frmPesq_Func.Designer.cs">
       <DependentUpon>frmPesq_Func.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelat_Estq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelat_Estq.Designer.cs">
+      <DependentUpon>frmRelat_Estq.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSplash.cs">
       <SubType>Form</SubType>
@@ -134,6 +153,12 @@
     <EmbeddedResource Include="frmATD_Perm.resx">
       <DependentUpon>frmATD_Perm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCompra_Estq.resx">
+      <DependentUpon>frmCompra_Estq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCons_Estq.resx">
+      <DependentUpon>frmCons_Estq.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCons_Func.resx">
       <DependentUpon>frmCons_Func.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPesq_Func.resx">
       <DependentUpon>frmPesq_Func.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelat_Estq.resx">
+      <DependentUpon>frmRelat_Estq.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSplash.resx">
       <DependentUpon>frmSplash.cs</DependentUpon>

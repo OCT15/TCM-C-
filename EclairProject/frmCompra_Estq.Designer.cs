@@ -1,6 +1,6 @@
 ﻿namespace EclairProject
 {
-    partial class frmPesq_Func
+    partial class frmCompra_Estq
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPesq_Func));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCompra_Estq));
             this.btnBack = new System.Windows.Forms.PictureBox();
+            this.lblRetornar = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,31 +42,46 @@
             this.btnBack.Location = new System.Drawing.Point(571, -8);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(60, 60);
-            this.btnBack.TabIndex = 110;
+            this.btnBack.TabIndex = 111;
             this.btnBack.TabStop = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.btnBack.MouseLeave += new System.EventHandler(this.btnBack_MouseLeave);
+            this.btnBack.MouseHover += new System.EventHandler(this.btnBack_MouseHover);
             // 
-            // frmPesq_Func
+            // lblRetornar
+            // 
+            this.lblRetornar.AutoSize = true;
+            this.lblRetornar.BackColor = System.Drawing.Color.Transparent;
+            this.lblRetornar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblRetornar.Location = new System.Drawing.Point(521, 41);
+            this.lblRetornar.Name = "lblRetornar";
+            this.lblRetornar.Size = new System.Drawing.Size(48, 13);
+            this.lblRetornar.TabIndex = 112;
+            this.lblRetornar.Text = "Retornar";
+            this.lblRetornar.Visible = false;
+            // 
+            // frmCompra_Estq
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EclairProject.Properties.Resources.Logadaview;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(630, 417);
+            this.Controls.Add(this.lblRetornar);
             this.Controls.Add(this.btnBack);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmPesq_Func";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "frmPesq_Func";
+            this.Name = "frmCompra_Estq";
+            this.Text = "frmCompra_Estq";
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.PictureBox btnBack;
-
+        private System.Windows.Forms.Label lblRetornar;
     }
 }

@@ -69,11 +69,10 @@ namespace EclairProject
             DialogResult res = MessageBox.Show("Deseja inserir os campos selecionados?", "Aviso", MessageBoxButtons.YesNo);
             if (res == DialogResult.Yes)
             {
-                string sql = string.Format("insert into cliente values ({0},'{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}')",
+                string sql = string.Format("insert into cliente values ({0},'{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}')",
                     txtID_Cli.Text,
                     txtNome.Text,
                     txtSenha.Text,
-                    txtIdade.Text,
                     txtDate_nasc.Text,
                     txtEnd.Text,
                     txtTelefone.Text,
@@ -114,5 +113,67 @@ namespace EclairProject
         {
             this.Close();
         }
+
+        private void txtCPF_Leave(object sender, EventArgs e)
+        {
+            if (ClasseValida.IsCpf(txtCPF.Text))
+            {
+                ptbCPF.BackColor = Color.MediumTurquoise;
+            }
+            else
+            {
+                MessageBox.Show("CPF inválido");
+                ptbCPF.BackColor = Color.Red;
+                txtCPF.Text = "";
+            }
+        }
+
+        private void txtDate_nasc_Leave(object sender, EventArgs e)
+        {
+            if(ClasseValida.Data(txtDate_nasc.Text))
+            {
+                ptbData.BackColor = Color.Green;
+                DateTime ag;
+                DateTime.TryParse(txtDate_nasc.Text, out ag);
+                TimeSpan t = DateTime.Now - ag;
+                txtIdade.Text = Math.Floor(t.Days / 365d) + "";
+            }
+            else
+            {
+                MessageBox.Show("Data inválida");
+                ptbData.BackColor = Color.Red;
+                txtCPF.Text = "";
+            }
+        }
+        private void pictureBox2_MouseHover(object sender, EventArgs e)
+        {
+            lblRetornar.Visible = true;
+        }
+
+        private void pictureBox2_MouseLeave(object sender, EventArgs e)
+        {
+            lblRetornar.Visible = false;
+        }
+
+        private void frmInser_Cli_Leave(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void radioButton1_Click(object sender, EventArgs e)
+        {
+            lblCPF.Text = "CPF";
+        }
+
+        private void radioButton2_Click(object sender, EventArgs e)
+        {
+            lblCPF.Text = "CNPJ";
+        }
+
     }
 }

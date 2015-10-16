@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmATD_Perm));
-            this.button4 = new System.Windows.Forms.Button();
             this.btnCons_Cli = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -44,19 +43,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.PictureBox();
+            this.lblRetornar = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button4
-            // 
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(588, -1);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(38, 38);
-            this.button4.TabIndex = 92;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // btnCons_Cli
             // 
@@ -184,11 +174,39 @@
             this.label7.TabIndex = 107;
             this.label7.Text = "Gerar Contrato";
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
+            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBack.Location = new System.Drawing.Point(571, -8);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(60, 60);
+            this.btnBack.TabIndex = 110;
+            this.btnBack.TabStop = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.btnBack.MouseLeave += new System.EventHandler(this.btnBack_MouseLeave);
+            this.btnBack.MouseHover += new System.EventHandler(this.btnBack_MouseHover);
+            // 
+            // lblRetornar
+            // 
+            this.lblRetornar.AutoSize = true;
+            this.lblRetornar.BackColor = System.Drawing.Color.Transparent;
+            this.lblRetornar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblRetornar.Location = new System.Drawing.Point(521, 41);
+            this.lblRetornar.Name = "lblRetornar";
+            this.lblRetornar.Size = new System.Drawing.Size(48, 13);
+            this.lblRetornar.TabIndex = 111;
+            this.lblRetornar.Text = "Retornar";
+            this.lblRetornar.Visible = false;
+            // 
             // frmATD_Perm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(625, 417);
+            this.ClientSize = new System.Drawing.Size(630, 417);
+            this.Controls.Add(this.lblRetornar);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -203,10 +221,11 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnCons_Cli);
-            this.Controls.Add(this.button4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmATD_Perm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "frmATD_Perm";
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,7 +233,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnCons_Cli;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
@@ -229,5 +247,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox btnBack;
+        private System.Windows.Forms.Label lblRetornar;
     }
 }

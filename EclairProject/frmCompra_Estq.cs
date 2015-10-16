@@ -10,15 +10,26 @@ using System.Windows.Forms;
 
 namespace EclairProject
 {
-    public partial class frmPesq_Func : Form
+    public partial class frmCompra_Estq : Form
     {
-        public frmPesq_Func()
+        public frmCompra_Estq()
         {
             InitializeComponent();
         }
+
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnBack_MouseHover(object sender, EventArgs e)
+        {
+            lblRetornar.Visible = true;
+        }
+
+        private void btnBack_MouseLeave(object sender, EventArgs e)
+        {
+            lblRetornar.Visible = false;
         }
     }
 }

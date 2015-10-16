@@ -24,16 +24,45 @@ namespace EclairProject
 
         private void btnCons_Cli_Click(object sender, EventArgs e)
         {
-            frmCons_Cli fCC = new frmCons_Cli();
-            fCC.Show();
-            fCC.Location = new Point(448, 133);
+            if (Application.OpenForms.OfType<frmCons_Cli>().Count() > 0)
+            {
+
+            }
+            else
+            {
+                frmCons_Cli fCC = new frmCons_Cli();
+                fCC.Location = new Point(443, 133);
+                fCC.ShowDialog();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            frmPesq_Cli fPC = new frmPesq_Cli();
-            fPC.Show();
-            fPC.Location = new Point(448, 133);
+            if (Application.OpenForms.OfType<frmPesq_Cli>().Count() > 0)
+            {
+
+            }
+            else
+            {
+                frmPesq_Cli fPC = new frmPesq_Cli();
+                fPC.Location = new Point(443, 133);
+                fPC.ShowDialog();
+            }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnBack_MouseHover(object sender, EventArgs e)
+        {
+            lblRetornar.Visible = true;
+        }
+
+        private void btnBack_MouseLeave(object sender, EventArgs e)
+        {
+            lblRetornar.Visible = false;
         }
     }
 }

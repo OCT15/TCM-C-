@@ -55,14 +55,15 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.gpbMid = new System.Windows.Forms.GroupBox();
             this.lblconsulta = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnAlterar2 = new System.Windows.Forms.Button();
             this.gpbBot = new System.Windows.Forms.GroupBox();
+            this.btnBack = new System.Windows.Forms.PictureBox();
             this.gpbTop1.SuspendLayout();
             this.gpbTop2.SuspendLayout();
             this.gpbBot.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTelefone
@@ -340,18 +341,6 @@
             this.lblconsulta.TabIndex = 99;
             this.lblconsulta.Text = "Manter - Cliente";
             // 
-            // button1
-            // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(588, -1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(38, 38);
-            this.button1.TabIndex = 100;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // btnAlterar
             // 
             this.btnAlterar.Location = new System.Drawing.Point(50, 13);
@@ -395,14 +384,26 @@
             this.gpbBot.TabIndex = 97;
             this.gpbBot.TabStop = false;
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
+            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBack.Location = new System.Drawing.Point(571, -8);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(60, 60);
+            this.btnBack.TabIndex = 110;
+            this.btnBack.TabStop = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // frmMant_Cli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EclairProject.Properties.Resources.Logadaview;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(625, 417);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(630, 417);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblconsulta);
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.txtSenha);
@@ -417,6 +418,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMant_Cli";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "frmTeste";
             this.Load += new System.EventHandler(this.frmTeste_Load);
             this.gpbTop1.ResumeLayout(false);
@@ -424,6 +426,7 @@
             this.gpbTop2.ResumeLayout(false);
             this.gpbTop2.PerformLayout();
             this.gpbBot.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -457,10 +460,10 @@
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.GroupBox gpbMid;
         private System.Windows.Forms.Label lblconsulta;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnAlterar2;
         private System.Windows.Forms.GroupBox gpbBot;
+        private System.Windows.Forms.PictureBox btnBack;
     }
 }
