@@ -19,7 +19,12 @@ namespace EclairProject
             InitializeComponent();
         }
 
-        public void ORetornoDeSplaton_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ORetornodoRetornodeSplaton.ReplacePdfForm();
+        }
+
+        /*public void ORetornoDeSplaton_Load(object sender, EventArgs e)
         {
             string CaminhoNome = "D:\\OIII\\arq01.txt";
             x = File.CreateText(CaminhoNome);
@@ -41,7 +46,7 @@ namespace EclairProject
             x.WriteLine();
 
             x.Close();
-        }
+        }*/
 
      /*   private void button1_Click(object sender, EventArgs e)
         {

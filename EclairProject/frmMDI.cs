@@ -189,16 +189,21 @@ namespace EclairProject
         {
             lblEstoquista.Visible = false;
         }
-
-        private void btnDeslogar_MouseHover(object sender, EventArgs e)
+        private void btnDeslogar_Click(object sender, EventArgs e)
         {
-            lblLogOff.Visible = true;
+            Application.Exit();
         }
 
         private void btnDeslogar_MouseLeave(object sender, EventArgs e)
         {
             lblLogOff.Visible = false;
         }
+
+        private void btnDeslogar_MouseHover(object sender, EventArgs e)
+        {
+            lblLogOff.Visible = true;
+        }
+
     }
 }
 

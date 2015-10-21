@@ -27,7 +27,7 @@ namespace EclairProject
         {
             cc = new ClasseConexao();
             ds = new DataSet();
-            string sql = ("select * from cliente where id_cliente = " + textBox1.Text + " or nome like '" + textBox1.Text + "' or telefone like '" + textBox1.Text + "' or celular like '" + textBox1.Text + "' or cep like '" + textBox1.Text + "' or cpf like '" + textBox1.Text + "'");
+            string sql = ("select * from cliente where id_cliente = " + textBox1.Text + " or nome like '" + textBox1.Text + "' or telefone like '" + textBox1.Text + "' or celular like '" + textBox1.Text + "' or cep like '" + textBox1.Text + "' or rg_ie like '" + textBox1.Text + "' or cpf_cnpj like '" + textBox1.Text + "'");
             ds = cc.executarSQL(sql);
             dataGridView1.DataSource = ds.Tables[0];
 

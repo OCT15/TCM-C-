@@ -42,7 +42,7 @@
             // 
             // btnCons_Estq
             // 
-            this.btnCons_Estq.Location = new System.Drawing.Point(117, 135);
+            this.btnCons_Estq.Location = new System.Drawing.Point(120, 92);
             this.btnCons_Estq.Name = "btnCons_Estq";
             this.btnCons_Estq.Size = new System.Drawing.Size(60, 60);
             this.btnCons_Estq.TabIndex = 0;
@@ -52,15 +52,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(102, 198);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(97, 153);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 13);
+            this.label1.Size = new System.Drawing.Size(117, 15);
             this.label1.TabIndex = 1;
             this.label1.Text = "Consultar Estoque";
             // 
             // btnRelat_Estq
             // 
-            this.btnRelat_Estq.Location = new System.Drawing.Point(278, 135);
+            this.btnRelat_Estq.Location = new System.Drawing.Point(289, 249);
             this.btnRelat_Estq.Name = "btnRelat_Estq";
             this.btnRelat_Estq.Size = new System.Drawing.Size(60, 60);
             this.btnRelat_Estq.TabIndex = 2;
@@ -69,7 +72,7 @@
             // 
             // btnCompra_Estq
             // 
-            this.btnCompra_Estq.Location = new System.Drawing.Point(434, 135);
+            this.btnCompra_Estq.Location = new System.Drawing.Point(455, 92);
             this.btnCompra_Estq.Name = "btnCompra_Estq";
             this.btnCompra_Estq.Size = new System.Drawing.Size(60, 60);
             this.btnCompra_Estq.TabIndex = 3;
@@ -79,18 +82,24 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(258, 198);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(258, 310);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 13);
+            this.label2.Size = new System.Drawing.Size(132, 15);
             this.label2.TabIndex = 4;
             this.label2.Text = "Relatório de Estoque";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(417, 198);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(429, 153);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 13);
+            this.label3.Size = new System.Drawing.Size(123, 15);
             this.label3.TabIndex = 5;
             this.label3.Text = "Compra de Estoque";
             // 
@@ -99,7 +108,7 @@
             this.btnBack.BackColor = System.Drawing.Color.Transparent;
             this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
             this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBack.Location = new System.Drawing.Point(571, -8);
+            this.btnBack.Location = new System.Drawing.Point(570, -8);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(60, 60);
             this.btnBack.TabIndex = 110;
@@ -112,10 +121,11 @@
             // 
             this.lblRetornar.AutoSize = true;
             this.lblRetornar.BackColor = System.Drawing.Color.Transparent;
-            this.lblRetornar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblRetornar.Location = new System.Drawing.Point(521, 41);
+            this.lblRetornar.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.lblRetornar.ForeColor = System.Drawing.Color.White;
+            this.lblRetornar.Location = new System.Drawing.Point(515, 41);
             this.lblRetornar.Name = "lblRetornar";
-            this.lblRetornar.Size = new System.Drawing.Size(48, 13);
+            this.lblRetornar.Size = new System.Drawing.Size(59, 15);
             this.lblRetornar.TabIndex = 111;
             this.lblRetornar.Text = "Retornar";
             this.lblRetornar.Visible = false;
@@ -124,6 +134,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(630, 417);
             this.Controls.Add(this.lblRetornar);
             this.Controls.Add(this.btnBack);
@@ -133,6 +145,7 @@
             this.Controls.Add(this.btnRelat_Estq);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCons_Estq);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmETQ_Perm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;

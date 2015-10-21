@@ -39,6 +39,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ORetornoDeSplaton
             // 
@@ -48,7 +49,6 @@
             this.Controls.Add(this.button1);
             this.Name = "ORetornoDeSplaton";
             this.Text = "ORetornoDeSplaton";
-            this.Load += new System.EventHandler(this.ORetornoDeSplaton_Load);
             this.ResumeLayout(false);
 
         }

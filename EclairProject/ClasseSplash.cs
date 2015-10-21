@@ -14,7 +14,7 @@ namespace EclairProject
         {
             for (int i = 1; i <= 300; i++)
             {
-                for (int j = i; j <= 150000; j++)
+                for (int j = i; j <= 460000; j++)
                 {
                     Math.Pow(i, j);
                 }

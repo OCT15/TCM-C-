@@ -40,7 +40,7 @@ namespace EclairProject
                 txtEnd.Text = ds.Tables[0].Rows[0]["endereco"].ToString();
                 txtTelefone.Text = ds.Tables[0].Rows[0]["telefone"].ToString();
                 txtCel.Text = ds.Tables[0].Rows[0]["celular"].ToString();
-                txtCPF.Text = ds.Tables[0].Rows[0]["cpf"].ToString();
+                txtCPF.Text = ds.Tables[0].Rows[0]["cpf_cnpj"].ToString();
                 txtCEP.Text = ds.Tables[0].Rows[0]["cep"].ToString();
                 txtMail.Text = ds.Tables[0].Rows[0]["email"].ToString();
             }

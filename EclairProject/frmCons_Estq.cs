@@ -27,7 +27,7 @@ namespace EclairProject
             ds = cc.executarSQL(sql);
             if (ds == null || ds.Tables[0].Rows.Count < 1)
             {
-                txtNome.Text = txtPreço.Text = txtQuant.Text = txtTipo.Text = "";
+                txtID_Produto.Text = --var_x + "";
             }
             else
             {
@@ -71,6 +71,7 @@ namespace EclairProject
         {
             txtID_Produto.Text = ++var_x + "";
             atualizarCampos();
+
         }
 
     }

@@ -48,70 +48,91 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(86, 93);
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(79, 61);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(60, 60);
             this.button1.TabIndex = 94;
-            this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(183, 156);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(228, 304);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 13);
+            this.label1.Size = new System.Drawing.Size(157, 15);
             this.label1.TabIndex = 95;
             this.label1.Text = "Consultar Fluxo de Caixa";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(332, 274);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(434, 304);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 13);
+            this.label4.Size = new System.Drawing.Size(83, 15);
             this.label4.TabIndex = 99;
             this.label4.Text = "Gerar Boleto";
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(338, 211);
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(445, 241);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(60, 60);
             this.button5.TabIndex = 97;
-            this.button5.Text = "button5";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(62, 156);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(43, 124);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 13);
+            this.label2.Size = new System.Drawing.Size(132, 15);
             this.label2.TabIndex = 102;
             this.label2.Text = "Gerar Fluxo de Caixa";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(216, 93);
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(273, 241);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(60, 60);
             this.button2.TabIndex = 101;
-            this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(312, 156);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(241, 124);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 13);
+            this.label3.Size = new System.Drawing.Size(138, 15);
             this.label3.TabIndex = 104;
             this.label3.Text = "Consultar Funcionário";
             // 
             // btnCons_Func
             // 
-            this.btnCons_Func.Location = new System.Drawing.Point(338, 93);
+            this.btnCons_Func.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCons_Func.FlatAppearance.BorderSize = 0;
+            this.btnCons_Func.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCons_Func.Location = new System.Drawing.Point(273, 61);
             this.btnCons_Func.Name = "btnCons_Func";
             this.btnCons_Func.Size = new System.Drawing.Size(60, 60);
             this.btnCons_Func.TabIndex = 103;
@@ -121,15 +142,22 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(432, 156);
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(436, 124);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(110, 13);
+            this.label6.Size = new System.Drawing.Size(139, 15);
             this.label6.TabIndex = 106;
             this.label6.Text = "Cadastrar Funcionário";
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(459, 93);
+            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(469, 61);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(60, 60);
             this.button7.TabIndex = 105;
@@ -139,19 +167,24 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(187, 274);
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(80, 304);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 13);
+            this.label7.Size = new System.Drawing.Size(112, 15);
             this.label7.TabIndex = 108;
             this.label7.Text = "Gerar Nota Fiscal";
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(202, 211);
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Location = new System.Drawing.Point(107, 241);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(60, 60);
             this.button8.TabIndex = 107;
-            this.button8.Text = "button8";
             this.button8.UseVisualStyleBackColor = true;
             // 
             // btnBack
@@ -172,10 +205,11 @@
             // 
             this.lblRetornar.AutoSize = true;
             this.lblRetornar.BackColor = System.Drawing.Color.Transparent;
-            this.lblRetornar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblRetornar.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.lblRetornar.ForeColor = System.Drawing.Color.White;
             this.lblRetornar.Location = new System.Drawing.Point(521, 41);
             this.lblRetornar.Name = "lblRetornar";
-            this.lblRetornar.Size = new System.Drawing.Size(48, 13);
+            this.lblRetornar.Size = new System.Drawing.Size(59, 15);
             this.lblRetornar.TabIndex = 110;
             this.lblRetornar.Text = "Retornar";
             this.lblRetornar.Visible = false;
@@ -184,6 +218,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(630, 417);
             this.Controls.Add(this.lblRetornar);
             this.Controls.Add(this.btnBack);
@@ -199,6 +235,7 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmADM_Perm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;

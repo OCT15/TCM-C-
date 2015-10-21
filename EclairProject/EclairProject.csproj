@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\packages\iTextSharp.5.5.7\lib\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -138,6 +141,7 @@
     <Compile Include="ORetornoDeSplaton.Designer.cs">
       <DependentUpon>ORetornoDeSplaton.cs</DependentUpon>
     </Compile>
+    <Compile Include="ORetornodoRetornodeSplaton.cs" />
     <Compile Include="Persist.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -205,6 +209,7 @@
     <EmbeddedResource Include="frmPesq_Cli.resx">
       <DependentUpon>frmPesq_Cli.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

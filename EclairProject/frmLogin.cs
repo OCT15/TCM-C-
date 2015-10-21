@@ -46,8 +46,8 @@ namespace EclairProject
                 nm_permissao = ds.Tables[0].Rows[0]["nm_permissao"].ToString();
                 permissao = ds.Tables[0].Rows[0]["lista_permissoes"].ToString();
                 frmMDI fp = new frmMDI(txtUser.Text, nm_permissao, permissao);
-                fp.Show();
                 this.Hide();
+                fp.Show();
             }
             else
             {

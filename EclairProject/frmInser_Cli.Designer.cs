@@ -33,6 +33,9 @@
             this.txtID_Cli = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.gpbTop1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtMail = new System.Windows.Forms.TextBox();
+            this.lblEmail = new System.Windows.Forms.Label();
             this.txtDate_nasc = new System.Windows.Forms.MaskedTextBox();
             this.txtIdade = new System.Windows.Forms.TextBox();
             this.lblIdade = new System.Windows.Forms.Label();
@@ -43,23 +46,25 @@
             this.ptbData = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gpbTop2 = new System.Windows.Forms.GroupBox();
+            this.txtCEP = new System.Windows.Forms.MaskedTextBox();
+            this.lblCEP = new System.Windows.Forms.Label();
+            this.txtIE = new System.Windows.Forms.TextBox();
+            this.txtRG = new System.Windows.Forms.TextBox();
+            this.lblRG_IE = new System.Windows.Forms.Label();
+            this.txtCNPJ = new System.Windows.Forms.MaskedTextBox();
             this.txtCPF = new System.Windows.Forms.MaskedTextBox();
             this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.txtCel = new System.Windows.Forms.MaskedTextBox();
-            this.txtCEP = new System.Windows.Forms.MaskedTextBox();
             this.lblTelefone = new System.Windows.Forms.Label();
             this.txtEnd = new System.Windows.Forms.TextBox();
             this.lblEndereço = new System.Windows.Forms.Label();
             this.lblCelular = new System.Windows.Forms.Label();
-            this.lblCEP = new System.Windows.Forms.Label();
-            this.lblCPF = new System.Windows.Forms.Label();
+            this.lblCPF_CNPJ = new System.Windows.Forms.Label();
             this.ptbCPF = new System.Windows.Forms.PictureBox();
             this.ptbTelefone = new System.Windows.Forms.PictureBox();
             this.ptbCel = new System.Windows.Forms.PictureBox();
-            this.txtMail = new System.Windows.Forms.TextBox();
-            this.lblEmail = new System.Windows.Forms.Label();
+            this.ptbRG = new System.Windows.Forms.PictureBox();
             this.lblconsulta = new System.Windows.Forms.Label();
-            this.gpbMid = new System.Windows.Forms.GroupBox();
             this.gpbBot = new System.Windows.Forms.GroupBox();
             this.btnInserir = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
@@ -74,6 +79,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptbCPF)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbTelefone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbRG)).BeginInit();
             this.gpbBot.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
@@ -103,6 +109,9 @@
             // gpbTop1
             // 
             this.gpbTop1.BackColor = System.Drawing.Color.Transparent;
+            this.gpbTop1.Controls.Add(this.label1);
+            this.gpbTop1.Controls.Add(this.txtMail);
+            this.gpbTop1.Controls.Add(this.lblEmail);
             this.gpbTop1.Controls.Add(this.txtDate_nasc);
             this.gpbTop1.Controls.Add(this.txtSenha);
             this.gpbTop1.Controls.Add(this.txtIdade);
@@ -115,9 +124,40 @@
             this.gpbTop1.Controls.Add(this.pictureBox1);
             this.gpbTop1.Location = new System.Drawing.Point(13, 81);
             this.gpbTop1.Name = "gpbTop1";
-            this.gpbTop1.Size = new System.Drawing.Size(301, 169);
+            this.gpbTop1.Size = new System.Drawing.Size(301, 194);
             this.gpbTop1.TabIndex = 99;
             this.gpbTop1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(28, 162);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 22);
+            this.label1.TabIndex = 102;
+            this.label1.Text = "E-mail";
+            // 
+            // txtMail
+            // 
+            this.txtMail.Location = new System.Drawing.Point(104, 164);
+            this.txtMail.Name = "txtMail";
+            this.txtMail.Size = new System.Drawing.Size(191, 20);
+            this.txtMail.TabIndex = 99;
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.ForeColor = System.Drawing.Color.White;
+            this.lblEmail.Location = new System.Drawing.Point(-79, 92);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(60, 22);
+            this.lblEmail.TabIndex = 100;
+            this.lblEmail.Text = "E-mail";
             // 
             // txtDate_nasc
             // 
@@ -206,33 +246,97 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(18, 133);
+            this.pictureBox1.Location = new System.Drawing.Point(33, 148);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(80, 25);
+            this.pictureBox1.Size = new System.Drawing.Size(50, 10);
             this.pictureBox1.TabIndex = 97;
             this.pictureBox1.TabStop = false;
             // 
             // gpbTop2
             // 
             this.gpbTop2.BackColor = System.Drawing.Color.Transparent;
+            this.gpbTop2.Controls.Add(this.txtCEP);
+            this.gpbTop2.Controls.Add(this.lblCEP);
+            this.gpbTop2.Controls.Add(this.txtIE);
+            this.gpbTop2.Controls.Add(this.txtRG);
+            this.gpbTop2.Controls.Add(this.lblRG_IE);
+            this.gpbTop2.Controls.Add(this.txtCNPJ);
             this.gpbTop2.Controls.Add(this.txtCPF);
             this.gpbTop2.Controls.Add(this.txtTelefone);
             this.gpbTop2.Controls.Add(this.txtCel);
-            this.gpbTop2.Controls.Add(this.txtCEP);
             this.gpbTop2.Controls.Add(this.lblTelefone);
             this.gpbTop2.Controls.Add(this.txtEnd);
             this.gpbTop2.Controls.Add(this.lblEndereço);
             this.gpbTop2.Controls.Add(this.lblCelular);
-            this.gpbTop2.Controls.Add(this.lblCEP);
-            this.gpbTop2.Controls.Add(this.lblCPF);
+            this.gpbTop2.Controls.Add(this.lblCPF_CNPJ);
             this.gpbTop2.Controls.Add(this.ptbCPF);
             this.gpbTop2.Controls.Add(this.ptbTelefone);
             this.gpbTop2.Controls.Add(this.ptbCel);
+            this.gpbTop2.Controls.Add(this.ptbRG);
             this.gpbTop2.Location = new System.Drawing.Point(329, 81);
             this.gpbTop2.Name = "gpbTop2";
-            this.gpbTop2.Size = new System.Drawing.Size(277, 169);
+            this.gpbTop2.Size = new System.Drawing.Size(277, 194);
             this.gpbTop2.TabIndex = 100;
             this.gpbTop2.TabStop = false;
+            // 
+            // txtCEP
+            // 
+            this.txtCEP.Location = new System.Drawing.Point(93, 163);
+            this.txtCEP.Mask = "00000-000";
+            this.txtCEP.Name = "txtCEP";
+            this.txtCEP.Size = new System.Drawing.Size(175, 20);
+            this.txtCEP.TabIndex = 87;
+            // 
+            // lblCEP
+            // 
+            this.lblCEP.AutoSize = true;
+            this.lblCEP.BackColor = System.Drawing.Color.Transparent;
+            this.lblCEP.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCEP.ForeColor = System.Drawing.Color.White;
+            this.lblCEP.Location = new System.Drawing.Point(24, 162);
+            this.lblCEP.Name = "lblCEP";
+            this.lblCEP.Size = new System.Drawing.Size(47, 22);
+            this.lblCEP.TabIndex = 88;
+            this.lblCEP.Text = "CEP";
+            // 
+            // txtIE
+            // 
+            this.txtIE.Location = new System.Drawing.Point(93, 135);
+            this.txtIE.Name = "txtIE";
+            this.txtIE.Size = new System.Drawing.Size(175, 20);
+            this.txtIE.TabIndex = 86;
+            this.txtIE.Visible = false;
+            this.txtIE.Leave += new System.EventHandler(this.txtIE_Leave);
+            // 
+            // txtRG
+            // 
+            this.txtRG.Location = new System.Drawing.Point(93, 135);
+            this.txtRG.Name = "txtRG";
+            this.txtRG.Size = new System.Drawing.Size(175, 20);
+            this.txtRG.TabIndex = 85;
+            this.txtRG.Leave += new System.EventHandler(this.txtRG_Leave);
+            // 
+            // lblRG_IE
+            // 
+            this.lblRG_IE.AutoSize = true;
+            this.lblRG_IE.BackColor = System.Drawing.Color.Transparent;
+            this.lblRG_IE.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRG_IE.ForeColor = System.Drawing.Color.White;
+            this.lblRG_IE.Location = new System.Drawing.Point(29, 136);
+            this.lblRG_IE.Name = "lblRG_IE";
+            this.lblRG_IE.Size = new System.Drawing.Size(37, 22);
+            this.lblRG_IE.TabIndex = 84;
+            this.lblRG_IE.Text = "RG";
+            // 
+            // txtCNPJ
+            // 
+            this.txtCNPJ.Location = new System.Drawing.Point(93, 105);
+            this.txtCNPJ.Mask = "00\\.000\\.000/0000-00";
+            this.txtCNPJ.Name = "txtCNPJ";
+            this.txtCNPJ.Size = new System.Drawing.Size(175, 20);
+            this.txtCNPJ.TabIndex = 83;
+            this.txtCNPJ.Visible = false;
+            this.txtCNPJ.Leave += new System.EventHandler(this.txtCNPJ_Leave);
             // 
             // txtCPF
             // 
@@ -258,14 +362,6 @@
             this.txtCel.Name = "txtCel";
             this.txtCel.Size = new System.Drawing.Size(175, 20);
             this.txtCel.TabIndex = 15;
-            // 
-            // txtCEP
-            // 
-            this.txtCEP.Location = new System.Drawing.Point(93, 135);
-            this.txtCEP.Mask = "00000-000";
-            this.txtCEP.Name = "txtCEP";
-            this.txtCEP.Size = new System.Drawing.Size(175, 20);
-            this.txtCEP.TabIndex = 18;
             // 
             // lblTelefone
             // 
@@ -310,36 +406,24 @@
             this.lblCelular.TabIndex = 74;
             this.lblCelular.Text = "Celular";
             // 
-            // lblCEP
+            // lblCPF_CNPJ
             // 
-            this.lblCEP.AutoSize = true;
-            this.lblCEP.BackColor = System.Drawing.Color.Transparent;
-            this.lblCEP.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCEP.ForeColor = System.Drawing.Color.White;
-            this.lblCEP.Location = new System.Drawing.Point(23, 136);
-            this.lblCEP.Name = "lblCEP";
-            this.lblCEP.Size = new System.Drawing.Size(47, 22);
-            this.lblCEP.TabIndex = 72;
-            this.lblCEP.Text = "CEP";
-            // 
-            // lblCPF
-            // 
-            this.lblCPF.AutoSize = true;
-            this.lblCPF.BackColor = System.Drawing.Color.Transparent;
-            this.lblCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCPF.ForeColor = System.Drawing.Color.White;
-            this.lblCPF.Location = new System.Drawing.Point(22, 106);
-            this.lblCPF.Name = "lblCPF";
-            this.lblCPF.Size = new System.Drawing.Size(46, 22);
-            this.lblCPF.TabIndex = 71;
-            this.lblCPF.Text = "CPF";
+            this.lblCPF_CNPJ.AutoSize = true;
+            this.lblCPF_CNPJ.BackColor = System.Drawing.Color.Transparent;
+            this.lblCPF_CNPJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCPF_CNPJ.ForeColor = System.Drawing.Color.White;
+            this.lblCPF_CNPJ.Location = new System.Drawing.Point(22, 106);
+            this.lblCPF_CNPJ.Name = "lblCPF_CNPJ";
+            this.lblCPF_CNPJ.Size = new System.Drawing.Size(46, 22);
+            this.lblCPF_CNPJ.TabIndex = 71;
+            this.lblCPF_CNPJ.Text = "CPF";
             // 
             // ptbCPF
             // 
             this.ptbCPF.BackColor = System.Drawing.Color.Transparent;
-            this.ptbCPF.Location = new System.Drawing.Point(12, 104);
+            this.ptbCPF.Location = new System.Drawing.Point(26, 119);
             this.ptbCPF.Name = "ptbCPF";
-            this.ptbCPF.Size = new System.Drawing.Size(67, 25);
+            this.ptbCPF.Size = new System.Drawing.Size(37, 10);
             this.ptbCPF.TabIndex = 80;
             this.ptbCPF.TabStop = false;
             // 
@@ -353,30 +437,20 @@
             // 
             // ptbCel
             // 
-            this.ptbCel.Location = new System.Drawing.Point(6, 45);
+            this.ptbCel.Location = new System.Drawing.Point(15, 60);
             this.ptbCel.Name = "ptbCel";
-            this.ptbCel.Size = new System.Drawing.Size(80, 25);
+            this.ptbCel.Size = new System.Drawing.Size(56, 10);
             this.ptbCel.TabIndex = 82;
             this.ptbCel.TabStop = false;
             // 
-            // txtMail
+            // ptbRG
             // 
-            this.txtMail.Location = new System.Drawing.Point(118, 264);
-            this.txtMail.Name = "txtMail";
-            this.txtMail.Size = new System.Drawing.Size(392, 20);
-            this.txtMail.TabIndex = 19;
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.ForeColor = System.Drawing.Color.White;
-            this.lblEmail.Location = new System.Drawing.Point(51, 263);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(60, 22);
-            this.lblEmail.TabIndex = 98;
-            this.lblEmail.Text = "E-mail";
+            this.ptbRG.BackColor = System.Drawing.Color.Transparent;
+            this.ptbRG.Location = new System.Drawing.Point(30, 151);
+            this.ptbRG.Name = "ptbRG";
+            this.ptbRG.Size = new System.Drawing.Size(33, 10);
+            this.ptbRG.TabIndex = 89;
+            this.ptbRG.TabStop = false;
             // 
             // lblconsulta
             // 
@@ -390,21 +464,12 @@
             this.lblconsulta.TabIndex = 97;
             this.lblconsulta.Text = "Inserir Cliente";
             // 
-            // gpbMid
-            // 
-            this.gpbMid.BackColor = System.Drawing.Color.Transparent;
-            this.gpbMid.Location = new System.Drawing.Point(43, 249);
-            this.gpbMid.Name = "gpbMid";
-            this.gpbMid.Size = new System.Drawing.Size(482, 44);
-            this.gpbMid.TabIndex = 102;
-            this.gpbMid.TabStop = false;
-            // 
             // gpbBot
             // 
             this.gpbBot.BackColor = System.Drawing.Color.Transparent;
             this.gpbBot.Controls.Add(this.btnInserir);
             this.gpbBot.Controls.Add(this.btnLimpar);
-            this.gpbBot.Location = new System.Drawing.Point(152, 293);
+            this.gpbBot.Location = new System.Drawing.Point(152, 283);
             this.gpbBot.Name = "gpbBot";
             this.gpbBot.Size = new System.Drawing.Size(324, 42);
             this.gpbBot.TabIndex = 103;
@@ -501,10 +566,7 @@
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.gpbTop1);
             this.Controls.Add(this.gpbTop2);
-            this.Controls.Add(this.txtMail);
-            this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblconsulta);
-            this.Controls.Add(this.gpbMid);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmInser_Cli";
@@ -521,6 +583,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptbCPF)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbTelefone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbRG)).EndInit();
             this.gpbBot.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.ResumeLayout(false);
@@ -545,17 +608,12 @@
         private System.Windows.Forms.TextBox txtEnd;
         private System.Windows.Forms.Label lblEndereço;
         private System.Windows.Forms.Label lblCelular;
-        private System.Windows.Forms.Label lblCEP;
-        private System.Windows.Forms.Label lblCPF;
-        private System.Windows.Forms.TextBox txtMail;
-        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblCPF_CNPJ;
         private System.Windows.Forms.Label lblconsulta;
-        private System.Windows.Forms.GroupBox gpbMid;
         private System.Windows.Forms.GroupBox gpbBot;
         private System.Windows.Forms.Button btnInserir;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.MaskedTextBox txtCel;
-        private System.Windows.Forms.MaskedTextBox txtCEP;
         private System.Windows.Forms.MaskedTextBox txtDate_nasc;
         private System.Windows.Forms.MaskedTextBox txtTelefone;
         private System.Windows.Forms.MaskedTextBox txtCPF;
@@ -568,5 +626,15 @@
         private System.Windows.Forms.Label lblRetornar;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.MaskedTextBox txtCNPJ;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtMail;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.TextBox txtRG;
+        private System.Windows.Forms.Label lblRG_IE;
+        private System.Windows.Forms.TextBox txtIE;
+        private System.Windows.Forms.MaskedTextBox txtCEP;
+        private System.Windows.Forms.Label lblCEP;
+        private System.Windows.Forms.PictureBox ptbRG;
     }
 }

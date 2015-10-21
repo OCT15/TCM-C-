@@ -12,9 +12,12 @@ namespace EclairProject
 {
     public partial class frmSplash : Form
     {
+        int timer=0;
         Timer tmAnim2;
         int curLetter;
-        string txt = "Carregando Festa!";
+        string txt = "Carregando Festa";
+        string txt2 = "Preparando Forno";
+        string txt3 = "Curando Diabetes";
         public int Progress
         {
             get
@@ -52,15 +55,73 @@ namespace EclairProject
         }
         void tmAnim2_Tick(object sender, EventArgs e)
         {
-            if (curLetter <= txt.Length)
+            if (timer == 0)
+            {
+              if (curLetter <= txt.Length)
+              {
+                  textBox1.Text = txt.Substring(0, curLetter);
+                  curLetter++;
+              }
+              else
+              {
+                  timer = 1;
+                  textBox1.Text = "";
+                  curLetter = 0;
+              }
+            }
+            //////////////////////////////////////////////////////////////
+            if (timer == 1)
+            {
+                if (curLetter <= txt2.Length)
+                {
+                    textBox1.Text = txt2.Substring(0, curLetter);
+                    curLetter++;
+                }
+                else
+                {
+                    timer = 2;
+                    textBox1.Text = "";
+                    curLetter = 0;
+                }
+            }
+            ///////////////////////////////////////////////////////////////
+            if (timer == 2)
+            {
+                if (curLetter <= txt3.Length)
+                {
+                    textBox1.Text = txt3.Substring(0, curLetter);
+                    curLetter++;
+                }
+            }
+            /*if (curLetter <= txt.Length)
             {
                 textBox1.Text = txt.Substring(0, curLetter);
                 curLetter++;
             }
             else
             {
-                tmAnim2.Stop();
-            }
+                textBox1.Text = "";
+                curLetter = 0;
+                if (curLetter <= txt2.Length)
+                {
+                   textBox1.Text = txt2.Substring(0, curLetter);
+                   curLetter++;
+                }
+                else
+                {
+                   textBox1.Text = "";
+                   curLetter = 0;
+                   if (curLetter <= txt3.Length)
+                   {
+                      textBox1.Text = txt3.Substring(0, curLetter);
+                      curLetter++;
+                   }
+                   else
+                   {
+                      tmAnim2.Stop();
+                   }
+                 }
+            }*/
         }
 
         private void frmSplash_Load(object sender, EventArgs e)
