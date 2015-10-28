@@ -12,13 +12,81 @@ namespace EclairProject
 {
     public partial class frmPesq_Func : Form
     {
+        Persist pr;
+        ClasseConexao cc;
+        DataSet ds;
+        int var; 
+
         public frmPesq_Func()
         {
             InitializeComponent();
         }
+
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+        private void btnBack_MouseHover(object sender, EventArgs e)
+        {
+            lblRetornar.Visible = true;
+        }
+
+        private void btnBack_MouseLeave(object sender, EventArgs e)
+        {
+            lblRetornar.Visible = false;
+        }
+
+        private void btnProcurar_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("Insira algo no campo para pesquisar na lista de clientes");
+                dataGridView1.DataSource = "";
+            }
+            else
+            {
+                cc = new ClasseConexao();
+                ds = new DataSet();
+                string sql = ("select * from funcionario where id_funcionario like '" + textBox1.Text + "' or nome = '" + textBox1.Text + "' or senha = '" + textBox1.Text + "' or dt_nascim like '" + textBox1.Text + "' or endereco = '" + textBox1.Text + "' or telefone = '" + textBox1.Text + "' or celular = '" + textBox1.Text + "' or cep = '" + textBox1.Text + "' or cpf = '" + textBox1.Text + "' or rg = '" + textBox1.Text + "' or email = '" + textBox1.Text + "'");
+                ds = cc.executarSQL(sql);
+                dataGridView1.DataSource = ds.Tables[0];
+            }
+        }
+
+        private void btnInserir_Click(object sender, EventArgs e)
+        {
+            cc = new ClasseConexao();
+            ds = new DataSet();
+            var = 1;
+
+            do
+            {
+                cc = new ClasseConexao();
+                ds = new DataSet();
+                string sql = ("select nome from funcionario where id_funcionario = '" + var + "'");
+                ds = cc.executarSQL(sql);
+                if (ds.Tables[0].Rows.Count > 0) var++;
+                else break;
+            }
+            while (true);
+
+            frmInser_Cli fIC = new frmInser_Cli(var);
+            fIC.Show();
+            fIC.Location = new Point(448, 133);
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            pr = new Persist();
+            int r = e.RowIndex, // e > argumentos de evento                     ^
+            c = e.ColumnIndex;
+            string v1 = dataGridView1.Rows[r].Cells[0].Value.ToString();
+            pr.setId(v1);
+            frmMant_Func fT = new frmMant_Func();
+            fT.Show();
+            fT.Location = new Point(448, 133);
+        }
+
     }
 }

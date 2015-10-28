@@ -8,10 +8,38 @@ namespace EclairProject
 {
     public static class ClasseValida
     {
+        public static bool IsEmail(string email)
+        {
+            int arr = email.IndexOf("@");
+            if (arr < 1) // Checa por 1 arroba
+                return false;
+            if (email.IndexOf("@", arr + 1) > -1) //Checa por um 2º arroba
+                return false;
+
+            int arr2 = email.IndexOf(".", arr + 1);
+            if (arr2 < 1)
+                return false;
+            
+            return true;
+        }
         public static bool Data(string data)
         {
             DateTime dt;
             return DateTime.TryParse(data, out dt);
+        }
+        public static bool IsTel(string Tel)
+        {
+            string Telefone = Tel.Replace("(", "").Replace(")","").Replace("-","");
+            long r;
+            if (long.TryParse(Telefone, out r))    {return true;}
+                     else                                    {return false;}
+        }
+        public static bool IsCep(string cepp)
+        {
+            string Cep = cepp.Replace("-", "");
+            int r;
+            if (int.TryParse(Cep, out r)) { return true; }
+            else { return false; }
         }
 
         public static bool IsCpf(string cpf)
@@ -64,13 +92,15 @@ namespace EclairProject
                  else   {return false;}
             }
 
-        public static bool IsIE(string rg)
+        public static bool IsIE(string ie)
         {
-            if (rg.Length == 12)
+            string iesonumero = ie.Replace(".", "").Replace("-", "");
+            System.Windows.Forms.MessageBox.Show(iesonumero);
+            if (iesonumero.Length == 12)
             {
-                string rgsonumero = rg.Replace("x", "").Replace(".", "").Replace("-", "");
-                int r = 9;
-                if (int.TryParse(rgsonumero, out r)) { return true; }
+
+                long r;
+                if (long.TryParse(iesonumero, out r)) { return true; }
                 else { return false; }
             }
             else { return false; }
@@ -78,11 +108,13 @@ namespace EclairProject
       
         public static bool IsRG(string rg)
         {
-           if (rg.Length == 12)
+
+                string rgsonumero = rg.Replace(".", "").Replace("-", "");
+                string rgfinal = rgsonumero.Replace("x", "");
+            if (rgfinal.Length == 9)
             {
-                string rgsonumero = rg.Replace("x", "").Replace(".", "").Replace("-", "");
                 int r = 9;
-                     if (int.TryParse(rgsonumero, out r))    {return true;}
+                     if (int.TryParse(rgfinal, out r))    {return true;}
                      else                                    {return false;}
             }
             else                                             {return false;}

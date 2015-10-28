@@ -38,10 +38,11 @@
             // 
             this.lblRetornar.AutoSize = true;
             this.lblRetornar.BackColor = System.Drawing.Color.Transparent;
-            this.lblRetornar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblRetornar.Location = new System.Drawing.Point(521, 41);
+            this.lblRetornar.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.lblRetornar.ForeColor = System.Drawing.Color.White;
+            this.lblRetornar.Location = new System.Drawing.Point(520, 42);
             this.lblRetornar.Name = "lblRetornar";
-            this.lblRetornar.Size = new System.Drawing.Size(48, 13);
+            this.lblRetornar.Size = new System.Drawing.Size(59, 15);
             this.lblRetornar.TabIndex = 112;
             this.lblRetornar.Text = "Retornar";
             this.lblRetornar.Visible = false;
@@ -51,10 +52,10 @@
             this.btnBack.BackColor = System.Drawing.Color.Transparent;
             this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
             this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBack.Location = new System.Drawing.Point(571, -8);
+            this.btnBack.Location = new System.Drawing.Point(570, -7);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(60, 60);
-            this.btnBack.TabIndex = 113;
+            this.btnBack.TabIndex = 111;
             this.btnBack.TabStop = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             this.btnBack.MouseLeave += new System.EventHandler(this.btnBack_MouseLeave);
@@ -64,11 +65,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EclairProject.Properties.Resources.Logadaview;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(630, 417);
-            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblRetornar);
+            this.Controls.Add(this.btnBack);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmRelat_Estq";
@@ -84,5 +85,6 @@
 
         private System.Windows.Forms.Label lblRetornar;
         private System.Windows.Forms.PictureBox btnBack;
+
     }
 }

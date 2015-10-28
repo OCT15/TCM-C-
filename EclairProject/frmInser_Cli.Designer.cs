@@ -45,11 +45,12 @@
             this.lblID = new System.Windows.Forms.Label();
             this.ptbData = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ptbMail = new System.Windows.Forms.PictureBox();
             this.gpbTop2 = new System.Windows.Forms.GroupBox();
+            this.txtIE = new System.Windows.Forms.MaskedTextBox();
+            this.txtRG = new System.Windows.Forms.MaskedTextBox();
             this.txtCEP = new System.Windows.Forms.MaskedTextBox();
             this.lblCEP = new System.Windows.Forms.Label();
-            this.txtIE = new System.Windows.Forms.TextBox();
-            this.txtRG = new System.Windows.Forms.TextBox();
             this.lblRG_IE = new System.Windows.Forms.Label();
             this.txtCNPJ = new System.Windows.Forms.MaskedTextBox();
             this.txtCPF = new System.Windows.Forms.MaskedTextBox();
@@ -64,22 +65,25 @@
             this.ptbTelefone = new System.Windows.Forms.PictureBox();
             this.ptbCel = new System.Windows.Forms.PictureBox();
             this.ptbRG = new System.Windows.Forms.PictureBox();
+            this.ptbCEP = new System.Windows.Forms.PictureBox();
             this.lblconsulta = new System.Windows.Forms.Label();
             this.gpbBot = new System.Windows.Forms.GroupBox();
             this.btnInserir = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
-            this.btnBack = new System.Windows.Forms.PictureBox();
-            this.lblRetornar = new System.Windows.Forms.Label();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.lblRetornar = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.PictureBox();
             this.gpbTop1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbMail)).BeginInit();
             this.gpbTop2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCPF)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbTelefone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbRG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCEP)).BeginInit();
             this.gpbBot.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
@@ -87,6 +91,7 @@
             // txtSenha
             // 
             this.txtSenha.Location = new System.Drawing.Point(104, 76);
+            this.txtSenha.MaxLength = 50;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(190, 20);
             this.txtSenha.TabIndex = 11;
@@ -102,6 +107,7 @@
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(117, 127);
+            this.txtNome.MaxLength = 50;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(190, 20);
             this.txtNome.TabIndex = 10;
@@ -122,6 +128,7 @@
             this.gpbTop1.Controls.Add(this.lblID);
             this.gpbTop1.Controls.Add(this.ptbData);
             this.gpbTop1.Controls.Add(this.pictureBox1);
+            this.gpbTop1.Controls.Add(this.ptbMail);
             this.gpbTop1.Location = new System.Drawing.Point(13, 81);
             this.gpbTop1.Name = "gpbTop1";
             this.gpbTop1.Size = new System.Drawing.Size(301, 194);
@@ -134,7 +141,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(28, 162);
+            this.label1.Location = new System.Drawing.Point(28, 161);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 22);
             this.label1.TabIndex = 102;
@@ -146,6 +153,7 @@
             this.txtMail.Name = "txtMail";
             this.txtMail.Size = new System.Drawing.Size(191, 20);
             this.txtMail.TabIndex = 99;
+            this.txtMail.Leave += new System.EventHandler(this.txtMail_Leave);
             // 
             // lblEmail
             // 
@@ -252,13 +260,21 @@
             this.pictureBox1.TabIndex = 97;
             this.pictureBox1.TabStop = false;
             // 
+            // ptbMail
+            // 
+            this.ptbMail.Location = new System.Drawing.Point(30, 177);
+            this.ptbMail.Name = "ptbMail";
+            this.ptbMail.Size = new System.Drawing.Size(53, 10);
+            this.ptbMail.TabIndex = 103;
+            this.ptbMail.TabStop = false;
+            // 
             // gpbTop2
             // 
             this.gpbTop2.BackColor = System.Drawing.Color.Transparent;
-            this.gpbTop2.Controls.Add(this.txtCEP);
-            this.gpbTop2.Controls.Add(this.lblCEP);
             this.gpbTop2.Controls.Add(this.txtIE);
             this.gpbTop2.Controls.Add(this.txtRG);
+            this.gpbTop2.Controls.Add(this.txtCEP);
+            this.gpbTop2.Controls.Add(this.lblCEP);
             this.gpbTop2.Controls.Add(this.lblRG_IE);
             this.gpbTop2.Controls.Add(this.txtCNPJ);
             this.gpbTop2.Controls.Add(this.txtCPF);
@@ -273,11 +289,31 @@
             this.gpbTop2.Controls.Add(this.ptbTelefone);
             this.gpbTop2.Controls.Add(this.ptbCel);
             this.gpbTop2.Controls.Add(this.ptbRG);
+            this.gpbTop2.Controls.Add(this.ptbCEP);
             this.gpbTop2.Location = new System.Drawing.Point(329, 81);
             this.gpbTop2.Name = "gpbTop2";
             this.gpbTop2.Size = new System.Drawing.Size(277, 194);
             this.gpbTop2.TabIndex = 100;
             this.gpbTop2.TabStop = false;
+            // 
+            // txtIE
+            // 
+            this.txtIE.Location = new System.Drawing.Point(93, 135);
+            this.txtIE.Mask = "000\\.000\\.000\\.000";
+            this.txtIE.Name = "txtIE";
+            this.txtIE.Size = new System.Drawing.Size(175, 20);
+            this.txtIE.TabIndex = 91;
+            this.txtIE.Visible = false;
+            this.txtIE.Leave += new System.EventHandler(this.txtIE_Leave);
+            // 
+            // txtRG
+            // 
+            this.txtRG.Location = new System.Drawing.Point(93, 135);
+            this.txtRG.Mask = "00\\.000\\.000-a";
+            this.txtRG.Name = "txtRG";
+            this.txtRG.Size = new System.Drawing.Size(175, 20);
+            this.txtRG.TabIndex = 90;
+            this.txtRG.Leave += new System.EventHandler(this.txtRG_Leave);
             // 
             // txtCEP
             // 
@@ -285,7 +321,8 @@
             this.txtCEP.Mask = "00000-000";
             this.txtCEP.Name = "txtCEP";
             this.txtCEP.Size = new System.Drawing.Size(175, 20);
-            this.txtCEP.TabIndex = 87;
+            this.txtCEP.TabIndex = 92;
+            this.txtCEP.Leave += new System.EventHandler(this.txtCEP_Leave);
             // 
             // lblCEP
             // 
@@ -293,28 +330,11 @@
             this.lblCEP.BackColor = System.Drawing.Color.Transparent;
             this.lblCEP.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCEP.ForeColor = System.Drawing.Color.White;
-            this.lblCEP.Location = new System.Drawing.Point(24, 162);
+            this.lblCEP.Location = new System.Drawing.Point(23, 164);
             this.lblCEP.Name = "lblCEP";
             this.lblCEP.Size = new System.Drawing.Size(47, 22);
             this.lblCEP.TabIndex = 88;
             this.lblCEP.Text = "CEP";
-            // 
-            // txtIE
-            // 
-            this.txtIE.Location = new System.Drawing.Point(93, 135);
-            this.txtIE.Name = "txtIE";
-            this.txtIE.Size = new System.Drawing.Size(175, 20);
-            this.txtIE.TabIndex = 86;
-            this.txtIE.Visible = false;
-            this.txtIE.Leave += new System.EventHandler(this.txtIE_Leave);
-            // 
-            // txtRG
-            // 
-            this.txtRG.Location = new System.Drawing.Point(93, 135);
-            this.txtRG.Name = "txtRG";
-            this.txtRG.Size = new System.Drawing.Size(175, 20);
-            this.txtRG.TabIndex = 85;
-            this.txtRG.Leave += new System.EventHandler(this.txtRG_Leave);
             // 
             // lblRG_IE
             // 
@@ -354,6 +374,7 @@
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(175, 20);
             this.txtTelefone.TabIndex = 14;
+            this.txtTelefone.Leave += new System.EventHandler(this.txtTelefone_Leave);
             // 
             // txtCel
             // 
@@ -362,6 +383,7 @@
             this.txtCel.Name = "txtCel";
             this.txtCel.Size = new System.Drawing.Size(175, 20);
             this.txtCel.TabIndex = 15;
+            this.txtCel.Leave += new System.EventHandler(this.txtCel_Leave);
             // 
             // lblTelefone
             // 
@@ -421,7 +443,7 @@
             // ptbCPF
             // 
             this.ptbCPF.BackColor = System.Drawing.Color.Transparent;
-            this.ptbCPF.Location = new System.Drawing.Point(26, 119);
+            this.ptbCPF.Location = new System.Drawing.Point(27, 120);
             this.ptbCPF.Name = "ptbCPF";
             this.ptbCPF.Size = new System.Drawing.Size(37, 10);
             this.ptbCPF.TabIndex = 80;
@@ -429,7 +451,7 @@
             // 
             // ptbTelefone
             // 
-            this.ptbTelefone.Location = new System.Drawing.Point(5, 13);
+            this.ptbTelefone.Location = new System.Drawing.Point(6, 17);
             this.ptbTelefone.Name = "ptbTelefone";
             this.ptbTelefone.Size = new System.Drawing.Size(80, 25);
             this.ptbTelefone.TabIndex = 81;
@@ -446,11 +468,20 @@
             // ptbRG
             // 
             this.ptbRG.BackColor = System.Drawing.Color.Transparent;
-            this.ptbRG.Location = new System.Drawing.Point(30, 151);
+            this.ptbRG.Location = new System.Drawing.Point(30, 152);
             this.ptbRG.Name = "ptbRG";
-            this.ptbRG.Size = new System.Drawing.Size(33, 10);
+            this.ptbRG.Size = new System.Drawing.Size(21, 10);
             this.ptbRG.TabIndex = 89;
             this.ptbRG.TabStop = false;
+            // 
+            // ptbCEP
+            // 
+            this.ptbCEP.BackColor = System.Drawing.Color.Transparent;
+            this.ptbCEP.Location = new System.Drawing.Point(27, 179);
+            this.ptbCEP.Name = "ptbCEP";
+            this.ptbCEP.Size = new System.Drawing.Size(38, 10);
+            this.ptbCEP.TabIndex = 92;
+            this.ptbCEP.TabStop = false;
             // 
             // lblconsulta
             // 
@@ -496,32 +527,6 @@
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
-            // btnBack
-            // 
-            this.btnBack.BackColor = System.Drawing.Color.Transparent;
-            this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
-            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBack.Location = new System.Drawing.Point(571, -8);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(60, 60);
-            this.btnBack.TabIndex = 104;
-            this.btnBack.TabStop = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            this.btnBack.MouseLeave += new System.EventHandler(this.pictureBox2_MouseLeave);
-            this.btnBack.MouseHover += new System.EventHandler(this.pictureBox2_MouseHover);
-            // 
-            // lblRetornar
-            // 
-            this.lblRetornar.AutoSize = true;
-            this.lblRetornar.BackColor = System.Drawing.Color.Transparent;
-            this.lblRetornar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblRetornar.Location = new System.Drawing.Point(521, 41);
-            this.lblRetornar.Name = "lblRetornar";
-            this.lblRetornar.Size = new System.Drawing.Size(48, 13);
-            this.lblRetornar.TabIndex = 105;
-            this.lblRetornar.Text = "Retornar";
-            this.lblRetornar.Visible = false;
-            // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
@@ -550,17 +555,44 @@
             this.radioButton1.UseVisualStyleBackColor = false;
             this.radioButton1.Click += new System.EventHandler(this.radioButton1_Click);
             // 
+            // lblRetornar
+            // 
+            this.lblRetornar.AutoSize = true;
+            this.lblRetornar.BackColor = System.Drawing.Color.Transparent;
+            this.lblRetornar.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.lblRetornar.ForeColor = System.Drawing.Color.White;
+            this.lblRetornar.Location = new System.Drawing.Point(520, 42);
+            this.lblRetornar.Name = "lblRetornar";
+            this.lblRetornar.Size = new System.Drawing.Size(59, 15);
+            this.lblRetornar.TabIndex = 116;
+            this.lblRetornar.Text = "Retornar";
+            this.lblRetornar.Visible = false;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
+            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBack.Location = new System.Drawing.Point(570, -7);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(60, 60);
+            this.btnBack.TabIndex = 115;
+            this.btnBack.TabStop = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
+            this.btnBack.MouseLeave += new System.EventHandler(this.btnBack_MouseLeave);
+            this.btnBack.MouseHover += new System.EventHandler(this.btnBack_MouseHover);
+            // 
             // frmInser_Cli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EclairProject.Properties.Resources.Logadaview;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(630, 417);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.lblRetornar);
             this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.gpbBot);
             this.Controls.Add(this.txtID_Cli);
             this.Controls.Add(this.txtNome);
@@ -578,12 +610,14 @@
             this.gpbTop1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbMail)).EndInit();
             this.gpbTop2.ResumeLayout(false);
             this.gpbTop2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCPF)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbTelefone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbRG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCEP)).EndInit();
             this.gpbBot.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.ResumeLayout(false);
@@ -622,19 +656,21 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox ptbTelefone;
         private System.Windows.Forms.PictureBox ptbCel;
-        private System.Windows.Forms.PictureBox btnBack;
-        private System.Windows.Forms.Label lblRetornar;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.MaskedTextBox txtCNPJ;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtMail;
         private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.TextBox txtRG;
         private System.Windows.Forms.Label lblRG_IE;
-        private System.Windows.Forms.TextBox txtIE;
         private System.Windows.Forms.MaskedTextBox txtCEP;
         private System.Windows.Forms.Label lblCEP;
         private System.Windows.Forms.PictureBox ptbRG;
+        private System.Windows.Forms.Label lblRetornar;
+        private System.Windows.Forms.PictureBox btnBack;
+        private System.Windows.Forms.MaskedTextBox txtIE;
+        private System.Windows.Forms.MaskedTextBox txtRG;
+        private System.Windows.Forms.PictureBox ptbMail;
+        private System.Windows.Forms.PictureBox ptbCEP;
     }
 }

@@ -11,7 +11,6 @@ namespace EclairProject
 {
     public class Persist
     {
-        private static string x = ("Operação não utilizada! Parâmetro vazio");
         private static string id = null;
 
         public void setId(String valor)

@@ -22,6 +22,10 @@ namespace EclairProject
 
         private void frmTeste_Load(object sender, EventArgs e)
         {
+            DateTime ag;
+            DateTime.TryParse(txtDate_nasc.Text, out ag);
+            TimeSpan t = DateTime.Now - ag;
+            txtIdade.Text = Math.Floor(t.Days / 365d) + "";
             pr = new Persist();
             cc = new ClasseConexao();
             ds = new DataSet();
@@ -29,7 +33,7 @@ namespace EclairProject
             ds = cc.executarSQL(sql);
             if (ds == null || ds.Tables[0].Rows.Count < 1)
             {
-                txtNome.Text = txtSenha.Text = txtEnd.Text = txtDate_nasc.Text = txtEnd.Text = txtTelefone.Text = txtCel.Text = txtCPF.Text = txtCEP.Text = txtIdade.Text = txtMail.Text = "";
+                txtNome.Text = txtSenha.Text = txtDate_nasc.Text = txtIdade.Text = txtMail.Text = txtTelefone.Text = txtCel.Text = txtEnd.Text = txtCPF.Text = txtRG_IE.Text = txtCEP.Text = "";
             }
             else
             {
@@ -37,25 +41,19 @@ namespace EclairProject
                 txtNome.Text = ds.Tables[0].Rows[0]["nome"].ToString();
                 txtSenha.Text = ds.Tables[0].Rows[0]["senha"].ToString();
                 txtDate_nasc.Text = ds.Tables[0].Rows[0]["dt_nascim"].ToString();
-                txtEnd.Text = ds.Tables[0].Rows[0]["endereco"].ToString();
+                txtMail.Text = ds.Tables[0].Rows[0]["email"].ToString();
                 txtTelefone.Text = ds.Tables[0].Rows[0]["telefone"].ToString();
                 txtCel.Text = ds.Tables[0].Rows[0]["celular"].ToString();
+                txtEnd.Text = ds.Tables[0].Rows[0]["endereco"].ToString();
                 txtCPF.Text = ds.Tables[0].Rows[0]["cpf_cnpj"].ToString();
+                txtRG_IE.Text = ds.Tables[0].Rows[0]["rg_ie"].ToString();
                 txtCEP.Text = ds.Tables[0].Rows[0]["cep"].ToString();
-                txtMail.Text = ds.Tables[0].Rows[0]["email"].ToString();
             }
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btnAlterar_Click(object sender, EventArgs e)
         {
             txtNome.Enabled = true;
             txtSenha.Enabled = true;
-            txtIdade.Enabled = true;
             txtDate_nasc.Enabled = true;
             txtTelefone.Enabled = true;
             txtCel.Enabled = true;
@@ -69,64 +67,26 @@ namespace EclairProject
 
         private void btnAlterar2_Click(object sender, EventArgs e)
         {
-            if (txtNome.Text == "")
+            if (txtNome.Text == "" || txtSenha.Text == "" || txtIdade.Text == "" || txtDate_nasc.Text == "" || txtTelefone.Text == "" || txtCel.Text == "" || txtEnd.Text == "" || txtCEP.Text == "" || txtMail.Text == "")
             {
-                MessageBox.Show("O campo nome está vazio!");
-            }
-            if (txtSenha.Text == "")
-            {
-                MessageBox.Show("O campo senha está vazio!");
-            }
-            if (txtIdade.Text == "")
-            {
-                MessageBox.Show("O campo idade está vazio!");
-            }
-            if (txtDate_nasc.Text == "")
-            {
-                MessageBox.Show("O campo nascimento está vazio!");
-            }
-            if (txtTelefone.Text == "")
-            {
-                MessageBox.Show("O campo telefone está vazio!");
-            }
-            if (txtCel.Text == "")
-            {
-                MessageBox.Show("O campo celular está vazio!");
-            }
-            if (txtEnd.Text == "")
-            {
-                MessageBox.Show("O campo endereço está vazio!");
-            }
-            if (txtCPF.Text == "")
-            {
-                MessageBox.Show("O campo CPF está vazio!");
-            }
-            if (txtCEP.Text == "")
-            {
-                MessageBox.Show("O campo CEP está vazio!");
-            }
-            if (txtMail.Text == "")
-            {
-                MessageBox.Show("O campo email está vazio!");
-            }
-
-            DialogResult res = MessageBox.Show("Deseja alterar o campo selecionado?", "Aviso", MessageBoxButtons.YesNo);
-            if (res == DialogResult.Yes)
-            {
-                string sql = string.Format("UPDATE cliente SET nome = '{0}', senha = '{1}', idade = '{2}', dt_nascim = '{3}', endereco = '{4}', telefone = '{5}', celular = '{6}', cep = '{7}', cpf = '{8}', email = '{9}' where id_cliente = {10}",
-                    txtNome.Text,
-                    txtSenha.Text,
-                    txtIdade.Text,
-                    txtDate_nasc.Text,
-                    txtEnd.Text,
-                    txtTelefone.Text,
-                    txtCel.Text,
-                    txtCEP.Text,
-                    txtCPF.Text,
-                    txtMail.Text,
-                    txtID_Cli.Text);
-                cc = new ClasseConexao();
-                cc.executarSQL(sql);
+                DialogResult res = MessageBox.Show("Deseja alterar o campo selecionado?", "Aviso", MessageBoxButtons.YesNo);
+                if (res == DialogResult.Yes)
+                {
+                    string sql = string.Format("UPDATE cliente SET nome = '{0}', senha = '{1}', idade = '{2}', dt_nascim = '{3}', endereco = '{4}', telefone = '{5}', celular = '{6}', cep = '{7}', cpf = '{8}', email = '{9}' where id_cliente = {10}",
+                        txtNome.Text,
+                        txtSenha.Text,
+                        txtIdade.Text,
+                        txtDate_nasc.Text,
+                        txtEnd.Text,
+                        txtTelefone.Text,
+                        txtCel.Text,
+                        txtCEP.Text,
+                        txtCPF.Text,
+                        txtMail.Text,
+                        txtID_Cli.Text);
+                    cc = new ClasseConexao();
+                    cc.executarSQL(sql);
+                }
             }
             else
             {
@@ -165,5 +125,16 @@ namespace EclairProject
         {
             this.Close();
         }
+
+        private void btnBack_MouseHover(object sender, EventArgs e)
+        {
+            lblRetornar.Visible = true;
+        }
+
+        private void btnBack_MouseLeave(object sender, EventArgs e)
+        {
+            lblRetornar.Visible = false;
+        }
+
         }
     }

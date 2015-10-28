@@ -31,7 +31,7 @@ namespace EclairProject
             ds = cc.executarSQL(sql);
             if (ds == null || ds.Tables[0].Rows.Count < 1)
             {
-                txtNome.Text = txtSenha.Text =  txtEnd.Text = txtDate_nasc.Text = txtEnd.Text = txtTelefone.Text = txtCel.Text = txtCPF_CNPJ.Text = txtCEP.Text = txtIdade.Text = txtMail.Text = "";
+                txtNome.Text = txtSenha.Text =  txtEnd.Text = txtDate_nasc.Text = txtEnd.Text = txtTelefone.Text = txtCel.Text = txtCPF_CNPJ.Text = txtRG_IE.Text = txtCEP.Text = txtIdade.Text = txtMail.Text = "";
             }
             else
             {
@@ -122,14 +122,19 @@ namespace EclairProject
             atualizarCampos();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
+        private void btnBack_MouseHover(object sender, EventArgs e)
         {
-            this.Close();
+            lblRetornar.Visible = true;
+        }
+
+        private void btnBack_MouseLeave(object sender, EventArgs e)
+        {
+            lblRetornar.Visible = false;
         }
         }
     }

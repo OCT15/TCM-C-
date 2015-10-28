@@ -15,13 +15,7 @@ namespace EclairProject
         public frmADM_Perm()
         {
             InitializeComponent();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
+        } //INITIALIZE
         private void btnCons_Func_Click(object sender, EventArgs e)
         {
             if (Application.OpenForms.OfType<frmCons_Func>().Count() > 0)
@@ -34,9 +28,20 @@ namespace EclairProject
                 fCF.Location = new Point(443, 133);
                 fCF.ShowDialog();
             }
-        }
-
-        private void button7_Click(object sender, EventArgs e)
+        } //frmCons_Func
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        } //back form
+        private void btnBack_MouseHover(object sender, EventArgs e)
+        {
+            lblRetornar.Visible = true;
+        }  // Hover => Visible lbl
+        private void btnBack_MouseLeave(object sender, EventArgs e)
+        {
+            lblRetornar.Visible = false;
+        }  // Leave => Invisible lbl
+        private void btnManter_Func_Click(object sender, EventArgs e)
         {
             if (Application.OpenForms.OfType<frmPesq_Func>().Count() > 0)
             {
@@ -48,21 +53,58 @@ namespace EclairProject
                 fPF.Location = new Point(443, 133);
                 fPF.ShowDialog();
             }
-        }
-
-        private void btnBack_Click(object sender, EventArgs e)
+        } //frmManter_Func 
+        private void btnGerar_NF_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
+            if (Application.OpenForms.OfType<frmGerar_NF>().Count() > 0)
+            {
 
-        private void btnBack_MouseHover(object sender, EventArgs e)
+            }
+            else
+            {
+                frmGerar_NF fGNF = new frmGerar_NF();
+                fGNF.Location = new Point(443, 133);
+                fGNF.ShowDialog();
+            }
+        } //frmGerar_NF
+        private void btnGerar_FC_Click(object sender, EventArgs e)
         {
-            lblRetornar.Visible = true;
-        }
+            if (Application.OpenForms.OfType<frmGerar_FC>().Count() > 0)
+            {
 
-        private void btnBack_MouseLeave(object sender, EventArgs e)
+            }
+            else
+            {
+                frmGerar_FC fGFC = new frmGerar_FC();
+                fGFC.Location = new Point(443, 133);
+                fGFC.ShowDialog();
+            }
+        } //frmGerar_FC
+        private void btnCons_FC_Click(object sender, EventArgs e)
         {
-            lblRetornar.Visible = false;
-        }
+            if (Application.OpenForms.OfType<frmCons_FC >().Count() > 0)
+            {
+
+            }
+            else
+            {
+                frmCons_FC fCFC = new frmCons_FC();
+                fCFC.Location = new Point(443, 133);
+                fCFC.ShowDialog();
+            }
+        } //frmCons_FC
+        private void btnGerar_B_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<frmGerar_B>().Count() > 0)
+            {
+
+            }
+            else
+            {
+                frmGerar_B fGB = new frmGerar_B();
+                fGB.Location = new Point(443, 133);
+                fGB.ShowDialog();
+            }
+        } //frmGerar_B
     }
-}
+} //frmADM_Perm - Permissão do Admnistrador; 6 Formulários;;
