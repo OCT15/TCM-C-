@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace EclairProject
@@ -16,21 +10,16 @@ namespace EclairProject
         string permissao;
         string nome;
         string id;
-        ClasseConexao cc = new ClasseConexao();
+        ClasseConexao cc;
 
         public frmLogin()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
+        }             // INITIALIZE
         private void btnLogar_Click(object sender, EventArgs e)
         {
             DataSet ds = new DataSet();
+            cc = new ClasseConexao();
             string sql = "select * from funcionario where nome='" + txtUser.Text + "' and senha='" + txtPass.Text + "'";
             ds = cc.executarSQL(sql);
             int quantidade = ds.Tables[0].Rows.Count;
@@ -55,11 +44,33 @@ namespace EclairProject
                 txtUser.Text = "";
                 txtPass.Text = "";
             }
-        }
-        private void btnInv_Click(object sender, EventArgs e)
+        }        //Log com banco de dados
+        private void txtPass_KeyPress(object sender, KeyPressEventArgs e)
         {
-            txtUser.Text = "Testador";
-            txtPass.Text = "1234deoliveira";
+            if (e.KeyChar == 13)
+            {
+                this.btnLogar_Click(sender, e);
+            }
+        } // Key Press ENTER (btnLogar_Click)
+        private void txtUser_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+            this.btnLogar_Click(sender, e);
+            }
+        } // Key Press ENTER (btnLogar_Click)
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            ClasseSplash CS = new ClasseSplash();
+        }       // Sair da aplicação
+
+        private void frmLogin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
-}
+}    //frmLogin - Conexao Banco de dados; entrada SplashScreen; parametros Permissão;;

@@ -121,6 +121,12 @@
   <data name="DEFININDO_BACKGROUND_black_and_red_Recovered" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DEFININDO BACKGROUND_black_and_red-Recovered.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Eclair" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Eclair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eclair2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Eclair2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Logadaview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logadaview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

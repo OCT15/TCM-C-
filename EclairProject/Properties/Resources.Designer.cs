@@ -73,6 +73,26 @@ namespace EclairProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Eclair {
+            get {
+                object obj = ResourceManager.GetObject("Eclair", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Eclair2 {
+            get {
+                object obj = ResourceManager.GetObject("Eclair2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logadaview {
             get {
                 object obj = ResourceManager.GetObject("Logadaview", resourceCulture);

@@ -30,32 +30,33 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmATD_Perm));
             this.btnCons_Cli = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.btnPesq_Cli = new System.Windows.Forms.Button();
+            this.btnGerar_O = new System.Windows.Forms.Button();
+            this.btnCons_Evento = new System.Windows.Forms.Button();
+            this.btnGerar_C = new System.Windows.Forms.Button();
+            this.btnCons_Calen = new System.Windows.Forms.Button();
+            this.lblCons_Evento = new System.Windows.Forms.Label();
+            this.lblManter_Cli = new System.Windows.Forms.Label();
+            this.lblCons_Cli = new System.Windows.Forms.Label();
+            this.lblCons_Calen = new System.Windows.Forms.Label();
+            this.lblGerar_O = new System.Windows.Forms.Label();
+            this.lblGerar_C = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.PictureBox();
             this.lblRetornar = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCons_Cli
             // 
             this.btnCons_Cli.BackColor = System.Drawing.Color.White;
+            this.btnCons_Cli.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCons_Cli.BackgroundImage")));
             this.btnCons_Cli.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCons_Cli.FlatAppearance.BorderSize = 0;
             this.btnCons_Cli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCons_Cli.ForeColor = System.Drawing.Color.Black;
-            this.btnCons_Cli.Location = new System.Drawing.Point(52, 72);
+            this.btnCons_Cli.Location = new System.Drawing.Point(60, 72);
             this.btnCons_Cli.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCons_Cli.Name = "btnCons_Cli";
             this.btnCons_Cli.Size = new System.Drawing.Size(60, 60);
@@ -63,182 +64,165 @@
             this.btnCons_Cli.UseVisualStyleBackColor = false;
             this.btnCons_Cli.Click += new System.EventHandler(this.btnCons_Cli_Click);
             // 
-            // button2
+            // btnPesq_Cli
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(208, 72);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(60, 60);
-            this.button2.TabIndex = 94;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnPesq_Cli.BackColor = System.Drawing.Color.White;
+            this.btnPesq_Cli.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPesq_Cli.BackgroundImage")));
+            this.btnPesq_Cli.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPesq_Cli.FlatAppearance.BorderSize = 0;
+            this.btnPesq_Cli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPesq_Cli.ForeColor = System.Drawing.Color.Black;
+            this.btnPesq_Cli.Location = new System.Drawing.Point(283, 72);
+            this.btnPesq_Cli.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnPesq_Cli.Name = "btnPesq_Cli";
+            this.btnPesq_Cli.Size = new System.Drawing.Size(60, 60);
+            this.btnPesq_Cli.TabIndex = 94;
+            this.btnPesq_Cli.UseVisualStyleBackColor = false;
+            this.btnPesq_Cli.Click += new System.EventHandler(this.btnPesq_Cli_Click);
             // 
-            // button3
+            // btnGerar_O
             // 
-            this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(366, 72);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(60, 60);
-            this.button3.TabIndex = 95;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnGerar_O.BackColor = System.Drawing.Color.White;
+            this.btnGerar_O.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGerar_O.BackgroundImage")));
+            this.btnGerar_O.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGerar_O.Enabled = false;
+            this.btnGerar_O.FlatAppearance.BorderSize = 0;
+            this.btnGerar_O.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGerar_O.ForeColor = System.Drawing.Color.Black;
+            this.btnGerar_O.Location = new System.Drawing.Point(203, 243);
+            this.btnGerar_O.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnGerar_O.Name = "btnGerar_O";
+            this.btnGerar_O.Size = new System.Drawing.Size(60, 60);
+            this.btnGerar_O.TabIndex = 95;
+            this.btnGerar_O.UseVisualStyleBackColor = false;
+            this.btnGerar_O.Click += new System.EventHandler(this.btnGerar_O_Click);
             // 
-            // button5
+            // btnCons_Evento
             // 
-            this.button5.BackColor = System.Drawing.Color.White;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(528, 72);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(60, 60);
-            this.button5.TabIndex = 96;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnCons_Evento.BackColor = System.Drawing.Color.White;
+            this.btnCons_Evento.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCons_Evento.BackgroundImage")));
+            this.btnCons_Evento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCons_Evento.FlatAppearance.BorderSize = 0;
+            this.btnCons_Evento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCons_Evento.ForeColor = System.Drawing.Color.Black;
+            this.btnCons_Evento.Location = new System.Drawing.Point(505, 72);
+            this.btnCons_Evento.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnCons_Evento.Name = "btnCons_Evento";
+            this.btnCons_Evento.Size = new System.Drawing.Size(60, 60);
+            this.btnCons_Evento.TabIndex = 97;
+            this.btnCons_Evento.UseVisualStyleBackColor = false;
+            this.btnCons_Evento.Click += new System.EventHandler(this.btnCons_Evento_Click);
             // 
-            // button6
+            // btnGerar_C
             // 
-            this.button6.BackColor = System.Drawing.Color.White;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.Color.Black;
-            this.button6.Location = new System.Drawing.Point(134, 243);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(60, 60);
-            this.button6.TabIndex = 97;
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnGerar_C.BackColor = System.Drawing.Color.White;
+            this.btnGerar_C.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGerar_C.BackgroundImage")));
+            this.btnGerar_C.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGerar_C.FlatAppearance.BorderSize = 0;
+            this.btnGerar_C.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGerar_C.ForeColor = System.Drawing.Color.Black;
+            this.btnGerar_C.Location = new System.Drawing.Point(30, 243);
+            this.btnGerar_C.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnGerar_C.Name = "btnGerar_C";
+            this.btnGerar_C.Size = new System.Drawing.Size(60, 60);
+            this.btnGerar_C.TabIndex = 98;
+            this.btnGerar_C.UseVisualStyleBackColor = false;
+            this.btnGerar_C.Click += new System.EventHandler(this.btnGerar_C_Click);
             // 
-            // button7
+            // btnCons_Calen
             // 
-            this.button7.BackColor = System.Drawing.Color.White;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.ForeColor = System.Drawing.Color.Black;
-            this.button7.Location = new System.Drawing.Point(292, 243);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(60, 60);
-            this.button7.TabIndex = 98;
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnCons_Calen.BackColor = System.Drawing.Color.White;
+            this.btnCons_Calen.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCons_Calen.BackgroundImage")));
+            this.btnCons_Calen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCons_Calen.Enabled = false;
+            this.btnCons_Calen.FlatAppearance.BorderSize = 0;
+            this.btnCons_Calen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCons_Calen.ForeColor = System.Drawing.Color.Black;
+            this.btnCons_Calen.Location = new System.Drawing.Point(521, 243);
+            this.btnCons_Calen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnCons_Calen.Name = "btnCons_Calen";
+            this.btnCons_Calen.Size = new System.Drawing.Size(60, 60);
+            this.btnCons_Calen.TabIndex = 99;
+            this.btnCons_Calen.UseVisualStyleBackColor = false;
+            this.btnCons_Calen.Click += new System.EventHandler(this.btnCons_Calen_Click);
             // 
-            // button8
+            // lblCons_Evento
             // 
-            this.button8.BackColor = System.Drawing.Color.White;
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.ForeColor = System.Drawing.Color.Black;
-            this.button8.Location = new System.Drawing.Point(457, 243);
-            this.button8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(60, 60);
-            this.button8.TabIndex = 99;
-            this.button8.UseVisualStyleBackColor = false;
+            this.lblCons_Evento.AutoSize = true;
+            this.lblCons_Evento.BackColor = System.Drawing.Color.Transparent;
+            this.lblCons_Evento.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.lblCons_Evento.ForeColor = System.Drawing.Color.White;
+            this.lblCons_Evento.Location = new System.Drawing.Point(482, 135);
+            this.lblCons_Evento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCons_Evento.Name = "lblCons_Evento";
+            this.lblCons_Evento.Size = new System.Drawing.Size(110, 15);
+            this.lblCons_Evento.TabIndex = 101;
+            this.lblCons_Evento.Text = "Consultar Evento";
             // 
-            // label1
+            // lblManter_Cli
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial Black", 8.25F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(111, 306);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 15);
-            this.label1.TabIndex = 101;
-            this.label1.Text = "Consultar Evento";
+            this.lblManter_Cli.AutoSize = true;
+            this.lblManter_Cli.BackColor = System.Drawing.Color.Transparent;
+            this.lblManter_Cli.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.lblManter_Cli.ForeColor = System.Drawing.Color.White;
+            this.lblManter_Cli.Location = new System.Drawing.Point(265, 135);
+            this.lblManter_Cli.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblManter_Cli.Name = "lblManter_Cli";
+            this.lblManter_Cli.Size = new System.Drawing.Size(99, 15);
+            this.lblManter_Cli.TabIndex = 103;
+            this.lblManter_Cli.Text = " Manter Cliente";
             // 
-            // label2
+            // lblCons_Cli
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial Black", 8.25F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(504, 135);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 15);
-            this.label2.TabIndex = 102;
-            this.label2.Text = "Cadastrar Evento";
+            this.lblCons_Cli.AutoSize = true;
+            this.lblCons_Cli.BackColor = System.Drawing.Color.Transparent;
+            this.lblCons_Cli.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.lblCons_Cli.ForeColor = System.Drawing.Color.White;
+            this.lblCons_Cli.Location = new System.Drawing.Point(37, 135);
+            this.lblCons_Cli.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCons_Cli.Name = "lblCons_Cli";
+            this.lblCons_Cli.Size = new System.Drawing.Size(112, 15);
+            this.lblCons_Cli.TabIndex = 104;
+            this.lblCons_Cli.Text = "Consultar Cliente";
             // 
-            // label3
+            // lblCons_Calen
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Arial Black", 8.25F);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(190, 135);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 15);
-            this.label3.TabIndex = 103;
-            this.label3.Text = " Manter Cliente";
+            this.lblCons_Calen.AutoSize = true;
+            this.lblCons_Calen.BackColor = System.Drawing.Color.Transparent;
+            this.lblCons_Calen.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.lblCons_Calen.ForeColor = System.Drawing.Color.Gray;
+            this.lblCons_Calen.Location = new System.Drawing.Point(488, 306);
+            this.lblCons_Calen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCons_Calen.Name = "lblCons_Calen";
+            this.lblCons_Calen.Size = new System.Drawing.Size(133, 15);
+            this.lblCons_Calen.TabIndex = 105;
+            this.lblCons_Calen.Text = "Consultar Calendário";
             // 
-            // label4
+            // lblGerar_O
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Arial Black", 8.25F);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(29, 135);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 15);
-            this.label4.TabIndex = 104;
-            this.label4.Text = "Consultar Cliente";
+            this.lblGerar_O.AutoSize = true;
+            this.lblGerar_O.BackColor = System.Drawing.Color.Transparent;
+            this.lblGerar_O.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.lblGerar_O.ForeColor = System.Drawing.Color.Gray;
+            this.lblGerar_O.Location = new System.Drawing.Point(178, 306);
+            this.lblGerar_O.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblGerar_O.Name = "lblGerar_O";
+            this.lblGerar_O.Size = new System.Drawing.Size(109, 15);
+            this.lblGerar_O.TabIndex = 106;
+            this.lblGerar_O.Text = "Gerar Orçamento";
             // 
-            // label5
+            // lblGerar_C
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Arial Black", 8.25F);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(424, 306);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(133, 15);
-            this.label5.TabIndex = 105;
-            this.label5.Text = "Consultar Calendário";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Arial Black", 8.25F);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(341, 135);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(109, 15);
-            this.label6.TabIndex = 106;
-            this.label6.Text = "Gerar Orçamento";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Arial Black", 8.25F);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(274, 306);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(96, 15);
-            this.label7.TabIndex = 107;
-            this.label7.Text = "Gerar Contrato";
+            this.lblGerar_C.AutoSize = true;
+            this.lblGerar_C.BackColor = System.Drawing.Color.Transparent;
+            this.lblGerar_C.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.lblGerar_C.ForeColor = System.Drawing.Color.White;
+            this.lblGerar_C.Location = new System.Drawing.Point(12, 306);
+            this.lblGerar_C.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblGerar_C.Name = "lblGerar_C";
+            this.lblGerar_C.Size = new System.Drawing.Size(96, 15);
+            this.lblGerar_C.TabIndex = 107;
+            this.lblGerar_C.Text = "Gerar Contrato";
             // 
             // btnBack
             // 
@@ -269,6 +253,35 @@
             this.lblRetornar.Text = "Retornar";
             this.lblRetornar.Visible = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(365, 243);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(60, 60);
+            this.button1.TabIndex = 112;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(323, 306);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(145, 15);
+            this.label1.TabIndex = 113;
+            this.label1.Text = "Orçamentos Pendentes";
+            // 
             // frmATD_Perm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -276,21 +289,21 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(630, 417);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblRetornar);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.lblGerar_C);
+            this.Controls.Add(this.lblGerar_O);
+            this.Controls.Add(this.lblCons_Calen);
+            this.Controls.Add(this.lblCons_Cli);
+            this.Controls.Add(this.lblManter_Cli);
+            this.Controls.Add(this.lblCons_Evento);
+            this.Controls.Add(this.btnCons_Calen);
+            this.Controls.Add(this.btnGerar_C);
+            this.Controls.Add(this.btnCons_Evento);
+            this.Controls.Add(this.btnGerar_O);
+            this.Controls.Add(this.btnPesq_Cli);
             this.Controls.Add(this.btnCons_Cli);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Arial Black", 8.25F);
@@ -309,20 +322,20 @@
         #endregion
 
         private System.Windows.Forms.Button btnCons_Cli;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnPesq_Cli;
+        private System.Windows.Forms.Button btnGerar_O;
+        private System.Windows.Forms.Button btnCons_Evento;
+        private System.Windows.Forms.Button btnGerar_C;
+        private System.Windows.Forms.Button btnCons_Calen;
+        private System.Windows.Forms.Label lblCons_Evento;
+        private System.Windows.Forms.Label lblManter_Cli;
+        private System.Windows.Forms.Label lblCons_Cli;
+        private System.Windows.Forms.Label lblCons_Calen;
+        private System.Windows.Forms.Label lblGerar_O;
+        private System.Windows.Forms.Label lblGerar_C;
         private System.Windows.Forms.PictureBox btnBack;
         private System.Windows.Forms.Label lblRetornar;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }

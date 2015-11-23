@@ -30,40 +30,52 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmETQ_Perm));
             this.btnCons_Estq = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblCons_Est = new System.Windows.Forms.Label();
             this.btnRelat_Estq = new System.Windows.Forms.Button();
             this.btnCompra_Estq = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblRelat_Est = new System.Windows.Forms.Label();
+            this.lblCompra_Est = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.PictureBox();
             this.lblRetornar = new System.Windows.Forms.Label();
+            this.lblCons_Forn = new System.Windows.Forms.Label();
+            this.btnCons_Forn = new System.Windows.Forms.Button();
+            this.lblManter_Forn = new System.Windows.Forms.Label();
+            this.btnCad_Forn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCons_Estq
             // 
-            this.btnCons_Estq.Location = new System.Drawing.Point(120, 92);
+            this.btnCons_Estq.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCons_Estq.BackgroundImage")));
+            this.btnCons_Estq.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCons_Estq.FlatAppearance.BorderSize = 0;
+            this.btnCons_Estq.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCons_Estq.Location = new System.Drawing.Point(120, 56);
             this.btnCons_Estq.Name = "btnCons_Estq";
             this.btnCons_Estq.Size = new System.Drawing.Size(60, 60);
             this.btnCons_Estq.TabIndex = 0;
             this.btnCons_Estq.UseVisualStyleBackColor = true;
             this.btnCons_Estq.Click += new System.EventHandler(this.btnCons_Estq_Click);
             // 
-            // label1
+            // lblCons_Est
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial Black", 8.25F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(97, 153);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 15);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Consultar Estoque";
+            this.lblCons_Est.AutoSize = true;
+            this.lblCons_Est.BackColor = System.Drawing.Color.Transparent;
+            this.lblCons_Est.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.lblCons_Est.ForeColor = System.Drawing.Color.White;
+            this.lblCons_Est.Location = new System.Drawing.Point(97, 117);
+            this.lblCons_Est.Name = "lblCons_Est";
+            this.lblCons_Est.Size = new System.Drawing.Size(117, 15);
+            this.lblCons_Est.TabIndex = 1;
+            this.lblCons_Est.Text = "Consultar Estoque";
             // 
             // btnRelat_Estq
             // 
-            this.btnRelat_Estq.Location = new System.Drawing.Point(289, 249);
+            this.btnRelat_Estq.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRelat_Estq.BackgroundImage")));
+            this.btnRelat_Estq.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRelat_Estq.FlatAppearance.BorderSize = 0;
+            this.btnRelat_Estq.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRelat_Estq.Location = new System.Drawing.Point(288, 56);
             this.btnRelat_Estq.Name = "btnRelat_Estq";
             this.btnRelat_Estq.Size = new System.Drawing.Size(60, 60);
             this.btnRelat_Estq.TabIndex = 2;
@@ -72,36 +84,40 @@
             // 
             // btnCompra_Estq
             // 
-            this.btnCompra_Estq.Location = new System.Drawing.Point(455, 92);
+            this.btnCompra_Estq.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCompra_Estq.BackgroundImage")));
+            this.btnCompra_Estq.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCompra_Estq.FlatAppearance.BorderSize = 0;
+            this.btnCompra_Estq.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCompra_Estq.Location = new System.Drawing.Point(455, 56);
             this.btnCompra_Estq.Name = "btnCompra_Estq";
             this.btnCompra_Estq.Size = new System.Drawing.Size(60, 60);
             this.btnCompra_Estq.TabIndex = 3;
             this.btnCompra_Estq.UseVisualStyleBackColor = true;
             this.btnCompra_Estq.Click += new System.EventHandler(this.btnCompra_Estq_Click);
             // 
-            // label2
+            // lblRelat_Est
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial Black", 8.25F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(258, 310);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 15);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Relatório de Estoque";
+            this.lblRelat_Est.AutoSize = true;
+            this.lblRelat_Est.BackColor = System.Drawing.Color.Transparent;
+            this.lblRelat_Est.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.lblRelat_Est.ForeColor = System.Drawing.Color.White;
+            this.lblRelat_Est.Location = new System.Drawing.Point(257, 117);
+            this.lblRelat_Est.Name = "lblRelat_Est";
+            this.lblRelat_Est.Size = new System.Drawing.Size(132, 15);
+            this.lblRelat_Est.TabIndex = 4;
+            this.lblRelat_Est.Text = "Relatório de Estoque";
             // 
-            // label3
+            // lblCompra_Est
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Arial Black", 8.25F);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(429, 153);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 15);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Compra de Estoque";
+            this.lblCompra_Est.AutoSize = true;
+            this.lblCompra_Est.BackColor = System.Drawing.Color.Transparent;
+            this.lblCompra_Est.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.lblCompra_Est.ForeColor = System.Drawing.Color.White;
+            this.lblCompra_Est.Location = new System.Drawing.Point(429, 117);
+            this.lblCompra_Est.Name = "lblCompra_Est";
+            this.lblCompra_Est.Size = new System.Drawing.Size(123, 15);
+            this.lblCompra_Est.TabIndex = 5;
+            this.lblCompra_Est.Text = "Compra de Estoque";
             // 
             // btnBack
             // 
@@ -123,12 +139,62 @@
             this.lblRetornar.BackColor = System.Drawing.Color.Transparent;
             this.lblRetornar.Font = new System.Drawing.Font("Arial Black", 8.25F);
             this.lblRetornar.ForeColor = System.Drawing.Color.White;
-            this.lblRetornar.Location = new System.Drawing.Point(515, 41);
+            this.lblRetornar.Location = new System.Drawing.Point(521, 41);
             this.lblRetornar.Name = "lblRetornar";
             this.lblRetornar.Size = new System.Drawing.Size(59, 15);
             this.lblRetornar.TabIndex = 111;
             this.lblRetornar.Text = "Retornar";
             this.lblRetornar.Visible = false;
+            // 
+            // lblCons_Forn
+            // 
+            this.lblCons_Forn.AutoSize = true;
+            this.lblCons_Forn.BackColor = System.Drawing.Color.Transparent;
+            this.lblCons_Forn.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.lblCons_Forn.ForeColor = System.Drawing.Color.White;
+            this.lblCons_Forn.Location = new System.Drawing.Point(172, 292);
+            this.lblCons_Forn.Name = "lblCons_Forn";
+            this.lblCons_Forn.Size = new System.Drawing.Size(135, 15);
+            this.lblCons_Forn.TabIndex = 113;
+            this.lblCons_Forn.Text = "Consultar Fornecedor";
+            // 
+            // btnCons_Forn
+            // 
+            this.btnCons_Forn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCons_Forn.BackgroundImage")));
+            this.btnCons_Forn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCons_Forn.FlatAppearance.BorderSize = 0;
+            this.btnCons_Forn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCons_Forn.Location = new System.Drawing.Point(202, 229);
+            this.btnCons_Forn.Name = "btnCons_Forn";
+            this.btnCons_Forn.Size = new System.Drawing.Size(60, 60);
+            this.btnCons_Forn.TabIndex = 112;
+            this.btnCons_Forn.UseVisualStyleBackColor = true;
+            this.btnCons_Forn.Click += new System.EventHandler(this.btnCons_Forn_Click);
+            // 
+            // lblManter_Forn
+            // 
+            this.lblManter_Forn.AutoSize = true;
+            this.lblManter_Forn.BackColor = System.Drawing.Color.Transparent;
+            this.lblManter_Forn.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.lblManter_Forn.ForeColor = System.Drawing.Color.White;
+            this.lblManter_Forn.Location = new System.Drawing.Point(350, 290);
+            this.lblManter_Forn.Name = "lblManter_Forn";
+            this.lblManter_Forn.Size = new System.Drawing.Size(136, 15);
+            this.lblManter_Forn.TabIndex = 117;
+            this.lblManter_Forn.Text = "Cadastrar Fornecedor";
+            // 
+            // btnCad_Forn
+            // 
+            this.btnCad_Forn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCad_Forn.BackgroundImage")));
+            this.btnCad_Forn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCad_Forn.FlatAppearance.BorderSize = 0;
+            this.btnCad_Forn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCad_Forn.Location = new System.Drawing.Point(384, 229);
+            this.btnCad_Forn.Name = "btnCad_Forn";
+            this.btnCad_Forn.Size = new System.Drawing.Size(60, 60);
+            this.btnCad_Forn.TabIndex = 116;
+            this.btnCad_Forn.UseVisualStyleBackColor = true;
+            this.btnCad_Forn.Click += new System.EventHandler(this.btnCad_Forn_Click);
             // 
             // frmETQ_Perm
             // 
@@ -137,13 +203,17 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(630, 417);
+            this.Controls.Add(this.lblManter_Forn);
+            this.Controls.Add(this.btnCad_Forn);
+            this.Controls.Add(this.lblCons_Forn);
+            this.Controls.Add(this.btnCons_Forn);
             this.Controls.Add(this.lblRetornar);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblCompra_Est);
+            this.Controls.Add(this.lblRelat_Est);
             this.Controls.Add(this.btnCompra_Estq);
             this.Controls.Add(this.btnRelat_Estq);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblCons_Est);
             this.Controls.Add(this.btnCons_Estq);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -159,12 +229,16 @@
         #endregion
 
         private System.Windows.Forms.Button btnCons_Estq;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCons_Est;
         private System.Windows.Forms.Button btnRelat_Estq;
         private System.Windows.Forms.Button btnCompra_Estq;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblRelat_Est;
+        private System.Windows.Forms.Label lblCompra_Est;
         private System.Windows.Forms.PictureBox btnBack;
         private System.Windows.Forms.Label lblRetornar;
+        private System.Windows.Forms.Label lblCons_Forn;
+        private System.Windows.Forms.Button btnCons_Forn;
+        private System.Windows.Forms.Label lblManter_Forn;
+        private System.Windows.Forms.Button btnCad_Forn;
     }
 }

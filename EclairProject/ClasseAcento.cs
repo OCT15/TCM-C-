@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EclairProject
+﻿namespace EclairProject
 {
     /*class ClasseAcento
     {
         public void TiraCarac()
         {
-            string comAcentos = "àâêôûãõáéíóúçüÀÂÊÔÛÃÕÁÉÍÓÚÇÜ'";
-            string semAcentos = "aaeouaoaeioucuAAEOUAOAEIOUCU ";
+            string nao = "àâêôûãõáéíóúçüÀÂÊÔÛÃÕÁÉÍÓÚÇÜ'";
+            string sim = "aaeouaoaeioucuAAEOUAOAEIOUCU ";
             string texto;
             int i, a, b;
 
@@ -24,10 +18,10 @@ namespace EclairProject
                         texto = (this.Controls[i] as TextBox).Text;
                         for (a = 0; a <= (texto.Length) - 1; a++)
                         {
-                            for (b = 0; b <= (comAcentos.Length) - 1; b++)
+                            for (b = 0; b <= (sim.Length) - 1; b++)
                             {
-                                if (texto[a] == comAcentos[b])
-                                    texto = texto.Replace(comAcentos[b], semAcentos[b]);
+                                if (texto[a] == sim[b])
+                                    texto = texto.Replace(sim[b], nao[b]);
                             }
                         }
                         (this.Controls[i] as TextBox).Text = texto;

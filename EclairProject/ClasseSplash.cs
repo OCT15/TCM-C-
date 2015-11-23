@@ -1,15 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EclairProject
 {
     public class ClasseSplash
     {
         public event EventHandler<HardWorkerEventArgs> ProgressChanged;
+
         public event EventHandler HardWorkDone;
+
         public void DoHardWork()
         {
             for (int i = 1; i <= 300; i++)
@@ -22,6 +20,7 @@ namespace EclairProject
             }
             this.OnHardWorkDone();
         }
+
         private void OnProgressChanged(int progress)
         {
             var handler = this.ProgressChanged;
@@ -30,6 +29,7 @@ namespace EclairProject
                 handler(this, new HardWorkerEventArgs(progress));
             }
         }
+
         private void OnHardWorkDone()
         {
             var handler = this.HardWorkDone;
@@ -39,12 +39,14 @@ namespace EclairProject
             }
         }
     }
+
     public class HardWorkerEventArgs : EventArgs
     {
         public HardWorkerEventArgs(int progress)
         {
             this.Progress = progress;
         }
+
         public int Progress
         {
             get;

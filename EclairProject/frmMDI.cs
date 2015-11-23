@@ -1,18 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace EclairProject
 {
+    
     public partial class frmMDI : Form
     {
+        int Width = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width / 41 * 4;
+        int Height = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height / 20 * 12;
         int seg = 0, min = 0, hr = 0;
         private string nm_permissao;
         private string nome;
@@ -23,9 +21,9 @@ namespace EclairProject
         {
             InitializeComponent();
 
-            btnADM.Enabled = permissao.Contains("adm");
-            btnATD.Enabled = permissao.Contains("atd");
-            btnETQ.Enabled = permissao.Contains("etq");
+            btnADM.Visible = permissao.Contains("adm");
+            btnATD.Visible = permissao.Contains("atd");
+            btnETQ.Visible = permissao.Contains("etq");
 
             nome = name;
             nm_permissao = nmpermissao;
@@ -77,21 +75,22 @@ namespace EclairProject
             int horas = data.Hour;
             if (horas >= 0 && horas < 12)
             {
-                lblHora.Text = "Bom Dia\nEclairCorp™";
+                lblHora.Text = "Eclair Buffet™\nBom Dia";
             }
             if (horas >= 12 && horas < 18)
             {
-                lblHora.Text = "Boa Tarde\nEclairCorp™";
+                lblHora.Text = "Eclair Buffet™\nBoa Tarde";
             }
             if (horas >= 18 && horas <=23)
             {
-                lblHora.Text = "Boa Noite\nEclairCorp™";
+                lblHora.Text = "Eclair Buffet™\nBoa Noite";
             }
 
             lblText.Text = "Nível de Acesso: "+nm_permissao+"";
             lblNome.Text = nome;
 
             timer1.Enabled = true;
+            ClasseSplash CS = new ClasseSplash();
         }
 
         private void btnADM_Click(object sender, EventArgs e)
@@ -103,7 +102,7 @@ namespace EclairProject
             else
             {
                 frmADM_Perm fDM = new frmADM_Perm();
-                fDM.Location = new Point(443, 133);
+                fDM.Location = new Point(Height + Height / 40, Width + Width / 80);
                 fDM.ShowDialog();
             }
         }
@@ -117,7 +116,7 @@ namespace EclairProject
             else
             {
                 frmATD_Perm fAP = new frmATD_Perm();
-                fAP.Location = new Point(443, 133);
+                fAP.Location = new Point(Height + Height / 40, Width + Width / 80);
                 fAP.ShowDialog();
             }
         }
@@ -131,7 +130,7 @@ namespace EclairProject
             else
             {
                 frmETQ_Perm fEP = new frmETQ_Perm();
-                fEP.Location = new Point(443, 133);
+                fEP.Location = new Point(Height + Height / 40, Width + Width / 80);
                 fEP.ShowDialog(); 
             }
         }
@@ -189,9 +188,13 @@ namespace EclairProject
         {
             lblEstoquista.Visible = false;
         }
+
         private void btnDeslogar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            id_permissao = nm_permissao = null;
+            frmLogin fL = new frmLogin();
+            fL.Show();
+            this.Close();
         }
 
         private void btnDeslogar_MouseLeave(object sender, EventArgs e)
@@ -203,7 +206,6 @@ namespace EclairProject
         {
             lblLogOff.Visible = true;
         }
-
     }
 }
 

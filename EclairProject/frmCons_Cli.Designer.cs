@@ -46,9 +46,9 @@
             this.lblID = new System.Windows.Forms.Label();
             this.lblEndereço = new System.Windows.Forms.Label();
             this.gpbTop2 = new System.Windows.Forms.GroupBox();
-            this.txtCEP = new System.Windows.Forms.TextBox();
             this.txtRG_IE = new System.Windows.Forms.TextBox();
             this.lblRG_IE = new System.Windows.Forms.Label();
+            this.txtCEP = new System.Windows.Forms.TextBox();
             this.lblTelefone = new System.Windows.Forms.Label();
             this.lblCelular = new System.Windows.Forms.Label();
             this.lblCEP = new System.Windows.Forms.Label();
@@ -58,12 +58,13 @@
             this.btnSair = new System.Windows.Forms.Button();
             this.btnAnterior = new System.Windows.Forms.Button();
             this.btnProximo = new System.Windows.Forms.Button();
-            this.lblconsulta = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.gpbBot = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnBack = new System.Windows.Forms.PictureBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.lblRetornar = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.PictureBox();
             this.gpbTop1.SuspendLayout();
             this.gpbTop2.SuspendLayout();
             this.gpbBot.SuspendLayout();
@@ -122,7 +123,7 @@
             this.gpbTop1.Controls.Add(this.lblSenha);
             this.gpbTop1.Controls.Add(this.lblNome);
             this.gpbTop1.Controls.Add(this.lblID);
-            this.gpbTop1.Location = new System.Drawing.Point(13, 81);
+            this.gpbTop1.Location = new System.Drawing.Point(13, 82);
             this.gpbTop1.Name = "gpbTop1";
             this.gpbTop1.Size = new System.Drawing.Size(301, 193);
             this.gpbTop1.TabIndex = 83;
@@ -140,11 +141,11 @@
             // 
             this.lblMail.AutoSize = true;
             this.lblMail.BackColor = System.Drawing.Color.Transparent;
-            this.lblMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMail.Font = new System.Drawing.Font("Arial Black", 10F);
             this.lblMail.ForeColor = System.Drawing.Color.White;
             this.lblMail.Location = new System.Drawing.Point(25, 164);
             this.lblMail.Name = "lblMail";
-            this.lblMail.Size = new System.Drawing.Size(60, 22);
+            this.lblMail.Size = new System.Drawing.Size(57, 19);
             this.lblMail.TabIndex = 76;
             this.lblMail.Text = "E-mail";
             // 
@@ -160,11 +161,11 @@
             // 
             this.lblNascimento.AutoSize = true;
             this.lblNascimento.BackColor = System.Drawing.Color.Transparent;
-            this.lblNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNascimento.Font = new System.Drawing.Font("Arial Black", 10F);
             this.lblNascimento.ForeColor = System.Drawing.Color.White;
             this.lblNascimento.Location = new System.Drawing.Point(5, 105);
             this.lblNascimento.Name = "lblNascimento";
-            this.lblNascimento.Size = new System.Drawing.Size(104, 22);
+            this.lblNascimento.Size = new System.Drawing.Size(100, 19);
             this.lblNascimento.TabIndex = 73;
             this.lblNascimento.Text = "Nascimento";
             // 
@@ -180,11 +181,11 @@
             // 
             this.lblIdade.AutoSize = true;
             this.lblIdade.BackColor = System.Drawing.Color.Transparent;
-            this.lblIdade.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdade.Font = new System.Drawing.Font("Arial Black", 10F);
             this.lblIdade.ForeColor = System.Drawing.Color.White;
             this.lblIdade.Location = new System.Drawing.Point(26, 134);
             this.lblIdade.Name = "lblIdade";
-            this.lblIdade.Size = new System.Drawing.Size(54, 22);
+            this.lblIdade.Size = new System.Drawing.Size(50, 19);
             this.lblIdade.TabIndex = 69;
             this.lblIdade.Text = "Idade";
             // 
@@ -192,11 +193,11 @@
             // 
             this.lblSenha.AutoSize = true;
             this.lblSenha.BackColor = System.Drawing.Color.Transparent;
-            this.lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSenha.Font = new System.Drawing.Font("Arial Black", 10F);
             this.lblSenha.ForeColor = System.Drawing.Color.White;
             this.lblSenha.Location = new System.Drawing.Point(26, 76);
             this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(62, 22);
+            this.lblSenha.Size = new System.Drawing.Size(55, 19);
             this.lblSenha.TabIndex = 66;
             this.lblSenha.Text = "Senha";
             // 
@@ -204,11 +205,11 @@
             // 
             this.lblNome.AutoSize = true;
             this.lblNome.BackColor = System.Drawing.Color.Transparent;
-            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Font = new System.Drawing.Font("Arial Black", 10F);
             this.lblNome.ForeColor = System.Drawing.Color.White;
             this.lblNome.Location = new System.Drawing.Point(28, 46);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(57, 22);
+            this.lblNome.Size = new System.Drawing.Size(53, 19);
             this.lblNome.TabIndex = 64;
             this.lblNome.Text = "Nome";
             // 
@@ -216,11 +217,11 @@
             // 
             this.lblID.AutoSize = true;
             this.lblID.BackColor = System.Drawing.Color.Transparent;
-            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblID.Font = new System.Drawing.Font("Arial Black", 10F);
             this.lblID.ForeColor = System.Drawing.Color.White;
             this.lblID.Location = new System.Drawing.Point(44, 16);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(27, 22);
+            this.lblID.Size = new System.Drawing.Size(25, 19);
             this.lblID.TabIndex = 63;
             this.lblID.Text = "ID";
             // 
@@ -228,20 +229,20 @@
             // 
             this.lblEndereço.AutoSize = true;
             this.lblEndereço.BackColor = System.Drawing.Color.Transparent;
-            this.lblEndereço.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEndereço.Font = new System.Drawing.Font("Arial Black", 10F);
             this.lblEndereço.ForeColor = System.Drawing.Color.White;
             this.lblEndereço.Location = new System.Drawing.Point(2, 76);
             this.lblEndereço.Name = "lblEndereço";
-            this.lblEndereço.Size = new System.Drawing.Size(87, 22);
+            this.lblEndereço.Size = new System.Drawing.Size(79, 19);
             this.lblEndereço.TabIndex = 70;
             this.lblEndereço.Text = "Endereço";
             // 
             // gpbTop2
             // 
             this.gpbTop2.BackColor = System.Drawing.Color.Transparent;
-            this.gpbTop2.Controls.Add(this.txtCEP);
             this.gpbTop2.Controls.Add(this.txtRG_IE);
             this.gpbTop2.Controls.Add(this.lblRG_IE);
+            this.gpbTop2.Controls.Add(this.txtCEP);
             this.gpbTop2.Controls.Add(this.lblTelefone);
             this.gpbTop2.Controls.Add(this.txtEnd);
             this.gpbTop2.Controls.Add(this.lblEndereço);
@@ -256,43 +257,43 @@
             this.gpbTop2.TabIndex = 84;
             this.gpbTop2.TabStop = false;
             // 
-            // txtCEP
-            // 
-            this.txtCEP.Enabled = false;
-            this.txtCEP.Location = new System.Drawing.Point(93, 136);
-            this.txtCEP.Name = "txtCEP";
-            this.txtCEP.Size = new System.Drawing.Size(175, 20);
-            this.txtCEP.TabIndex = 80;
-            // 
             // txtRG_IE
             // 
             this.txtRG_IE.Enabled = false;
-            this.txtRG_IE.Location = new System.Drawing.Point(93, 164);
+            this.txtRG_IE.Location = new System.Drawing.Point(93, 136);
             this.txtRG_IE.Name = "txtRG_IE";
             this.txtRG_IE.Size = new System.Drawing.Size(175, 20);
-            this.txtRG_IE.TabIndex = 79;
+            this.txtRG_IE.TabIndex = 82;
             // 
             // lblRG_IE
             // 
             this.lblRG_IE.AutoSize = true;
             this.lblRG_IE.BackColor = System.Drawing.Color.Transparent;
-            this.lblRG_IE.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRG_IE.Font = new System.Drawing.Font("Arial Black", 10F);
             this.lblRG_IE.ForeColor = System.Drawing.Color.White;
-            this.lblRG_IE.Location = new System.Drawing.Point(26, 163);
+            this.lblRG_IE.Location = new System.Drawing.Point(26, 135);
             this.lblRG_IE.Name = "lblRG_IE";
-            this.lblRG_IE.Size = new System.Drawing.Size(37, 22);
-            this.lblRG_IE.TabIndex = 78;
+            this.lblRG_IE.Size = new System.Drawing.Size(32, 19);
+            this.lblRG_IE.TabIndex = 81;
             this.lblRG_IE.Text = "RG";
+            // 
+            // txtCEP
+            // 
+            this.txtCEP.Enabled = false;
+            this.txtCEP.Location = new System.Drawing.Point(93, 166);
+            this.txtCEP.Name = "txtCEP";
+            this.txtCEP.Size = new System.Drawing.Size(175, 20);
+            this.txtCEP.TabIndex = 80;
             // 
             // lblTelefone
             // 
             this.lblTelefone.AutoSize = true;
             this.lblTelefone.BackColor = System.Drawing.Color.Transparent;
-            this.lblTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefone.Font = new System.Drawing.Font("Arial Black", 10F);
             this.lblTelefone.ForeColor = System.Drawing.Color.White;
             this.lblTelefone.Location = new System.Drawing.Point(3, 16);
             this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(81, 22);
+            this.lblTelefone.Size = new System.Drawing.Size(74, 19);
             this.lblTelefone.TabIndex = 75;
             this.lblTelefone.Text = "Telefone";
             // 
@@ -300,11 +301,11 @@
             // 
             this.lblCelular.AutoSize = true;
             this.lblCelular.BackColor = System.Drawing.Color.Transparent;
-            this.lblCelular.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCelular.Font = new System.Drawing.Font("Arial Black", 10F);
             this.lblCelular.ForeColor = System.Drawing.Color.White;
             this.lblCelular.Location = new System.Drawing.Point(11, 46);
             this.lblCelular.Name = "lblCelular";
-            this.lblCelular.Size = new System.Drawing.Size(67, 22);
+            this.lblCelular.Size = new System.Drawing.Size(63, 19);
             this.lblCelular.TabIndex = 74;
             this.lblCelular.Text = "Celular";
             // 
@@ -312,11 +313,11 @@
             // 
             this.lblCEP.AutoSize = true;
             this.lblCEP.BackColor = System.Drawing.Color.Transparent;
-            this.lblCEP.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCEP.Font = new System.Drawing.Font("Arial Black", 10F);
             this.lblCEP.ForeColor = System.Drawing.Color.White;
-            this.lblCEP.Location = new System.Drawing.Point(22, 134);
+            this.lblCEP.Location = new System.Drawing.Point(22, 164);
             this.lblCEP.Name = "lblCEP";
-            this.lblCEP.Size = new System.Drawing.Size(47, 22);
+            this.lblCEP.Size = new System.Drawing.Size(40, 19);
             this.lblCEP.TabIndex = 72;
             this.lblCEP.Text = "CEP";
             // 
@@ -324,11 +325,11 @@
             // 
             this.lblCPF_CNPJ.AutoSize = true;
             this.lblCPF_CNPJ.BackColor = System.Drawing.Color.Transparent;
-            this.lblCPF_CNPJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCPF_CNPJ.Font = new System.Drawing.Font("Arial Black", 10F);
             this.lblCPF_CNPJ.ForeColor = System.Drawing.Color.White;
             this.lblCPF_CNPJ.Location = new System.Drawing.Point(22, 106);
             this.lblCPF_CNPJ.Name = "lblCPF_CNPJ";
-            this.lblCPF_CNPJ.Size = new System.Drawing.Size(46, 22);
+            this.lblCPF_CNPJ.Size = new System.Drawing.Size(39, 19);
             this.lblCPF_CNPJ.TabIndex = 71;
             this.lblCPF_CNPJ.Text = "CPF";
             // 
@@ -361,42 +362,50 @@
             // 
             // btnAnterior
             // 
+            this.btnAnterior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(106)))), ((int)(((byte)(106)))));
+            this.btnAnterior.FlatAppearance.BorderSize = 0;
+            this.btnAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnterior.Font = new System.Drawing.Font("Arial Black", 8.25F);
             this.btnAnterior.Location = new System.Drawing.Point(27, 13);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(75, 23);
             this.btnAnterior.TabIndex = 52;
             this.btnAnterior.Text = "<";
-            this.btnAnterior.UseVisualStyleBackColor = true;
+            this.btnAnterior.UseVisualStyleBackColor = false;
             this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
             // 
             // btnProximo
             // 
+            this.btnProximo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(106)))), ((int)(((byte)(106)))));
+            this.btnProximo.FlatAppearance.BorderSize = 0;
+            this.btnProximo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProximo.Font = new System.Drawing.Font("Arial Black", 9F);
             this.btnProximo.Location = new System.Drawing.Point(225, 13);
             this.btnProximo.Name = "btnProximo";
             this.btnProximo.Size = new System.Drawing.Size(75, 23);
             this.btnProximo.TabIndex = 53;
             this.btnProximo.Text = ">";
-            this.btnProximo.UseVisualStyleBackColor = true;
+            this.btnProximo.UseVisualStyleBackColor = false;
             this.btnProximo.Click += new System.EventHandler(this.btnProximo_Click);
             // 
-            // lblconsulta
+            // lblTitle
             // 
-            this.lblconsulta.AutoSize = true;
-            this.lblconsulta.BackColor = System.Drawing.Color.Transparent;
-            this.lblconsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblconsulta.ForeColor = System.Drawing.Color.White;
-            this.lblconsulta.Location = new System.Drawing.Point(94, 26);
-            this.lblconsulta.Name = "lblconsulta";
-            this.lblconsulta.Size = new System.Drawing.Size(241, 35);
-            this.lblconsulta.TabIndex = 71;
-            this.lblconsulta.Text = "Consulta Cliente";
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(94, 26);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(251, 35);
+            this.lblTitle.TabIndex = 71;
+            this.lblTitle.Text = "Consultar Cliente";
             // 
             // gpbBot
             // 
             this.gpbBot.BackColor = System.Drawing.Color.Transparent;
             this.gpbBot.Controls.Add(this.btnAnterior);
             this.gpbBot.Controls.Add(this.btnProximo);
-            this.gpbBot.Location = new System.Drawing.Point(152, 281);
+            this.gpbBot.Location = new System.Drawing.Point(159, 289);
             this.gpbBot.Name = "gpbBot";
             this.gpbBot.Size = new System.Drawing.Size(324, 42);
             this.gpbBot.TabIndex = 85;
@@ -410,27 +419,16 @@
             this.panel1.Size = new System.Drawing.Size(804, 46);
             this.panel1.TabIndex = 89;
             // 
-            // btnBack
-            // 
-            this.btnBack.BackColor = System.Drawing.Color.Transparent;
-            this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
-            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBack.Location = new System.Drawing.Point(571, -8);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(60, 60);
-            this.btnBack.TabIndex = 110;
-            this.btnBack.TabStop = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.BackColor = System.Drawing.Color.Transparent;
             this.radioButton1.Enabled = false;
+            this.radioButton1.Font = new System.Drawing.Font("Arial Black", 8.25F);
             this.radioButton1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.radioButton1.Location = new System.Drawing.Point(363, 28);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(92, 17);
+            this.radioButton1.Size = new System.Drawing.Size(108, 19);
             this.radioButton1.TabIndex = 111;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Pessoa Física";
@@ -441,25 +439,54 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.BackColor = System.Drawing.Color.Transparent;
             this.radioButton2.Enabled = false;
+            this.radioButton2.Font = new System.Drawing.Font("Arial Black", 8.25F);
             this.radioButton2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.radioButton2.Location = new System.Drawing.Point(363, 47);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(101, 17);
+            this.radioButton2.Size = new System.Drawing.Size(120, 19);
             this.radioButton2.TabIndex = 112;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Pessoa Jurídica";
             this.radioButton2.UseVisualStyleBackColor = false;
             // 
+            // lblRetornar
+            // 
+            this.lblRetornar.AutoSize = true;
+            this.lblRetornar.BackColor = System.Drawing.Color.Transparent;
+            this.lblRetornar.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.lblRetornar.ForeColor = System.Drawing.Color.White;
+            this.lblRetornar.Location = new System.Drawing.Point(520, 42);
+            this.lblRetornar.Name = "lblRetornar";
+            this.lblRetornar.Size = new System.Drawing.Size(59, 15);
+            this.lblRetornar.TabIndex = 114;
+            this.lblRetornar.Text = "Retornar";
+            this.lblRetornar.Visible = false;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
+            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBack.Location = new System.Drawing.Point(570, -7);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(60, 60);
+            this.btnBack.TabIndex = 113;
+            this.btnBack.TabStop = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.btnBack.MouseLeave += new System.EventHandler(this.btnBack_MouseLeave);
+            this.btnBack.MouseHover += new System.EventHandler(this.btnBack_MouseHover);
+            // 
             // frmCons_Cli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EclairProject.Properties.Resources.Logadaview;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(630, 417);
+            this.Controls.Add(this.lblRetornar);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.txtSenha);
@@ -468,7 +495,7 @@
             this.Controls.Add(this.gpbTop1);
             this.Controls.Add(this.gpbTop2);
             this.Controls.Add(this.btnSair);
-            this.Controls.Add(this.lblconsulta);
+            this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.gpbBot);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -501,7 +528,7 @@
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Button btnAnterior;
         private System.Windows.Forms.Button btnProximo;
-        private System.Windows.Forms.Label lblconsulta;
+        private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.GroupBox gpbBot;
         private System.Windows.Forms.Label lblEndereço;
         private System.Windows.Forms.Label lblIdade;
@@ -514,16 +541,17 @@
         private System.Windows.Forms.Label lblCEP;
         private System.Windows.Forms.Label lblCPF_CNPJ;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox btnBack;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.TextBox txtDate_nasc;
         private System.Windows.Forms.Label lblNascimento;
         private System.Windows.Forms.TextBox txtMail;
         private System.Windows.Forms.Label lblMail;
+        private System.Windows.Forms.TextBox txtCEP;
+        private System.Windows.Forms.Label lblRetornar;
+        private System.Windows.Forms.PictureBox btnBack;
         private System.Windows.Forms.TextBox txtRG_IE;
         private System.Windows.Forms.Label lblRG_IE;
-        private System.Windows.Forms.TextBox txtCEP;
 
     }
 }

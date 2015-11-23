@@ -29,106 +29,90 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmADM_Perm));
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblCons_FC = new System.Windows.Forms.Label();
+            this.lblGerar_B = new System.Windows.Forms.Label();
+            this.btnGerar_B = new System.Windows.Forms.Button();
+            this.btnCons_FxC = new System.Windows.Forms.Button();
+            this.lblCons_Func = new System.Windows.Forms.Label();
             this.btnCons_Func = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
+            this.lblCad_Func = new System.Windows.Forms.Label();
+            this.btnManter_Func = new System.Windows.Forms.Button();
+            this.lblGerar_NF = new System.Windows.Forms.Label();
+            this.btnGerar_NF = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.PictureBox();
             this.lblRetornar = new System.Windows.Forms.Label();
+            this.lblGerar_FC = new System.Windows.Forms.Label();
+            this.btnGerar_FC = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // lblCons_FC
             // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(79, 61);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(60, 60);
-            this.button1.TabIndex = 94;
-            this.button1.UseVisualStyleBackColor = true;
+            this.lblCons_FC.AutoSize = true;
+            this.lblCons_FC.BackColor = System.Drawing.Color.Transparent;
+            this.lblCons_FC.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.lblCons_FC.ForeColor = System.Drawing.Color.Gray;
+            this.lblCons_FC.Location = new System.Drawing.Point(228, 304);
+            this.lblCons_FC.Name = "lblCons_FC";
+            this.lblCons_FC.Size = new System.Drawing.Size(157, 15);
+            this.lblCons_FC.TabIndex = 95;
+            this.lblCons_FC.Text = "Consultar Fluxo de Caixa";
             // 
-            // label1
+            // lblGerar_B
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial Black", 8.25F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(228, 304);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 15);
-            this.label1.TabIndex = 95;
-            this.label1.Text = "Consultar Fluxo de Caixa";
+            this.lblGerar_B.AutoSize = true;
+            this.lblGerar_B.BackColor = System.Drawing.Color.Transparent;
+            this.lblGerar_B.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.lblGerar_B.ForeColor = System.Drawing.Color.Gray;
+            this.lblGerar_B.Location = new System.Drawing.Point(434, 304);
+            this.lblGerar_B.Name = "lblGerar_B";
+            this.lblGerar_B.Size = new System.Drawing.Size(83, 15);
+            this.lblGerar_B.TabIndex = 99;
+            this.lblGerar_B.Text = "Gerar Boleto";
             // 
-            // label4
+            // btnGerar_B
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Arial Black", 8.25F);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(434, 304);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 15);
-            this.label4.TabIndex = 99;
-            this.label4.Text = "Gerar Boleto";
+            this.btnGerar_B.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGerar_B.BackgroundImage")));
+            this.btnGerar_B.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGerar_B.Enabled = false;
+            this.btnGerar_B.FlatAppearance.BorderSize = 0;
+            this.btnGerar_B.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGerar_B.Location = new System.Drawing.Point(445, 241);
+            this.btnGerar_B.Name = "btnGerar_B";
+            this.btnGerar_B.Size = new System.Drawing.Size(60, 60);
+            this.btnGerar_B.TabIndex = 97;
+            this.btnGerar_B.UseVisualStyleBackColor = true;
+            this.btnGerar_B.Click += new System.EventHandler(this.btnGerar_B_Click);
             // 
-            // button5
+            // btnCons_FxC
             // 
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(445, 241);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(60, 60);
-            this.button5.TabIndex = 97;
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnCons_FxC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCons_FxC.BackgroundImage")));
+            this.btnCons_FxC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCons_FxC.Enabled = false;
+            this.btnCons_FxC.FlatAppearance.BorderSize = 0;
+            this.btnCons_FxC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCons_FxC.Location = new System.Drawing.Point(273, 241);
+            this.btnCons_FxC.Name = "btnCons_FxC";
+            this.btnCons_FxC.Size = new System.Drawing.Size(60, 60);
+            this.btnCons_FxC.TabIndex = 101;
+            this.btnCons_FxC.UseVisualStyleBackColor = true;
+            this.btnCons_FxC.Click += new System.EventHandler(this.btnCons_FC_Click);
             // 
-            // label2
+            // lblCons_Func
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial Black", 8.25F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(43, 124);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 15);
-            this.label2.TabIndex = 102;
-            this.label2.Text = "Gerar Fluxo de Caixa";
-            // 
-            // button2
-            // 
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(273, 241);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(60, 60);
-            this.button2.TabIndex = 101;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Arial Black", 8.25F);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(241, 124);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(138, 15);
-            this.label3.TabIndex = 104;
-            this.label3.Text = "Consultar Funcionário";
+            this.lblCons_Func.AutoSize = true;
+            this.lblCons_Func.BackColor = System.Drawing.Color.Transparent;
+            this.lblCons_Func.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.lblCons_Func.ForeColor = System.Drawing.Color.White;
+            this.lblCons_Func.Location = new System.Drawing.Point(241, 124);
+            this.lblCons_Func.Name = "lblCons_Func";
+            this.lblCons_Func.Size = new System.Drawing.Size(138, 15);
+            this.lblCons_Func.TabIndex = 104;
+            this.lblCons_Func.Text = "Consultar Funcionário";
             // 
             // btnCons_Func
             // 
+            this.btnCons_Func.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCons_Func.BackgroundImage")));
             this.btnCons_Func.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCons_Func.FlatAppearance.BorderSize = 0;
             this.btnCons_Func.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -139,53 +123,56 @@
             this.btnCons_Func.UseVisualStyleBackColor = true;
             this.btnCons_Func.Click += new System.EventHandler(this.btnCons_Func_Click);
             // 
-            // label6
+            // lblCad_Func
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Arial Black", 8.25F);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(436, 124);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(139, 15);
-            this.label6.TabIndex = 106;
-            this.label6.Text = "Cadastrar Funcionário";
+            this.lblCad_Func.AutoSize = true;
+            this.lblCad_Func.BackColor = System.Drawing.Color.Transparent;
+            this.lblCad_Func.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.lblCad_Func.ForeColor = System.Drawing.Color.White;
+            this.lblCad_Func.Location = new System.Drawing.Point(436, 124);
+            this.lblCad_Func.Name = "lblCad_Func";
+            this.lblCad_Func.Size = new System.Drawing.Size(139, 15);
+            this.lblCad_Func.TabIndex = 106;
+            this.lblCad_Func.Text = "Cadastrar Funcionário";
             // 
-            // button7
+            // btnManter_Func
             // 
-            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(469, 61);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(60, 60);
-            this.button7.TabIndex = 105;
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.btnManter_Func.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnManter_Func.BackgroundImage")));
+            this.btnManter_Func.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnManter_Func.FlatAppearance.BorderSize = 0;
+            this.btnManter_Func.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManter_Func.Location = new System.Drawing.Point(469, 61);
+            this.btnManter_Func.Name = "btnManter_Func";
+            this.btnManter_Func.Size = new System.Drawing.Size(60, 60);
+            this.btnManter_Func.TabIndex = 105;
+            this.btnManter_Func.UseVisualStyleBackColor = true;
+            this.btnManter_Func.Click += new System.EventHandler(this.btnManter_Func_Click);
             // 
-            // label7
+            // lblGerar_NF
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Arial Black", 8.25F);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(80, 304);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(112, 15);
-            this.label7.TabIndex = 108;
-            this.label7.Text = "Gerar Nota Fiscal";
+            this.lblGerar_NF.AutoSize = true;
+            this.lblGerar_NF.BackColor = System.Drawing.Color.Transparent;
+            this.lblGerar_NF.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.lblGerar_NF.ForeColor = System.Drawing.Color.Gray;
+            this.lblGerar_NF.Location = new System.Drawing.Point(51, 124);
+            this.lblGerar_NF.Name = "lblGerar_NF";
+            this.lblGerar_NF.Size = new System.Drawing.Size(112, 15);
+            this.lblGerar_NF.TabIndex = 108;
+            this.lblGerar_NF.Text = "Gerar Nota Fiscal";
             // 
-            // button8
+            // btnGerar_NF
             // 
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(107, 241);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(60, 60);
-            this.button8.TabIndex = 107;
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnGerar_NF.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGerar_NF.BackgroundImage")));
+            this.btnGerar_NF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGerar_NF.Enabled = false;
+            this.btnGerar_NF.FlatAppearance.BorderSize = 0;
+            this.btnGerar_NF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGerar_NF.Location = new System.Drawing.Point(78, 61);
+            this.btnGerar_NF.Name = "btnGerar_NF";
+            this.btnGerar_NF.Size = new System.Drawing.Size(60, 60);
+            this.btnGerar_NF.TabIndex = 107;
+            this.btnGerar_NF.UseVisualStyleBackColor = true;
+            this.btnGerar_NF.Click += new System.EventHandler(this.btnGerar_NF_Click);
             // 
             // btnBack
             // 
@@ -214,6 +201,32 @@
             this.lblRetornar.Text = "Retornar";
             this.lblRetornar.Visible = false;
             // 
+            // lblGerar_FC
+            // 
+            this.lblGerar_FC.AutoSize = true;
+            this.lblGerar_FC.BackColor = System.Drawing.Color.Transparent;
+            this.lblGerar_FC.Font = new System.Drawing.Font("Arial Black", 8.25F);
+            this.lblGerar_FC.ForeColor = System.Drawing.Color.Gray;
+            this.lblGerar_FC.Location = new System.Drawing.Point(67, 304);
+            this.lblGerar_FC.Name = "lblGerar_FC";
+            this.lblGerar_FC.Size = new System.Drawing.Size(132, 15);
+            this.lblGerar_FC.TabIndex = 112;
+            this.lblGerar_FC.Text = "Gerar Fluxo de Caixa";
+            // 
+            // btnGerar_FC
+            // 
+            this.btnGerar_FC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGerar_FC.BackgroundImage")));
+            this.btnGerar_FC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGerar_FC.Enabled = false;
+            this.btnGerar_FC.FlatAppearance.BorderSize = 0;
+            this.btnGerar_FC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGerar_FC.Location = new System.Drawing.Point(103, 241);
+            this.btnGerar_FC.Name = "btnGerar_FC";
+            this.btnGerar_FC.Size = new System.Drawing.Size(60, 60);
+            this.btnGerar_FC.TabIndex = 111;
+            this.btnGerar_FC.UseVisualStyleBackColor = true;
+            this.btnGerar_FC.Click += new System.EventHandler(this.btnGerar_FC_Click);
+            // 
             // frmADM_Perm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -221,20 +234,20 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(630, 417);
+            this.Controls.Add(this.lblGerar_FC);
+            this.Controls.Add(this.btnGerar_FC);
             this.Controls.Add(this.lblRetornar);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblGerar_NF);
+            this.Controls.Add(this.btnGerar_NF);
+            this.Controls.Add(this.lblCad_Func);
+            this.Controls.Add(this.btnManter_Func);
+            this.Controls.Add(this.lblCons_Func);
             this.Controls.Add(this.btnCons_Func);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCons_FxC);
+            this.Controls.Add(this.lblGerar_B);
+            this.Controls.Add(this.btnGerar_B);
+            this.Controls.Add(this.lblCons_FC);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmADM_Perm";
@@ -248,19 +261,19 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblCons_FC;
+        private System.Windows.Forms.Label lblGerar_B;
+        private System.Windows.Forms.Button btnGerar_B;
+        private System.Windows.Forms.Button btnCons_FxC;
+        private System.Windows.Forms.Label lblCons_Func;
         private System.Windows.Forms.Button btnCons_Func;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Label lblCad_Func;
+        private System.Windows.Forms.Button btnManter_Func;
+        private System.Windows.Forms.Label lblGerar_NF;
+        private System.Windows.Forms.Button btnGerar_NF;
         private System.Windows.Forms.PictureBox btnBack;
         private System.Windows.Forms.Label lblRetornar;
+        private System.Windows.Forms.Label lblGerar_FC;
+        private System.Windows.Forms.Button btnGerar_FC;
     }
 }

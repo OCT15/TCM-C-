@@ -1,21 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EclairProject
 {
-    class ClasseConexao
+    internal class ClasseConexao
     {
         private SqlConnection conexao = new SqlConnection();
+
         private SqlConnection conectar()
         {
             try
             {
-                String strConexao = "Password =pfjd10; Persist Security Info=True; User ID=sa; Initial Catalog=eclair; Data Source=" + Environment.MachineName;
+                String strConexao = "Password =12345; Persist Security Info=True; User ID=sa; Initial Catalog=eclair; Data Source=" + Environment.MachineName + "\\SQLEXPRESS";
                 conexao.ConnectionString = strConexao;
                 conexao.Open();
                 return conexao;
@@ -27,6 +24,7 @@ namespace EclairProject
                 return null;
             }
         }
+
         public void desconectar()
         {
             try
@@ -38,8 +36,9 @@ namespace EclairProject
                     conexao = null;
                 }
             }
-            catch            { }
+            catch { }
         }
+
         public DataSet executarSQL(String comando_sql)
         {
             try
@@ -50,7 +49,7 @@ namespace EclairProject
                 adaptador.Fill(ds);
                 return ds;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 System.Windows.Forms.MessageBox.Show("[SQL Error] " + e.Message + "\nSQL:" + comando_sql);
                 return null;

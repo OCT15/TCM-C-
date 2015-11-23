@@ -51,7 +51,8 @@ namespace EclairProject
         }
         public void UpdateProgress(int progress)
         {
-            this.Invoke(del, progress);
+            try { this.Invoke(del, progress); }
+            catch { this.UpdateProgress(progress); }
         }
         void tmAnim2_Tick(object sender, EventArgs e)
         {
