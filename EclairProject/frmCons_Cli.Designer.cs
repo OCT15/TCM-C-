@@ -46,8 +46,11 @@
             this.lblID = new System.Windows.Forms.Label();
             this.lblEndereço = new System.Windows.Forms.Label();
             this.gpbTop2 = new System.Windows.Forms.GroupBox();
+<<<<<<< HEAD
             this.txtRG_IE = new System.Windows.Forms.TextBox();
             this.lblRG_IE = new System.Windows.Forms.Label();
+=======
+>>>>>>> origin/master
             this.txtCEP = new System.Windows.Forms.TextBox();
             this.lblTelefone = new System.Windows.Forms.Label();
             this.lblCelular = new System.Windows.Forms.Label();
@@ -65,6 +68,11 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.lblRetornar = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
+=======
+            this.txtRG_IE = new System.Windows.Forms.TextBox();
+            this.lblRG_IE = new System.Windows.Forms.Label();
+>>>>>>> origin/master
             this.gpbTop1.SuspendLayout();
             this.gpbTop2.SuspendLayout();
             this.gpbBot.SuspendLayout();
@@ -257,6 +265,7 @@
             this.gpbTop2.TabIndex = 84;
             this.gpbTop2.TabStop = false;
             // 
+<<<<<<< HEAD
             // txtRG_IE
             // 
             this.txtRG_IE.Enabled = false;
@@ -277,6 +286,8 @@
             this.lblRG_IE.TabIndex = 81;
             this.lblRG_IE.Text = "RG";
             // 
+=======
+>>>>>>> origin/master
             // txtCEP
             // 
             this.txtCEP.Enabled = false;
@@ -396,9 +407,15 @@
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(94, 26);
             this.lblTitle.Name = "lblTitle";
+<<<<<<< HEAD
             this.lblTitle.Size = new System.Drawing.Size(251, 35);
             this.lblTitle.TabIndex = 71;
             this.lblTitle.Text = "Consultar Cliente";
+=======
+            this.lblTitle.Size = new System.Drawing.Size(241, 35);
+            this.lblTitle.TabIndex = 71;
+            this.lblTitle.Text = "Consulta Cliente";
+>>>>>>> origin/master
             // 
             // gpbBot
             // 
@@ -476,6 +493,29 @@
             this.btnBack.MouseLeave += new System.EventHandler(this.btnBack_MouseLeave);
             this.btnBack.MouseHover += new System.EventHandler(this.btnBack_MouseHover);
             // 
+<<<<<<< HEAD
+=======
+            // txtRG_IE
+            // 
+            this.txtRG_IE.Enabled = false;
+            this.txtRG_IE.Location = new System.Drawing.Point(93, 136);
+            this.txtRG_IE.Name = "txtRG_IE";
+            this.txtRG_IE.Size = new System.Drawing.Size(175, 20);
+            this.txtRG_IE.TabIndex = 82;
+            // 
+            // lblRG_IE
+            // 
+            this.lblRG_IE.AutoSize = true;
+            this.lblRG_IE.BackColor = System.Drawing.Color.Transparent;
+            this.lblRG_IE.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRG_IE.ForeColor = System.Drawing.Color.White;
+            this.lblRG_IE.Location = new System.Drawing.Point(26, 135);
+            this.lblRG_IE.Name = "lblRG_IE";
+            this.lblRG_IE.Size = new System.Drawing.Size(37, 22);
+            this.lblRG_IE.TabIndex = 81;
+            this.lblRG_IE.Text = "RG";
+            // 
+>>>>>>> origin/master
             // frmCons_Cli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

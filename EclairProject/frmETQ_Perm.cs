@@ -69,15 +69,22 @@ namespace EclairProject
                 fAP.ShowDialog();
             }
         }  //frm_Compra_Est
+<<<<<<< HEAD
 
         private void btnCons_Forn_Click(object sender, EventArgs e)
         {
             if (Application.OpenForms.OfType<frmFornecedores>().Count() > 0)
+=======
+        private void btnCad_Forn_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<frmCad_Forn>().Count() > 0)
+>>>>>>> origin/master
             {
 
             }
             else
             {
+<<<<<<< HEAD
                 frmFornecedores fF = new frmFornecedores();
                 fF.Location = new Point(Height + Height / 80, Width + Width / 160);
                 fF.ShowDialog();
@@ -87,16 +94,34 @@ namespace EclairProject
         private void btnCad_Forn_Click(object sender, EventArgs e)
         {
             if (Application.OpenForms.OfType<frmInser_Forn>().Count() > 0)
+=======
+                frmCad_Forn fCF = new frmCad_Forn();
+                fCF.Location = new Point(443, 133);
+                fCF.ShowDialog();
+            }
+        }  //frm_Cad_Forn
+        private void btnCons_Forn_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<frmFornecedores>().Count() > 0)
+>>>>>>> origin/master
             {
 
             }
             else
             {
+<<<<<<< HEAD
                 frmInser_Forn fCF = new frmInser_Forn();
                 fCF.Location = new Point(Height + Height / 40, Width + Width / 80);
                 fCF.ShowDialog();
             }
         }
 
+=======
+                frmFornecedores fF = new frmFornecedores();
+                fF.Location = new Point(500, 220);
+                fF.ShowDialog();
+            }
+        }//frm_Cons_Forn
+>>>>>>> origin/master
     }
 }   //frmETQ_Perm - Permissão de Estoquista; 5 formulários

@@ -262,7 +262,11 @@
             // 
             // ptbMail
             // 
+<<<<<<< HEAD
             this.ptbMail.Location = new System.Drawing.Point(31, 175);
+=======
+            this.ptbMail.Location = new System.Drawing.Point(30, 177);
+>>>>>>> origin/master
             this.ptbMail.Name = "ptbMail";
             this.ptbMail.Size = new System.Drawing.Size(53, 10);
             this.ptbMail.TabIndex = 103;
@@ -298,7 +302,11 @@
             // 
             // txtIE
             // 
+<<<<<<< HEAD
             this.txtIE.Location = new System.Drawing.Point(33, 133);
+=======
+            this.txtIE.Location = new System.Drawing.Point(93, 135);
+>>>>>>> origin/master
             this.txtIE.Mask = "000\\.000\\.000\\.000";
             this.txtIE.Name = "txtIE";
             this.txtIE.Size = new System.Drawing.Size(175, 20);
@@ -451,7 +459,11 @@
             // 
             // ptbTelefone
             // 
+<<<<<<< HEAD
             this.ptbTelefone.Location = new System.Drawing.Point(6, 29);
+=======
+            this.ptbTelefone.Location = new System.Drawing.Point(6, 17);
+>>>>>>> origin/master
             this.ptbTelefone.Name = "ptbTelefone";
             this.ptbTelefone.Size = new System.Drawing.Size(80, 10);
             this.ptbTelefone.TabIndex = 81;
@@ -468,16 +480,26 @@
             // ptbRG
             // 
             this.ptbRG.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.ptbRG.Location = new System.Drawing.Point(31, 150);
             this.ptbRG.Name = "ptbRG";
             this.ptbRG.Size = new System.Drawing.Size(31, 10);
+=======
+            this.ptbRG.Location = new System.Drawing.Point(30, 152);
+            this.ptbRG.Name = "ptbRG";
+            this.ptbRG.Size = new System.Drawing.Size(21, 10);
+>>>>>>> origin/master
             this.ptbRG.TabIndex = 89;
             this.ptbRG.TabStop = false;
             // 
             // ptbCEP
             // 
             this.ptbCEP.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.ptbCEP.Location = new System.Drawing.Point(27, 178);
+=======
+            this.ptbCEP.Location = new System.Drawing.Point(27, 179);
+>>>>>>> origin/master
             this.ptbCEP.Name = "ptbCEP";
             this.ptbCEP.Size = new System.Drawing.Size(38, 10);
             this.ptbCEP.TabIndex = 92;
@@ -681,6 +703,9 @@
         private System.Windows.Forms.MaskedTextBox txtRG;
         private System.Windows.Forms.PictureBox ptbMail;
         private System.Windows.Forms.PictureBox ptbCEP;
+<<<<<<< HEAD
         private System.Windows.Forms.PictureBox pictureBox1;
+=======
+>>>>>>> origin/master
     }
 }

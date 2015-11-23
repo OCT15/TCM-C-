@@ -1,16 +1,30 @@
+<<<<<<< HEAD
 ﻿using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System;
 using System.Data;
 using System.IO;
+=======
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+>>>>>>> origin/master
 using System.Windows.Forms;
 
 namespace EclairProject
 {
     public partial class frmGerar_C : Form
     {
+<<<<<<< HEAD
         ClasseConexao cc;
         DataSet ds;
+=======
+>>>>>>> origin/master
         public frmGerar_C()
         {
             InitializeComponent();
@@ -31,6 +45,7 @@ namespace EclairProject
             lblRetornar.Visible = false;
         }
 
+<<<<<<< HEAD
         private void button1_Click(object sender, EventArgs e)
         {
             cc = new ClasseConexao();
@@ -77,5 +92,7 @@ namespace EclairProject
         {
             textBox1.Text = "";
         }
+=======
+>>>>>>> origin/master
     }
 }

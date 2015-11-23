@@ -32,7 +32,11 @@ namespace EclairProject
             ds = cc.executarSQL(sql);
             if (ds == null || ds.Tables[0].Rows.Count < 1)
             {
+<<<<<<< HEAD
                 txtID_Func.Text = --var_x + "";
+=======
+                txtNome.Text = txtPass.Text = txtEndereco.Text = txtDate_Nasc.Text = txtMail.Text = txtTel.Text = txtCel.Text = txtPerm.Text = txtCPF.Text = txtRG.Text = txtCEP.Text = "";
+>>>>>>> origin/master
             }
             else
             {
@@ -40,16 +44,23 @@ namespace EclairProject
                 txtNome.Text = ds.Tables[0].Rows[0]["nome"].ToString();
                 txtPass.Text = ds.Tables[0].Rows[0]["senha"].ToString();
                 txtEndereco.Text = ds.Tables[0].Rows[0]["endereco"].ToString();
+<<<<<<< HEAD
+=======
+                txtDate_Nasc.Text = ds.Tables[0].Rows[0]["dt_nascim"].ToString();
+>>>>>>> origin/master
                 txtMail.Text = ds.Tables[0].Rows[0]["email"].ToString();
                 txtTel.Text = ds.Tables[0].Rows[0]["telefone"].ToString();
                 txtCel.Text = ds.Tables[0].Rows[0]["celular"].ToString();
                 txtCPF.Text = ds.Tables[0].Rows[0]["cpf"].ToString();
                 txtRG.Text = ds.Tables[0].Rows[0]["rg"].ToString();
                 txtCEP.Text = ds.Tables[0].Rows[0]["cep"].ToString();
+<<<<<<< HEAD
 
                 DateTime ag;
                 DateTime.TryParse(ds.Tables[0].Rows[0]["dt_nascim"].ToString(), out ag);
                 txtDate_Nasc.Text = ag.ToShortDateString();
+=======
+>>>>>>> origin/master
 ///////////////////////////////////////////////////////////////////////////////////////////// Separação de Tabelas Funcionário / Permissão
                 cc = new ClasseConexao();
                 ds = new DataSet();
@@ -79,14 +90,26 @@ namespace EclairProject
         {
             this.Close();
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
         private void btnBack_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
         private void btnBack_MouseHover(object sender, EventArgs e)
         {
             lblRetornar.Visible = true;
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
         private void btnBack_MouseLeave(object sender, EventArgs e)
         {
             lblRetornar.Visible = false;

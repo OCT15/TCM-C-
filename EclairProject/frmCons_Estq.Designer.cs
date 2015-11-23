@@ -57,8 +57,11 @@
             this.lblRetornar = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.PictureBox();
             this.btnEdit = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+=======
+>>>>>>> origin/master
             this.gpbTop1.SuspendLayout();
             this.gpbTop2.SuspendLayout();
             this.gpbBot.SuspendLayout();
@@ -177,6 +180,7 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.lblTitle.Font = new System.Drawing.Font("Arial Black", 18F);
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(43, 22);
@@ -184,6 +188,15 @@
             this.lblTitle.Size = new System.Drawing.Size(258, 33);
             this.lblTitle.TabIndex = 118;
             this.lblTitle.Text = "Consultar Estoque";
+=======
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(160, 21);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(259, 35);
+            this.lblTitle.TabIndex = 118;
+            this.lblTitle.Text = "Consulta Estoque";
+>>>>>>> origin/master
             // 
             // gpbBot
             // 
@@ -257,6 +270,7 @@
             // 
             // dataGridView1
             // 
+<<<<<<< HEAD
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
@@ -317,11 +331,35 @@
             this.btnProcurar.Name = "btnProcurar";
             this.btnProcurar.Size = new System.Drawing.Size(60, 60);
             this.btnProcurar.TabIndex = 126;
+=======
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(81, 116);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(475, 76);
+            this.dataGridView1.TabIndex = 116;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(87, 80);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(249, 20);
+            this.textBox1.TabIndex = 124;
+            // 
+            // btnProcurar
+            // 
+            this.btnProcurar.Location = new System.Drawing.Point(359, 80);
+            this.btnProcurar.Name = "btnProcurar";
+            this.btnProcurar.Size = new System.Drawing.Size(66, 20);
+            this.btnProcurar.TabIndex = 126;
+            this.btnProcurar.Text = "procurar";
+>>>>>>> origin/master
             this.btnProcurar.UseVisualStyleBackColor = true;
             this.btnProcurar.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnInserir
             // 
+<<<<<<< HEAD
             this.btnInserir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInserir.BackgroundImage")));
             this.btnInserir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnInserir.FlatAppearance.BorderSize = 0;
@@ -330,6 +368,13 @@
             this.btnInserir.Name = "btnInserir";
             this.btnInserir.Size = new System.Drawing.Size(60, 60);
             this.btnInserir.TabIndex = 125;
+=======
+            this.btnInserir.Location = new System.Drawing.Point(475, 80);
+            this.btnInserir.Name = "btnInserir";
+            this.btnInserir.Size = new System.Drawing.Size(66, 20);
+            this.btnInserir.TabIndex = 125;
+            this.btnInserir.Text = "inserir";
+>>>>>>> origin/master
             this.btnInserir.UseVisualStyleBackColor = true;
             this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
             // 
@@ -362,15 +407,19 @@
             // 
             // btnEdit
             // 
+<<<<<<< HEAD
             this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(80)))), ((int)(((byte)(214)))));
             this.btnEdit.FlatAppearance.BorderSize = 0;
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.Font = new System.Drawing.Font("Arial Black", 8.25F);
             this.btnEdit.ForeColor = System.Drawing.Color.Snow;
+=======
+>>>>>>> origin/master
             this.btnEdit.Location = new System.Drawing.Point(490, 298);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(113, 30);
             this.btnEdit.TabIndex = 129;
+<<<<<<< HEAD
             this.btnEdit.Text = "Alterar Produto";
             this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
@@ -398,6 +447,10 @@
             this.label5.Size = new System.Drawing.Size(66, 15);
             this.label5.TabIndex = 131;
             this.label5.Text = "Cadastrar";
+=======
+            this.btnEdit.Text = "Editar Produto";
+            this.btnEdit.UseVisualStyleBackColor = true;
+>>>>>>> origin/master
             // 
             // frmCons_Estq
             // 
@@ -406,8 +459,11 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(630, 417);
+<<<<<<< HEAD
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
+=======
+>>>>>>> origin/master
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.lblRetornar);
             this.Controls.Add(this.btnBack);
@@ -466,7 +522,10 @@
         private System.Windows.Forms.Label lblRetornar;
         private System.Windows.Forms.PictureBox btnBack;
         private System.Windows.Forms.Button btnEdit;
+<<<<<<< HEAD
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+=======
+>>>>>>> origin/master
     }
 }

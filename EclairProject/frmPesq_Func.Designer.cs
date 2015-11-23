@@ -29,9 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPesq_Func));
+<<<<<<< HEAD
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+=======
+>>>>>>> origin/master
             this.lblRetornar = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.PictureBox();
             this.lblconsulta = new System.Windows.Forms.Label();
@@ -39,8 +42,11 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnInserir = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+=======
+>>>>>>> origin/master
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -76,6 +82,7 @@
             // 
             this.lblconsulta.AutoSize = true;
             this.lblconsulta.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.lblconsulta.Font = new System.Drawing.Font("Arial Black", 19F);
             this.lblconsulta.ForeColor = System.Drawing.Color.White;
             this.lblconsulta.Location = new System.Drawing.Point(139, 29);
@@ -92,11 +99,29 @@
             this.btnProcurar.Name = "btnProcurar";
             this.btnProcurar.Size = new System.Drawing.Size(60, 60);
             this.btnProcurar.TabIndex = 116;
+=======
+            this.lblconsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblconsulta.ForeColor = System.Drawing.Color.White;
+            this.lblconsulta.Location = new System.Drawing.Point(139, 29);
+            this.lblconsulta.Name = "lblconsulta";
+            this.lblconsulta.Size = new System.Drawing.Size(312, 35);
+            this.lblconsulta.TabIndex = 117;
+            this.lblconsulta.Text = "Pesquisa Funcionário";
+            // 
+            // btnProcurar
+            // 
+            this.btnProcurar.Location = new System.Drawing.Point(387, 97);
+            this.btnProcurar.Name = "btnProcurar";
+            this.btnProcurar.Size = new System.Drawing.Size(66, 20);
+            this.btnProcurar.TabIndex = 116;
+            this.btnProcurar.Text = "procurar";
+>>>>>>> origin/master
             this.btnProcurar.UseVisualStyleBackColor = true;
             this.btnProcurar.Click += new System.EventHandler(this.btnProcurar_Click);
             // 
             // dataGridView1
             // 
+<<<<<<< HEAD
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -175,6 +200,31 @@
             this.label2.Size = new System.Drawing.Size(66, 15);
             this.label2.TabIndex = 119;
             this.label2.Text = "Cadastrar";
+=======
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(108, 144);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(345, 150);
+            this.dataGridView1.TabIndex = 115;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(108, 97);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(249, 20);
+            this.textBox1.TabIndex = 114;
+            // 
+            // btnInserir
+            // 
+            this.btnInserir.Location = new System.Drawing.Point(503, 97);
+            this.btnInserir.Name = "btnInserir";
+            this.btnInserir.Size = new System.Drawing.Size(66, 20);
+            this.btnInserir.TabIndex = 113;
+            this.btnInserir.Text = "inserir";
+            this.btnInserir.UseVisualStyleBackColor = true;
+            this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
+>>>>>>> origin/master
             // 
             // frmPesq_Func
             // 
@@ -183,8 +233,11 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(630, 417);
+<<<<<<< HEAD
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+=======
+>>>>>>> origin/master
             this.Controls.Add(this.lblconsulta);
             this.Controls.Add(this.btnProcurar);
             this.Controls.Add(this.dataGridView1);
@@ -214,8 +267,11 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnInserir;
+<<<<<<< HEAD
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+=======
+>>>>>>> origin/master
 
 
     }

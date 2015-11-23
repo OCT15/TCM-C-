@@ -33,7 +33,11 @@ namespace EclairProject
             ds = cc.executarSQL(sql);
             if (ds == null || ds.Tables[0].Rows.Count < 1)
             {
+<<<<<<< HEAD
                 txtID_Cli.Text = --var_x + "";
+=======
+                txtNome.Text = txtSenha.Text =  txtEnd.Text = txtDate_nasc.Text = txtEnd.Text = txtTelefone.Text = txtCel.Text = txtCPF_CNPJ.Text = txtRG_IE.Text = txtCEP.Text = txtIdade.Text = txtMail.Text = "";
+>>>>>>> origin/master
             }
             else
             {
@@ -139,6 +143,14 @@ namespace EclairProject
         private void btnBack_MouseHover(object sender, EventArgs e)
         {
             lblRetornar.Visible = true;
+<<<<<<< HEAD
+=======
+        }
+
+        private void btnBack_MouseLeave(object sender, EventArgs e)
+        {
+            lblRetornar.Visible = false;
+>>>>>>> origin/master
         }
 
         private void btnBack_MouseLeave(object sender, EventArgs e)

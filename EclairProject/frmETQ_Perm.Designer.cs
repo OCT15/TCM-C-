@@ -48,8 +48,11 @@
             // 
             this.btnCons_Estq.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCons_Estq.BackgroundImage")));
             this.btnCons_Estq.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+<<<<<<< HEAD
             this.btnCons_Estq.FlatAppearance.BorderSize = 0;
             this.btnCons_Estq.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+=======
+>>>>>>> origin/master
             this.btnCons_Estq.Location = new System.Drawing.Point(120, 56);
             this.btnCons_Estq.Name = "btnCons_Estq";
             this.btnCons_Estq.Size = new System.Drawing.Size(60, 60);
@@ -71,10 +74,14 @@
             // 
             // btnRelat_Estq
             // 
+<<<<<<< HEAD
             this.btnRelat_Estq.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRelat_Estq.BackgroundImage")));
             this.btnRelat_Estq.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRelat_Estq.FlatAppearance.BorderSize = 0;
             this.btnRelat_Estq.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+=======
+            this.btnRelat_Estq.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+>>>>>>> origin/master
             this.btnRelat_Estq.Location = new System.Drawing.Point(288, 56);
             this.btnRelat_Estq.Name = "btnRelat_Estq";
             this.btnRelat_Estq.Size = new System.Drawing.Size(60, 60);
@@ -84,10 +91,14 @@
             // 
             // btnCompra_Estq
             // 
+<<<<<<< HEAD
             this.btnCompra_Estq.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCompra_Estq.BackgroundImage")));
             this.btnCompra_Estq.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCompra_Estq.FlatAppearance.BorderSize = 0;
             this.btnCompra_Estq.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+=======
+            this.btnCompra_Estq.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+>>>>>>> origin/master
             this.btnCompra_Estq.Location = new System.Drawing.Point(455, 56);
             this.btnCompra_Estq.Name = "btnCompra_Estq";
             this.btnCompra_Estq.Size = new System.Drawing.Size(60, 60);
@@ -152,7 +163,11 @@
             this.lblCons_Forn.BackColor = System.Drawing.Color.Transparent;
             this.lblCons_Forn.Font = new System.Drawing.Font("Arial Black", 8.25F);
             this.lblCons_Forn.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.lblCons_Forn.Location = new System.Drawing.Point(172, 292);
+=======
+            this.lblCons_Forn.Location = new System.Drawing.Point(353, 290);
+>>>>>>> origin/master
             this.lblCons_Forn.Name = "lblCons_Forn";
             this.lblCons_Forn.Size = new System.Drawing.Size(135, 15);
             this.lblCons_Forn.TabIndex = 113;
@@ -160,11 +175,16 @@
             // 
             // btnCons_Forn
             // 
+<<<<<<< HEAD
             this.btnCons_Forn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCons_Forn.BackgroundImage")));
             this.btnCons_Forn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCons_Forn.FlatAppearance.BorderSize = 0;
             this.btnCons_Forn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCons_Forn.Location = new System.Drawing.Point(202, 229);
+=======
+            this.btnCons_Forn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCons_Forn.Location = new System.Drawing.Point(383, 227);
+>>>>>>> origin/master
             this.btnCons_Forn.Name = "btnCons_Forn";
             this.btnCons_Forn.Size = new System.Drawing.Size(60, 60);
             this.btnCons_Forn.TabIndex = 112;
@@ -177,14 +197,22 @@
             this.lblManter_Forn.BackColor = System.Drawing.Color.Transparent;
             this.lblManter_Forn.Font = new System.Drawing.Font("Arial Black", 8.25F);
             this.lblManter_Forn.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.lblManter_Forn.Location = new System.Drawing.Point(350, 290);
             this.lblManter_Forn.Name = "lblManter_Forn";
             this.lblManter_Forn.Size = new System.Drawing.Size(136, 15);
             this.lblManter_Forn.TabIndex = 117;
+=======
+            this.lblManter_Forn.Location = new System.Drawing.Point(173, 288);
+            this.lblManter_Forn.Name = "lblManter_Forn";
+            this.lblManter_Forn.Size = new System.Drawing.Size(136, 15);
+            this.lblManter_Forn.TabIndex = 115;
+>>>>>>> origin/master
             this.lblManter_Forn.Text = "Cadastrar Fornecedor";
             // 
             // btnCad_Forn
             // 
+<<<<<<< HEAD
             this.btnCad_Forn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCad_Forn.BackgroundImage")));
             this.btnCad_Forn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCad_Forn.FlatAppearance.BorderSize = 0;
@@ -193,6 +221,13 @@
             this.btnCad_Forn.Name = "btnCad_Forn";
             this.btnCad_Forn.Size = new System.Drawing.Size(60, 60);
             this.btnCad_Forn.TabIndex = 116;
+=======
+            this.btnCad_Forn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCad_Forn.Location = new System.Drawing.Point(207, 227);
+            this.btnCad_Forn.Name = "btnCad_Forn";
+            this.btnCad_Forn.Size = new System.Drawing.Size(60, 60);
+            this.btnCad_Forn.TabIndex = 114;
+>>>>>>> origin/master
             this.btnCad_Forn.UseVisualStyleBackColor = true;
             this.btnCad_Forn.Click += new System.EventHandler(this.btnCad_Forn_Click);
             // 

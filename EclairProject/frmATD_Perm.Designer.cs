@@ -83,6 +83,7 @@
             // btnGerar_O
             // 
             this.btnGerar_O.BackColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btnGerar_O.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGerar_O.BackgroundImage")));
             this.btnGerar_O.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGerar_O.Enabled = false;
@@ -90,6 +91,13 @@
             this.btnGerar_O.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGerar_O.ForeColor = System.Drawing.Color.Black;
             this.btnGerar_O.Location = new System.Drawing.Point(203, 243);
+=======
+            this.btnGerar_O.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGerar_O.FlatAppearance.BorderSize = 0;
+            this.btnGerar_O.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGerar_O.ForeColor = System.Drawing.Color.Black;
+            this.btnGerar_O.Location = new System.Drawing.Point(283, 243);
+>>>>>>> origin/master
             this.btnGerar_O.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnGerar_O.Name = "btnGerar_O";
             this.btnGerar_O.Size = new System.Drawing.Size(60, 60);
@@ -100,7 +108,10 @@
             // btnCons_Evento
             // 
             this.btnCons_Evento.BackColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btnCons_Evento.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCons_Evento.BackgroundImage")));
+=======
+>>>>>>> origin/master
             this.btnCons_Evento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCons_Evento.FlatAppearance.BorderSize = 0;
             this.btnCons_Evento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -116,12 +127,19 @@
             // btnGerar_C
             // 
             this.btnGerar_C.BackColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btnGerar_C.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGerar_C.BackgroundImage")));
+=======
+>>>>>>> origin/master
             this.btnGerar_C.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGerar_C.FlatAppearance.BorderSize = 0;
             this.btnGerar_C.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGerar_C.ForeColor = System.Drawing.Color.Black;
+<<<<<<< HEAD
             this.btnGerar_C.Location = new System.Drawing.Point(30, 243);
+=======
+            this.btnGerar_C.Location = new System.Drawing.Point(101, 243);
+>>>>>>> origin/master
             this.btnGerar_C.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnGerar_C.Name = "btnGerar_C";
             this.btnGerar_C.Size = new System.Drawing.Size(60, 60);
@@ -132,6 +150,7 @@
             // btnCons_Calen
             // 
             this.btnCons_Calen.BackColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btnCons_Calen.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCons_Calen.BackgroundImage")));
             this.btnCons_Calen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCons_Calen.Enabled = false;
@@ -139,6 +158,13 @@
             this.btnCons_Calen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCons_Calen.ForeColor = System.Drawing.Color.Black;
             this.btnCons_Calen.Location = new System.Drawing.Point(521, 243);
+=======
+            this.btnCons_Calen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCons_Calen.FlatAppearance.BorderSize = 0;
+            this.btnCons_Calen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCons_Calen.ForeColor = System.Drawing.Color.Black;
+            this.btnCons_Calen.Location = new System.Drawing.Point(476, 243);
+>>>>>>> origin/master
             this.btnCons_Calen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCons_Calen.Name = "btnCons_Calen";
             this.btnCons_Calen.Size = new System.Drawing.Size(60, 60);
@@ -190,8 +216,13 @@
             this.lblCons_Calen.AutoSize = true;
             this.lblCons_Calen.BackColor = System.Drawing.Color.Transparent;
             this.lblCons_Calen.Font = new System.Drawing.Font("Arial Black", 8.25F);
+<<<<<<< HEAD
             this.lblCons_Calen.ForeColor = System.Drawing.Color.Gray;
             this.lblCons_Calen.Location = new System.Drawing.Point(488, 306);
+=======
+            this.lblCons_Calen.ForeColor = System.Drawing.Color.White;
+            this.lblCons_Calen.Location = new System.Drawing.Point(443, 306);
+>>>>>>> origin/master
             this.lblCons_Calen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCons_Calen.Name = "lblCons_Calen";
             this.lblCons_Calen.Size = new System.Drawing.Size(133, 15);
@@ -203,8 +234,13 @@
             this.lblGerar_O.AutoSize = true;
             this.lblGerar_O.BackColor = System.Drawing.Color.Transparent;
             this.lblGerar_O.Font = new System.Drawing.Font("Arial Black", 8.25F);
+<<<<<<< HEAD
             this.lblGerar_O.ForeColor = System.Drawing.Color.Gray;
             this.lblGerar_O.Location = new System.Drawing.Point(178, 306);
+=======
+            this.lblGerar_O.ForeColor = System.Drawing.Color.White;
+            this.lblGerar_O.Location = new System.Drawing.Point(258, 306);
+>>>>>>> origin/master
             this.lblGerar_O.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGerar_O.Name = "lblGerar_O";
             this.lblGerar_O.Size = new System.Drawing.Size(109, 15);
@@ -217,7 +253,11 @@
             this.lblGerar_C.BackColor = System.Drawing.Color.Transparent;
             this.lblGerar_C.Font = new System.Drawing.Font("Arial Black", 8.25F);
             this.lblGerar_C.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.lblGerar_C.Location = new System.Drawing.Point(12, 306);
+=======
+            this.lblGerar_C.Location = new System.Drawing.Point(83, 306);
+>>>>>>> origin/master
             this.lblGerar_C.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGerar_C.Name = "lblGerar_C";
             this.lblGerar_C.Size = new System.Drawing.Size(96, 15);

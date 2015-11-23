@@ -82,7 +82,11 @@ namespace EclairProject
             v1 = dataGridView1.Rows[r].Cells[0].Value.ToString();
             cc = new ClasseConexao();
             ds = new DataSet();
+<<<<<<< HEAD
             string sql = ("select Evt.id_produto, Evt.dt_evento, Evt.hr_inicio, Evt.acrescimo from evento as Evt where Evt.id_produto like '" + v1 + "'");
+=======
+            string sql = ("select * from evento where id_produto like '" + v1 + "'");
+>>>>>>> origin/master
             ds = cc.executarSQL(sql);
             txtID_Evento.Text = ds.Tables[0].Rows[0]["id_produto"].ToString();
             txtData.Text = ds.Tables[0].Rows[0]["dt_evento"].ToString();
@@ -95,14 +99,22 @@ namespace EclairProject
         {
             if (textBox1.Text == "")
             {
+<<<<<<< HEAD
                 MessageBox.Show("Insira algo no campo para pesquisar na tabela de Eventos");
+=======
+                MessageBox.Show("Insira algo no campo para pesquisar na tabela de Produtos");
+>>>>>>> origin/master
                 dataGridView1.DataSource = "";
             }
             else
             {
                 cc = new ClasseConexao();
                 ds = new DataSet();
+<<<<<<< HEAD
                 string sql = ("select * from evento where id_evento like '" + textBox1.Text + "' or dt_evento like '" + textBox1.Text + "'");
+=======
+                string sql = ("select * from evento where id_evento like '" + textBox1.Text + "' or dt_evento = '" + textBox1.Text + "'");
+>>>>>>> origin/master
                 ds = cc.executarSQL(sql);
                 dataGridView1.DataSource = ds.Tables[0];
             }
@@ -129,6 +141,7 @@ namespace EclairProject
                 fIE.Show();
                 fIE.Location = new Point(448, 133);
         }
+<<<<<<< HEAD
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -137,5 +150,7 @@ namespace EclairProject
                 this.btnProcurar_Click(sender, e);
             }
         }
+=======
+>>>>>>> origin/master
     }
 }

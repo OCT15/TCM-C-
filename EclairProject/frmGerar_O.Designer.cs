@@ -31,7 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGerar_O));
             this.lblRetornar = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
             this.lblTitle = new System.Windows.Forms.Label();
+=======
+>>>>>>> origin/master
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,6 +65,7 @@
             this.btnBack.MouseLeave += new System.EventHandler(this.btnBack_MouseLeave);
             this.btnBack.MouseHover += new System.EventHandler(this.btnBack_MouseHover);
             // 
+<<<<<<< HEAD
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
@@ -74,6 +78,8 @@
             this.lblTitle.TabIndex = 117;
             this.lblTitle.Text = "Gerar Orçamento";
             // 
+=======
+>>>>>>> origin/master
             // frmGerar_O
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -81,7 +87,10 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(630, 417);
+<<<<<<< HEAD
             this.Controls.Add(this.lblTitle);
+=======
+>>>>>>> origin/master
             this.Controls.Add(this.lblRetornar);
             this.Controls.Add(this.btnBack);
             this.DoubleBuffered = true;
@@ -99,6 +108,9 @@
 
         private System.Windows.Forms.Label lblRetornar;
         private System.Windows.Forms.PictureBox btnBack;
+<<<<<<< HEAD
         private System.Windows.Forms.Label lblTitle;
+=======
+>>>>>>> origin/master
     }
 }

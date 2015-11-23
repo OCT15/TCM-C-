@@ -22,6 +22,10 @@ namespace EclairProject
 
         private void frmTeste_Load(object sender, EventArgs e)
         {
+            DateTime ag;
+            DateTime.TryParse(txtDate_nasc.Text, out ag);
+            TimeSpan t = DateTime.Now - ag;
+            txtIdade.Text = Math.Floor(t.Days / 365d) + "";
             pr = new Persist();
             cc = new ClasseConexao();
             ds = new DataSet();
@@ -29,13 +33,18 @@ namespace EclairProject
             ds = cc.executarSQL(sql);
             if (ds == null || ds.Tables[0].Rows.Count < 1)
             {
+<<<<<<< HEAD
                 txtNome.Text = txtSenha.Text = txtDate_nascView.Text = txtIdade.Text = txtMail.Text = txtTelefoneView.Text = txtCelView.Text = txtEnd.Text = txtCPF_CNPJView.Text = txtRG_IEView.Text = txtCEPView.Text = "";
+=======
+                txtNome.Text = txtSenha.Text = txtDate_nasc.Text = txtIdade.Text = txtMail.Text = txtTelefone.Text = txtCel.Text = txtEnd.Text = txtCPF.Text = txtRG_IE.Text = txtCEP.Text = "";
+>>>>>>> origin/master
             }
             else
             {
                 txtID_Cli.Text = ds.Tables[0].Rows[0]["id_cliente"].ToString();
                 txtNome.Text = ds.Tables[0].Rows[0]["nome"].ToString();
                 txtSenha.Text = ds.Tables[0].Rows[0]["senha"].ToString();
+<<<<<<< HEAD
                 txtMail.Text = ds.Tables[0].Rows[0]["email"].ToString();
                 txtTelefoneView.Text = ds.Tables[0].Rows[0]["telefone"].ToString();
                 txtCelView.Text = ds.Tables[0].Rows[0]["celular"].ToString();
@@ -66,6 +75,16 @@ namespace EclairProject
                 {
                     lblRG_IE.Text = "RG";
                 }
+=======
+                txtDate_nasc.Text = ds.Tables[0].Rows[0]["dt_nascim"].ToString();
+                txtMail.Text = ds.Tables[0].Rows[0]["email"].ToString();
+                txtTelefone.Text = ds.Tables[0].Rows[0]["telefone"].ToString();
+                txtCel.Text = ds.Tables[0].Rows[0]["celular"].ToString();
+                txtEnd.Text = ds.Tables[0].Rows[0]["endereco"].ToString();
+                txtCPF.Text = ds.Tables[0].Rows[0]["cpf_cnpj"].ToString();
+                txtRG_IE.Text = ds.Tables[0].Rows[0]["rg_ie"].ToString();
+                txtCEP.Text = ds.Tables[0].Rows[0]["cep"].ToString();
+>>>>>>> origin/master
             }
         }
         private void btnAlterar_Click(object sender, EventArgs e)
@@ -73,11 +92,17 @@ namespace EclairProject
             radioButton1.Checked = true;
             txtNome.Enabled = true;
             txtSenha.Enabled = true;
+<<<<<<< HEAD
             txtDate_nasc.Visible = true;
             txtTelefone.Visible = true;
             txtCPF.Visible = true;
             txtRG.Visible = true;
             txtCel.Visible = true;
+=======
+            txtDate_nasc.Enabled = true;
+            txtTelefone.Enabled = true;
+            txtCel.Enabled = true;
+>>>>>>> origin/master
             txtEnd.Enabled = true;
             txtCEPView.Enabled = true;
             txtMail.Enabled = true;
@@ -87,9 +112,32 @@ namespace EclairProject
 
         private void btnAlterar2_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             if (txtNome.Text == "" || txtSenha.Text == "" || txtDate_nascView.Text == "" || txtMail.Text == "" || txtTelefoneView.Text == "" || txtCelView.Text == "" || txtEnd.Text == "" || txtCPF_CNPJView.Text == "" || txtRG_IEView.Text == "" || txtCEPView.Text == "")
             {
                 MessageBox.Show("Campos vazios detectados");
+=======
+            if (txtNome.Text == "" || txtSenha.Text == "" || txtIdade.Text == "" || txtDate_nasc.Text == "" || txtTelefone.Text == "" || txtCel.Text == "" || txtEnd.Text == "" || txtCEP.Text == "" || txtMail.Text == "")
+            {
+                DialogResult res = MessageBox.Show("Deseja alterar o campo selecionado?", "Aviso", MessageBoxButtons.YesNo);
+                if (res == DialogResult.Yes)
+                {
+                    string sql = string.Format("UPDATE cliente SET nome = '{0}', senha = '{1}', idade = '{2}', dt_nascim = '{3}', endereco = '{4}', telefone = '{5}', celular = '{6}', cep = '{7}', cpf = '{8}', email = '{9}' where id_cliente = {10}",
+                        txtNome.Text,
+                        txtSenha.Text,
+                        txtIdade.Text,
+                        txtDate_nasc.Text,
+                        txtEnd.Text,
+                        txtTelefone.Text,
+                        txtCel.Text,
+                        txtCEP.Text,
+                        txtCPF.Text,
+                        txtMail.Text,
+                        txtID_Cli.Text);
+                    cc = new ClasseConexao();
+                    cc.executarSQL(sql);
+                }
+>>>>>>> origin/master
             }
             else
             {
@@ -159,6 +207,7 @@ namespace EclairProject
             lblRetornar.Visible = false;
         }
 
+<<<<<<< HEAD
         private void txtDate_nasc_Leave(object sender, EventArgs e)
         {
             DateTime ag;
@@ -188,5 +237,7 @@ namespace EclairProject
             txtRG.Text = "";
             txtRG.Visible = false;
         }
+=======
+>>>>>>> origin/master
         }
     }

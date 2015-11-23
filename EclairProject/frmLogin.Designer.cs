@@ -135,11 +135,18 @@
             // 
             this.lblPass.AutoSize = true;
             this.lblPass.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.lblPass.Font = new System.Drawing.Font("Arial Black", 8.25F);
             this.lblPass.ForeColor = System.Drawing.Color.Snow;
             this.lblPass.Location = new System.Drawing.Point(416, 227);
             this.lblPass.Name = "lblPass";
             this.lblPass.Size = new System.Drawing.Size(43, 15);
+=======
+            this.lblPass.ForeColor = System.Drawing.Color.Snow;
+            this.lblPass.Location = new System.Drawing.Point(416, 227);
+            this.lblPass.Name = "lblPass";
+            this.lblPass.Size = new System.Drawing.Size(38, 13);
+>>>>>>> origin/master
             this.lblPass.TabIndex = 13;
             this.lblPass.Text = "Senha";
             // 
@@ -164,8 +171,11 @@
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+<<<<<<< HEAD
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmLogin_FormClosed);
             this.Load += new System.EventHandler(this.frmLogin_Load);
+=======
+>>>>>>> origin/master
             ((System.ComponentModel.ISupportInitialize)(this.ptbUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbPass)).EndInit();
             this.ResumeLayout(false);

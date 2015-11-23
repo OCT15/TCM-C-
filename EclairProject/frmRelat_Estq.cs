@@ -23,6 +23,7 @@ namespace EclairProject
             InitializeComponent();
         }
         private void btnBack_MouseHover(object sender, EventArgs e)
+<<<<<<< HEAD
         {
             lblRetornar.Visible = true;
         }
@@ -38,6 +39,8 @@ namespace EclairProject
         }
 
         private void frmRelat_Estq_Load(object sender, EventArgs e)
+=======
+>>>>>>> origin/master
         {
             string relatorio;
             DateTime dtn = DateTime.Now;
@@ -94,6 +97,11 @@ namespace EclairProject
                     //naw.Minute.ToString().PadLeft(2, '0')
                     );
             }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

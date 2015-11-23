@@ -49,13 +49,43 @@ namespace EclairProject
         {
             if (e.KeyChar == 13)
             {
+<<<<<<< HEAD
                 this.btnLogar_Click(sender, e);
+=======
+                DataSet ds = new DataSet();
+                string sql = "select * from funcionario where nome='" + txtUser.Text + "' and senha='" + txtPass.Text + "'";
+                cc = new ClasseConexao();
+                ds = cc.executarSQL(sql);
+                int quantidade = ds.Tables[0].Rows.Count;
+                if (quantidade != 0)
+                {
+                    id = ds.Tables[0].Rows[0]["id_permissao"].ToString();
+                    nome = ds.Tables[0].Rows[0]["nome"].ToString();
+
+                    cc = new ClasseConexao();
+                    ds = new DataSet();
+                    string sql2 = "select * from permissao where id_permissao='" + id + "'";
+                    ds = cc.executarSQL(sql2);
+                    nm_permissao = ds.Tables[0].Rows[0]["nm_permissao"].ToString();
+                    permissao = ds.Tables[0].Rows[0]["lista_permissoes"].ToString();
+                    frmMDI fp = new frmMDI(txtUser.Text, nm_permissao, permissao);
+                    this.Hide();
+                    fp.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Usuário e/ou senha incorreto(s). Tente novamente");
+                    txtUser.Text = "";
+                    txtPass.Text = "";
+                }
+>>>>>>> origin/master
             }
         } // Key Press ENTER (btnLogar_Click)
         private void txtUser_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == 13)
             {
+<<<<<<< HEAD
             this.btnLogar_Click(sender, e);
             }
         } // Key Press ENTER (btnLogar_Click)
@@ -72,5 +102,40 @@ namespace EclairProject
         {
             Application.Exit();
         }
+=======
+                DataSet ds = new DataSet();
+                string sql = "select * from funcionario where nome='" + txtUser.Text + "' and senha='" + txtPass.Text + "'";
+                cc = new ClasseConexao();
+                ds = cc.executarSQL(sql);
+                int quantidade = ds.Tables[0].Rows.Count;
+                if (quantidade != 0)
+                {
+                    id = ds.Tables[0].Rows[0]["id_permissao"].ToString();
+                    nome = ds.Tables[0].Rows[0]["nome"].ToString();
+
+                    cc = new ClasseConexao();
+                    ds = new DataSet();
+                    string sql2 = "select * from permissao where id_permissao='" + id + "'";
+                    ds = cc.executarSQL(sql2);
+                    nm_permissao = ds.Tables[0].Rows[0]["nm_permissao"].ToString();
+                    permissao = ds.Tables[0].Rows[0]["lista_permissoes"].ToString();
+                    frmMDI fp = new frmMDI(txtUser.Text, nm_permissao, permissao);
+                    this.Hide();
+                    fp.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Usuário e/ou senha incorreto(s). Tente novamente");
+                    txtUser.Text = "";
+                    txtPass.Text = "";
+                }
+            }
+        } // Key Press ENTER (btnLogar_Click)
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }       // Sair da aplicação
+
+>>>>>>> origin/master
     }
 }    //frmLogin - Conexao Banco de dados; entrada SplashScreen; parametros Permissão;;

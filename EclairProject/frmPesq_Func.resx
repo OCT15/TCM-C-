@@ -158,6 +158,7 @@
         Ucrh9vEfFguu34YDsq8AAAAASUVORK5CYII=
 </value>
   </data>
+<<<<<<< HEAD
   <data name="btnProcurar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
@@ -264,6 +265,8 @@
         JBAIJBAIJBAIJBAIJBAIBF6d/gPe7HeqSlqvPwAAAABJRU5ErkJggg==
 </value>
   </data>
+=======
+>>>>>>> origin/master
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB3YAAASqCAYAAAClL4rVAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH

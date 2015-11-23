@@ -43,6 +43,7 @@
             this.lblForn_Per.AutoSize = true;
             this.lblForn_Per.BackColor = System.Drawing.Color.Transparent;
             this.lblForn_Per.Font = new System.Drawing.Font("Arial Black", 8.25F);
+<<<<<<< HEAD
             this.lblForn_Per.ForeColor = System.Drawing.Color.Black;
             this.lblForn_Per.Location = new System.Drawing.Point(15, 240);
             this.lblForn_Per.Name = "lblForn_Per";
@@ -57,6 +58,19 @@
             this.btnForn_Per.FlatAppearance.BorderSize = 0;
             this.btnForn_Per.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnForn_Per.Location = new System.Drawing.Point(52, 177);
+=======
+            this.lblForn_Per.ForeColor = System.Drawing.Color.White;
+            this.lblForn_Per.Location = new System.Drawing.Point(21, 179);
+            this.lblForn_Per.Name = "lblForn_Per";
+            this.lblForn_Per.Size = new System.Drawing.Size(132, 15);
+            this.lblForn_Per.TabIndex = 6;
+            this.lblForn_Per.Text = "Relatório de Estoque";
+            // 
+            // btnForn_Per
+            // 
+            this.btnForn_Per.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnForn_Per.Location = new System.Drawing.Point(52, 116);
+>>>>>>> origin/master
             this.btnForn_Per.Name = "btnForn_Per";
             this.btnForn_Per.Size = new System.Drawing.Size(60, 60);
             this.btnForn_Per.TabIndex = 5;
@@ -68,6 +82,7 @@
             this.lblForn_Cons.AutoSize = true;
             this.lblForn_Cons.BackColor = System.Drawing.Color.Transparent;
             this.lblForn_Cons.Font = new System.Drawing.Font("Arial Black", 8.25F);
+<<<<<<< HEAD
             this.lblForn_Cons.ForeColor = System.Drawing.Color.Black;
             this.lblForn_Cons.Location = new System.Drawing.Point(358, 240);
             this.lblForn_Cons.Name = "lblForn_Cons";
@@ -82,6 +97,19 @@
             this.btnForn_Cons.FlatAppearance.BorderSize = 0;
             this.btnForn_Cons.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnForn_Cons.Location = new System.Drawing.Point(406, 177);
+=======
+            this.lblForn_Cons.ForeColor = System.Drawing.Color.White;
+            this.lblForn_Cons.Location = new System.Drawing.Point(368, 179);
+            this.lblForn_Cons.Name = "lblForn_Cons";
+            this.lblForn_Cons.Size = new System.Drawing.Size(132, 15);
+            this.lblForn_Cons.TabIndex = 8;
+            this.lblForn_Cons.Text = "Relatório de Estoque";
+            // 
+            // btnForn_Cons
+            // 
+            this.btnForn_Cons.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnForn_Cons.Location = new System.Drawing.Point(406, 116);
+>>>>>>> origin/master
             this.btnForn_Cons.Name = "btnForn_Cons";
             this.btnForn_Cons.Size = new System.Drawing.Size(60, 60);
             this.btnForn_Cons.TabIndex = 7;
@@ -93,7 +121,11 @@
             this.lblRetornar.AutoSize = true;
             this.lblRetornar.BackColor = System.Drawing.Color.Transparent;
             this.lblRetornar.Font = new System.Drawing.Font("Arial Black", 8.25F);
+<<<<<<< HEAD
             this.lblRetornar.ForeColor = System.Drawing.Color.Black;
+=======
+            this.lblRetornar.ForeColor = System.Drawing.Color.White;
+>>>>>>> origin/master
             this.lblRetornar.Location = new System.Drawing.Point(403, 42);
             this.lblRetornar.Name = "lblRetornar";
             this.lblRetornar.Size = new System.Drawing.Size(59, 15);
@@ -106,7 +138,11 @@
             this.btnBack.BackColor = System.Drawing.Color.Transparent;
             this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
             this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+<<<<<<< HEAD
             this.btnBack.Location = new System.Drawing.Point(452, -8);
+=======
+            this.btnBack.Location = new System.Drawing.Point(452, -7);
+>>>>>>> origin/master
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(60, 60);
             this.btnBack.TabIndex = 112;
@@ -121,7 +157,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(512, 400);
+=======
+            this.ClientSize = new System.Drawing.Size(512, 230);
+>>>>>>> origin/master
             this.Controls.Add(this.lblRetornar);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblForn_Cons);

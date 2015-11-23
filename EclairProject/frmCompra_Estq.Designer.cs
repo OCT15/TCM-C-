@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCompra_Estq));
+<<<<<<< HEAD
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -41,6 +42,10 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+=======
+            this.lblRetornar = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.PictureBox();
+>>>>>>> origin/master
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -72,6 +77,7 @@
             this.btnBack.MouseLeave += new System.EventHandler(this.btnBack_MouseLeave);
             this.btnBack.MouseHover += new System.EventHandler(this.btnBack_MouseHover);
             // 
+<<<<<<< HEAD
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(37, 42);
@@ -165,6 +171,8 @@
             this.dataGridView1.Size = new System.Drawing.Size(542, 246);
             this.dataGridView1.TabIndex = 121;
             // 
+=======
+>>>>>>> origin/master
             // frmCompra_Estq
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -196,12 +204,15 @@
 
         private System.Windows.Forms.Label lblRetornar;
         private System.Windows.Forms.PictureBox btnBack;
+<<<<<<< HEAD
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridView dataGridView1;
+=======
+>>>>>>> origin/master
 
     }
 }

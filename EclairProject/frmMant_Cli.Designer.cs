@@ -34,12 +34,15 @@
             this.txtID_Cli = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.gpbTop1 = new System.Windows.Forms.GroupBox();
+<<<<<<< HEAD
             this.label1 = new System.Windows.Forms.Label();
             this.txtMail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtDate_nascView = new System.Windows.Forms.TextBox();
             this.lblNascimento = new System.Windows.Forms.Label();
             this.txtDate_nasc = new System.Windows.Forms.MaskedTextBox();
+=======
+>>>>>>> origin/master
             this.txtIdade = new System.Windows.Forms.TextBox();
             this.lblIdade = new System.Windows.Forms.Label();
             this.lblSenha = new System.Windows.Forms.Label();
@@ -61,9 +64,15 @@
             this.lblCelular = new System.Windows.Forms.Label();
             this.lblCEP = new System.Windows.Forms.Label();
             this.lblCPF = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.txtCEPView = new System.Windows.Forms.TextBox();
             this.txtCPF_CNPJView = new System.Windows.Forms.TextBox();
             this.txtCelView = new System.Windows.Forms.TextBox();
+=======
+            this.txtCEP = new System.Windows.Forms.TextBox();
+            this.txtCPF = new System.Windows.Forms.TextBox();
+            this.txtCel = new System.Windows.Forms.TextBox();
+>>>>>>> origin/master
             this.lblconsulta = new System.Windows.Forms.Label();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
@@ -71,8 +80,18 @@
             this.gpbBot = new System.Windows.Forms.GroupBox();
             this.lblRetornar = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
+=======
+            this.txtDate_nasc = new System.Windows.Forms.TextBox();
+            this.lblNascimento = new System.Windows.Forms.Label();
+            this.txtMail = new System.Windows.Forms.TextBox();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtRG_IE = new System.Windows.Forms.TextBox();
+            this.lblRG_IE = new System.Windows.Forms.Label();
+>>>>>>> origin/master
             this.gpbTop1.SuspendLayout();
             this.gpbTop2.SuspendLayout();
             this.gpbBot.SuspendLayout();
@@ -81,11 +100,19 @@
             // 
             // txtTelefoneView
             // 
+<<<<<<< HEAD
             this.txtTelefoneView.Enabled = false;
             this.txtTelefoneView.Location = new System.Drawing.Point(93, 15);
             this.txtTelefoneView.Name = "txtTelefoneView";
             this.txtTelefoneView.Size = new System.Drawing.Size(175, 20);
             this.txtTelefoneView.TabIndex = 93;
+=======
+            this.txtTelefone.Enabled = false;
+            this.txtTelefone.Location = new System.Drawing.Point(93, 15);
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(175, 20);
+            this.txtTelefone.TabIndex = 93;
+>>>>>>> origin/master
             // 
             // txtSenha
             // 
@@ -117,9 +144,13 @@
             this.gpbTop1.Controls.Add(this.label1);
             this.gpbTop1.Controls.Add(this.txtMail);
             this.gpbTop1.Controls.Add(this.lblEmail);
+<<<<<<< HEAD
             this.gpbTop1.Controls.Add(this.txtDate_nascView);
             this.gpbTop1.Controls.Add(this.lblNascimento);
+=======
+>>>>>>> origin/master
             this.gpbTop1.Controls.Add(this.txtDate_nasc);
+            this.gpbTop1.Controls.Add(this.lblNascimento);
             this.gpbTop1.Controls.Add(this.txtIdade);
             this.gpbTop1.Controls.Add(this.lblIdade);
             this.gpbTop1.Controls.Add(this.lblSenha);
@@ -131,6 +162,7 @@
             this.gpbTop1.TabIndex = 95;
             this.gpbTop1.TabStop = false;
             // 
+<<<<<<< HEAD
             // label1
             // 
             this.label1.AutoSize = true;
@@ -193,6 +225,8 @@
             this.txtDate_nasc.TabIndex = 96;
             this.txtDate_nasc.Visible = false;
             // 
+=======
+>>>>>>> origin/master
             // txtIdade
             // 
             this.txtIdade.Enabled = false;
@@ -252,6 +286,7 @@
             // gpbTop2
             // 
             this.gpbTop2.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.gpbTop2.Controls.Add(this.txtRG);
             this.gpbTop2.Controls.Add(this.txtCPF);
             this.gpbTop2.Controls.Add(this.txtIE);
@@ -260,11 +295,18 @@
             this.gpbTop2.Controls.Add(this.txtTelefone);
             this.gpbTop2.Controls.Add(this.txtCel);
             this.gpbTop2.Controls.Add(this.txtRG_IEView);
+=======
+            this.gpbTop2.Controls.Add(this.txtRG_IE);
+>>>>>>> origin/master
             this.gpbTop2.Controls.Add(this.lblRG_IE);
             this.gpbTop2.Controls.Add(this.lblTelefone);
             this.gpbTop2.Controls.Add(this.txtEnd);
             this.gpbTop2.Controls.Add(this.lblEndereço);
+<<<<<<< HEAD
             this.gpbTop2.Controls.Add(this.txtTelefoneView);
+=======
+            this.gpbTop2.Controls.Add(this.txtTelefone);
+>>>>>>> origin/master
             this.gpbTop2.Controls.Add(this.lblCelular);
             this.gpbTop2.Controls.Add(this.lblCEP);
             this.gpbTop2.Controls.Add(this.lblCPF);
@@ -428,6 +470,7 @@
             this.lblCPF.TabIndex = 71;
             this.lblCPF.Text = "CPF";
             // 
+<<<<<<< HEAD
             // txtCEPView
             // 
             this.txtCEPView.Enabled = false;
@@ -435,9 +478,27 @@
             this.txtCEPView.Name = "txtCEPView";
             this.txtCEPView.Size = new System.Drawing.Size(175, 20);
             this.txtCEPView.TabIndex = 38;
+=======
+            // txtCEP
+            // 
+            this.txtCEP.Enabled = false;
+            this.txtCEP.Location = new System.Drawing.Point(93, 155);
+            this.txtCEP.Name = "txtCEP";
+            this.txtCEP.Size = new System.Drawing.Size(175, 20);
+            this.txtCEP.TabIndex = 38;
+            // 
+            // txtCPF
+            // 
+            this.txtCPF.Enabled = false;
+            this.txtCPF.Location = new System.Drawing.Point(93, 99);
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(175, 20);
+            this.txtCPF.TabIndex = 37;
+>>>>>>> origin/master
             // 
             // txtCPF_CNPJView
             // 
+<<<<<<< HEAD
             this.txtCPF_CNPJView.Enabled = false;
             this.txtCPF_CNPJView.Location = new System.Drawing.Point(93, 99);
             this.txtCPF_CNPJView.Name = "txtCPF_CNPJView";
@@ -452,6 +513,14 @@
             this.txtCelView.Size = new System.Drawing.Size(175, 20);
             this.txtCelView.TabIndex = 35;
             // 
+=======
+            this.txtCel.Enabled = false;
+            this.txtCel.Location = new System.Drawing.Point(93, 44);
+            this.txtCel.Name = "txtCel";
+            this.txtCel.Size = new System.Drawing.Size(175, 20);
+            this.txtCel.TabIndex = 35;
+            // 
+>>>>>>> origin/master
             // lblconsulta
             // 
             this.lblconsulta.AutoSize = true;
@@ -546,6 +615,7 @@
             this.btnBack.MouseLeave += new System.EventHandler(this.btnBack_MouseLeave);
             this.btnBack.MouseHover += new System.EventHandler(this.btnBack_MouseHover);
             // 
+<<<<<<< HEAD
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
@@ -575,6 +645,79 @@
             this.radioButton1.Text = "Pessoa Física";
             this.radioButton1.UseVisualStyleBackColor = false;
             this.radioButton1.Click += new System.EventHandler(this.radioButton1_Click);
+=======
+            // txtDate_nasc
+            // 
+            this.txtDate_nasc.Enabled = false;
+            this.txtDate_nasc.Location = new System.Drawing.Point(104, 99);
+            this.txtDate_nasc.Name = "txtDate_nasc";
+            this.txtDate_nasc.Size = new System.Drawing.Size(190, 20);
+            this.txtDate_nasc.TabIndex = 74;
+            // 
+            // lblNascimento
+            // 
+            this.lblNascimento.AutoSize = true;
+            this.lblNascimento.BackColor = System.Drawing.Color.Transparent;
+            this.lblNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNascimento.ForeColor = System.Drawing.Color.White;
+            this.lblNascimento.Location = new System.Drawing.Point(4, 97);
+            this.lblNascimento.Name = "lblNascimento";
+            this.lblNascimento.Size = new System.Drawing.Size(104, 22);
+            this.lblNascimento.TabIndex = 73;
+            this.lblNascimento.Text = "Nascimento";
+            // 
+            // txtMail
+            // 
+            this.txtMail.Enabled = false;
+            this.txtMail.Location = new System.Drawing.Point(104, 155);
+            this.txtMail.Name = "txtMail";
+            this.txtMail.Size = new System.Drawing.Size(190, 20);
+            this.txtMail.TabIndex = 95;
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.ForeColor = System.Drawing.Color.White;
+            this.lblEmail.Location = new System.Drawing.Point(-79, 86);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(60, 22);
+            this.lblEmail.TabIndex = 96;
+            this.lblEmail.Text = "E-mail";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(30, 153);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 22);
+            this.label1.TabIndex = 98;
+            this.label1.Text = "E-mail";
+            // 
+            // txtRG_IE
+            // 
+            this.txtRG_IE.Enabled = false;
+            this.txtRG_IE.Location = new System.Drawing.Point(93, 127);
+            this.txtRG_IE.Name = "txtRG_IE";
+            this.txtRG_IE.Size = new System.Drawing.Size(175, 20);
+            this.txtRG_IE.TabIndex = 95;
+            // 
+            // lblRG_IE
+            // 
+            this.lblRG_IE.AutoSize = true;
+            this.lblRG_IE.BackColor = System.Drawing.Color.Transparent;
+            this.lblRG_IE.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRG_IE.ForeColor = System.Drawing.Color.White;
+            this.lblRG_IE.Location = new System.Drawing.Point(27, 126);
+            this.lblRG_IE.Name = "lblRG_IE";
+            this.lblRG_IE.Size = new System.Drawing.Size(37, 22);
+            this.lblRG_IE.TabIndex = 94;
+            this.lblRG_IE.Text = "RG";
+>>>>>>> origin/master
             // 
             // frmMant_Cli
             // 
@@ -583,8 +726,11 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(630, 417);
+<<<<<<< HEAD
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
+=======
+>>>>>>> origin/master
             this.Controls.Add(this.lblRetornar);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblconsulta);
@@ -630,9 +776,15 @@
         private System.Windows.Forms.Label lblCelular;
         private System.Windows.Forms.Label lblCEP;
         private System.Windows.Forms.Label lblCPF;
+<<<<<<< HEAD
         private System.Windows.Forms.TextBox txtCEPView;
         private System.Windows.Forms.TextBox txtCPF_CNPJView;
         private System.Windows.Forms.TextBox txtCelView;
+=======
+        private System.Windows.Forms.TextBox txtCEP;
+        private System.Windows.Forms.TextBox txtCPF;
+        private System.Windows.Forms.TextBox txtCel;
+>>>>>>> origin/master
         private System.Windows.Forms.Label lblconsulta;
         private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.Button btnExcluir;
@@ -643,6 +795,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtMail;
         private System.Windows.Forms.Label lblEmail;
+<<<<<<< HEAD
         private System.Windows.Forms.TextBox txtDate_nascView;
         private System.Windows.Forms.Label lblNascimento;
         private System.Windows.Forms.TextBox txtRG_IEView;
@@ -657,5 +810,11 @@
         private System.Windows.Forms.MaskedTextBox txtCPF;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
+=======
+        private System.Windows.Forms.TextBox txtDate_nasc;
+        private System.Windows.Forms.Label lblNascimento;
+        private System.Windows.Forms.TextBox txtRG_IE;
+        private System.Windows.Forms.Label lblRG_IE;
+>>>>>>> origin/master
     }
 }

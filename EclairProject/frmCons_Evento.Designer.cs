@@ -29,9 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCons_Evento));
+<<<<<<< HEAD
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+=======
+>>>>>>> origin/master
             this.lblRetornar = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.PictureBox();
             this.gpbTop1 = new System.Windows.Forms.GroupBox();
@@ -119,11 +122,19 @@
             // 
             this.lblNome.AutoSize = true;
             this.lblNome.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.lblNome.Font = new System.Drawing.Font("Arial Black", 12F);
             this.lblNome.ForeColor = System.Drawing.Color.White;
             this.lblNome.Location = new System.Drawing.Point(19, 46);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(51, 23);
+=======
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.ForeColor = System.Drawing.Color.White;
+            this.lblNome.Location = new System.Drawing.Point(19, 46);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(48, 22);
+>>>>>>> origin/master
             this.lblNome.TabIndex = 64;
             this.lblNome.Text = "Data";
             // 
@@ -131,11 +142,19 @@
             // 
             this.lblID.AutoSize = true;
             this.lblID.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.lblID.Font = new System.Drawing.Font("Arial Black", 12F);
             this.lblID.ForeColor = System.Drawing.Color.White;
             this.lblID.Location = new System.Drawing.Point(31, 14);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(28, 23);
+=======
+            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblID.ForeColor = System.Drawing.Color.White;
+            this.lblID.Location = new System.Drawing.Point(31, 14);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(27, 22);
+>>>>>>> origin/master
             this.lblID.TabIndex = 63;
             this.lblID.Text = "ID";
             // 
@@ -156,11 +175,19 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.label2.Font = new System.Drawing.Font("Arial Black", 12F);
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(9, 46);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(104, 23);
+=======
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(9, 46);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(93, 22);
+>>>>>>> origin/master
             this.label2.TabIndex = 119;
             this.label2.Text = "Acrescimo";
             // 
@@ -168,11 +195,19 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.label1.Font = new System.Drawing.Font("Arial Black", 12F);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(31, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 23);
+=======
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(31, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 22);
+>>>>>>> origin/master
             this.label1.TabIndex = 118;
             this.label1.Text = "Inicio";
             // 
@@ -194,6 +229,7 @@
             // 
             // btnProcurar
             // 
+<<<<<<< HEAD
             this.btnProcurar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnProcurar.BackgroundImage")));
             this.btnProcurar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnProcurar.FlatAppearance.BorderSize = 0;
@@ -202,11 +238,19 @@
             this.btnProcurar.Name = "btnProcurar";
             this.btnProcurar.Size = new System.Drawing.Size(60, 60);
             this.btnProcurar.TabIndex = 130;
+=======
+            this.btnProcurar.Location = new System.Drawing.Point(363, 79);
+            this.btnProcurar.Name = "btnProcurar";
+            this.btnProcurar.Size = new System.Drawing.Size(66, 20);
+            this.btnProcurar.TabIndex = 130;
+            this.btnProcurar.Text = "procurar";
+>>>>>>> origin/master
             this.btnProcurar.UseVisualStyleBackColor = true;
             this.btnProcurar.Click += new System.EventHandler(this.btnProcurar_Click);
             // 
             // btnInserir
             // 
+<<<<<<< HEAD
             this.btnInserir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInserir.BackgroundImage")));
             this.btnInserir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnInserir.FlatAppearance.BorderSize = 0;
@@ -215,11 +259,19 @@
             this.btnInserir.Name = "btnInserir";
             this.btnInserir.Size = new System.Drawing.Size(60, 60);
             this.btnInserir.TabIndex = 129;
+=======
+            this.btnInserir.Location = new System.Drawing.Point(479, 79);
+            this.btnInserir.Name = "btnInserir";
+            this.btnInserir.Size = new System.Drawing.Size(66, 20);
+            this.btnInserir.TabIndex = 129;
+            this.btnInserir.Text = "inserir";
+>>>>>>> origin/master
             this.btnInserir.UseVisualStyleBackColor = true;
             this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
             // 
             // textBox1
             // 
+<<<<<<< HEAD
             this.textBox1.Location = new System.Drawing.Point(49, 79);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(249, 20);
@@ -260,6 +312,19 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.Size = new System.Drawing.Size(540, 61);
+=======
+            this.textBox1.Location = new System.Drawing.Point(91, 79);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(249, 20);
+            this.textBox1.TabIndex = 128;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(85, 115);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(475, 76);
+>>>>>>> origin/master
             this.dataGridView1.TabIndex = 127;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -267,6 +332,7 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.lblTitle.Font = new System.Drawing.Font("Arial Black", 19F);
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(36, 26);
@@ -274,6 +340,15 @@
             this.lblTitle.Size = new System.Drawing.Size(277, 37);
             this.lblTitle.TabIndex = 131;
             this.lblTitle.Text = "Consultar Eventos";
+=======
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(174, 22);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(258, 35);
+            this.lblTitle.TabIndex = 131;
+            this.lblTitle.Text = "Consulta Eventos";
+>>>>>>> origin/master
             // 
             // gpbBot
             // 
@@ -288,30 +363,44 @@
             // 
             // btnAnterior
             // 
+<<<<<<< HEAD
             this.btnAnterior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(80)))), ((int)(((byte)(214)))));
             this.btnAnterior.FlatAppearance.BorderSize = 0;
             this.btnAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnterior.Font = new System.Drawing.Font("Arial Black", 8.25F);
+=======
+>>>>>>> origin/master
             this.btnAnterior.Location = new System.Drawing.Point(27, 13);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(75, 23);
             this.btnAnterior.TabIndex = 52;
             this.btnAnterior.Text = "<";
+<<<<<<< HEAD
             this.btnAnterior.UseVisualStyleBackColor = false;
+=======
+            this.btnAnterior.UseVisualStyleBackColor = true;
+>>>>>>> origin/master
             this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
             // 
             // btnProximo
             // 
+<<<<<<< HEAD
             this.btnProximo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(80)))), ((int)(((byte)(214)))));
             this.btnProximo.FlatAppearance.BorderSize = 0;
             this.btnProximo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProximo.Font = new System.Drawing.Font("Arial Black", 8.25F);
+=======
+>>>>>>> origin/master
             this.btnProximo.Location = new System.Drawing.Point(140, 13);
             this.btnProximo.Name = "btnProximo";
             this.btnProximo.Size = new System.Drawing.Size(75, 23);
             this.btnProximo.TabIndex = 53;
             this.btnProximo.Text = ">";
+<<<<<<< HEAD
             this.btnProximo.UseVisualStyleBackColor = false;
+=======
+            this.btnProximo.UseVisualStyleBackColor = true;
+>>>>>>> origin/master
             this.btnProximo.Click += new System.EventHandler(this.btnProximo_Click);
             // 
             // frmCons_Evento

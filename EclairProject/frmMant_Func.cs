@@ -12,7 +12,10 @@ namespace EclairProject
 {
     public partial class frmMant_Func : Form
     {
+<<<<<<< HEAD
         int IDPERM;
+=======
+>>>>>>> origin/master
         Persist pr;
         ClasseConexao cc;
         DataSet ds;
@@ -41,11 +44,17 @@ namespace EclairProject
             DialogResult res = MessageBox.Show("Deseja excluir o campo selecionado?", "Aviso", MessageBoxButtons.YesNo);
             if (res == DialogResult.Yes)
             {
+<<<<<<< HEAD
                 string sql = string.Format("delete from funcionario where id_funcionario = {0}", txtID_Func.Text);
                 cc = new ClasseConexao();
                 cc.executarSQL(sql);
                 MessageBox.Show("Operação Concluída!");
                 this.Close();
+=======
+                string sql = string.Format("delete from funcionario where id_funcionario = {0}", txtID_Cli.Text);
+                cc = new ClasseConexao();
+                cc.executarSQL(sql);
+>>>>>>> origin/master
             }
             else
             {
@@ -63,6 +72,11 @@ namespace EclairProject
             txtTelefone.Enabled = true;
             txtCel.Enabled = true;
             txtPerm.Enabled = true;
+<<<<<<< HEAD
+=======
+            txtCPF.Enabled = true;
+            txtRG.Enabled = true;
+>>>>>>> origin/master
             txtCEP.Enabled = true;
             btnAlterar2.Visible = true;
             btnExcluir.Enabled = false;
@@ -72,6 +86,7 @@ namespace EclairProject
         {
             if (txtNome.Text == "" || txtSenha.Text == "" || txtDate_nasc.Text == "" || txtTelefone.Text == "" || txtCel.Text == "" || txtEnd.Text == "" || txtCEP.Text == "" || txtMail.Text == "")
             {
+<<<<<<< HEAD
                 MessageBox.Show("Campos vazios detectados");
             }
             else
@@ -159,3 +174,44 @@ namespace EclairProject
         }
     }
 }
+=======
+                MessageBox.Show("O campo nome está vazio!");
+            }
+            
+
+            DialogResult res = MessageBox.Show("Deseja alterar o campo selecionado?", "Aviso", MessageBoxButtons.YesNo);
+            if (res == DialogResult.Yes)
+            {
+                string sql = string.Format("UPDATE funcionario SET nome = '{0}', senha = '{1}', idade = '{2}', dt_nascim = '{3}', endereco = '{4}', telefone = '{5}', celular = '{6}', cep = '{7}', cpf = '{8}', email = '{9}' where id_cliente = {10}",
+                    txtNome.Text,
+                    txtSenha.Text,
+                    txtDate_nasc.Text,
+                    txtEnd.Text,
+                    txtTelefone.Text,
+                    txtCel.Text,
+                    txtCEP.Text,
+                    txtCPF.Text,
+                    txtMail.Text,
+                    txtID_Cli.Text);
+                cc = new ClasseConexao();
+                cc.executarSQL(sql);
+            }
+            else
+            {
+                MessageBox.Show("Operação Cancelada");
+            }
+            txtNome.Enabled = false;
+            txtSenha.Enabled = false;
+            txtDate_nasc.Enabled = false;
+            txtTelefone.Enabled = false;
+            txtCel.Enabled = false;
+            txtEnd.Enabled = false;
+            txtCPF.Enabled = false;
+            txtCEP.Enabled = false;
+            txtMail.Enabled = false;
+            btnAlterar2.Visible = false;
+            btnExcluir.Enabled = true;
+        }
+        }
+    }
+>>>>>>> origin/master

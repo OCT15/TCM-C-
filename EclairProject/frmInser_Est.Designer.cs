@@ -45,14 +45,20 @@
             this.txtTipo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.gpbBot = new System.Windows.Forms.GroupBox();
             this.btnInserir = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
+=======
+>>>>>>> origin/master
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.gpbTop1.SuspendLayout();
             this.gpbTop2.SuspendLayout();
             this.gpbMid.SuspendLayout();
+<<<<<<< HEAD
             this.gpbBot.SuspendLayout();
+=======
+>>>>>>> origin/master
             this.SuspendLayout();
             // 
             // lblRetornar
@@ -105,6 +111,10 @@
             // 
             // txtNome
             // 
+<<<<<<< HEAD
+=======
+            this.txtNome.Enabled = false;
+>>>>>>> origin/master
             this.txtNome.Location = new System.Drawing.Point(87, 48);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(190, 20);
@@ -114,11 +124,19 @@
             // 
             this.lblNome.AutoSize = true;
             this.lblNome.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.lblNome.Font = new System.Drawing.Font("Arial Black", 11F);
             this.lblNome.ForeColor = System.Drawing.Color.White;
             this.lblNome.Location = new System.Drawing.Point(15, 46);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(58, 22);
+=======
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.ForeColor = System.Drawing.Color.White;
+            this.lblNome.Location = new System.Drawing.Point(15, 46);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(57, 22);
+>>>>>>> origin/master
             this.lblNome.TabIndex = 64;
             this.lblNome.Text = "Nome";
             // 
@@ -126,11 +144,19 @@
             // 
             this.lblID.AutoSize = true;
             this.lblID.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.lblID.Font = new System.Drawing.Font("Arial Black", 11F);
             this.lblID.ForeColor = System.Drawing.Color.White;
             this.lblID.Location = new System.Drawing.Point(31, 14);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(28, 22);
+=======
+            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblID.ForeColor = System.Drawing.Color.White;
+            this.lblID.Location = new System.Drawing.Point(31, 14);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(27, 22);
+>>>>>>> origin/master
             this.lblID.TabIndex = 63;
             this.lblID.Text = "ID";
             // 
@@ -151,11 +177,19 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.label2.Font = new System.Drawing.Font("Arial Black", 11F);
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(4, 46);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 22);
+=======
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(4, 46);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(103, 22);
+>>>>>>> origin/master
             this.label2.TabIndex = 119;
             this.label2.Text = "Quantidade";
             // 
@@ -163,16 +197,28 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.label1.Font = new System.Drawing.Font("Arial Black", 11F);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(31, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 22);
+=======
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(31, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 22);
+>>>>>>> origin/master
             this.label1.TabIndex = 118;
             this.label1.Text = "Preço";
             // 
             // txtQuant
             // 
+<<<<<<< HEAD
+=======
+            this.txtQuant.Enabled = false;
+>>>>>>> origin/master
             this.txtQuant.Location = new System.Drawing.Point(114, 48);
             this.txtQuant.Name = "txtQuant";
             this.txtQuant.Size = new System.Drawing.Size(163, 20);
@@ -180,11 +226,18 @@
             // 
             // txtPreço
             // 
+<<<<<<< HEAD
+=======
+            this.txtPreço.Enabled = false;
+>>>>>>> origin/master
             this.txtPreço.Location = new System.Drawing.Point(114, 16);
             this.txtPreço.Name = "txtPreço";
             this.txtPreço.Size = new System.Drawing.Size(163, 20);
             this.txtPreço.TabIndex = 116;
+<<<<<<< HEAD
             this.txtPreço.Click += new System.EventHandler(this.txtPreço_Click);
+=======
+>>>>>>> origin/master
             // 
             // gpbMid
             // 
@@ -199,17 +252,28 @@
             // 
             // txtTipo
             // 
+<<<<<<< HEAD
+=======
+            this.txtTipo.Enabled = false;
+>>>>>>> origin/master
             this.txtTipo.Location = new System.Drawing.Point(120, 14);
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Size = new System.Drawing.Size(190, 20);
             this.txtTipo.TabIndex = 121;
+<<<<<<< HEAD
             this.txtTipo.Click += new System.EventHandler(this.txtTipo_Click);
+=======
+>>>>>>> origin/master
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.label3.Font = new System.Drawing.Font("Arial Black", 11F);
+=======
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+>>>>>>> origin/master
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(37, 11);
             this.label3.Name = "label3";
@@ -221,6 +285,7 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.lblTitle.Font = new System.Drawing.Font("Arial Black", 21F);
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(194, 25);
@@ -269,6 +334,16 @@
             this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
+=======
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(194, 25);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(216, 35);
+            this.lblTitle.TabIndex = 134;
+            this.lblTitle.Text = "Inserir Produto";
+            // 
+>>>>>>> origin/master
             // frmInser_Est
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -276,7 +351,10 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(630, 417);
+<<<<<<< HEAD
             this.Controls.Add(this.gpbBot);
+=======
+>>>>>>> origin/master
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.gpbTop1);
             this.Controls.Add(this.gpbTop2);
@@ -287,7 +365,10 @@
             this.Name = "frmInser_Est";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "frmInser_Est";
+<<<<<<< HEAD
             this.Load += new System.EventHandler(this.frmInser_Est_Load);
+=======
+>>>>>>> origin/master
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.gpbTop1.ResumeLayout(false);
             this.gpbTop1.PerformLayout();
@@ -295,7 +376,10 @@
             this.gpbTop2.PerformLayout();
             this.gpbMid.ResumeLayout(false);
             this.gpbMid.PerformLayout();
+<<<<<<< HEAD
             this.gpbBot.ResumeLayout(false);
+=======
+>>>>>>> origin/master
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -319,8 +403,11 @@
         private System.Windows.Forms.TextBox txtTipo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblTitle;
+<<<<<<< HEAD
         private System.Windows.Forms.GroupBox gpbBot;
         private System.Windows.Forms.Button btnInserir;
         private System.Windows.Forms.Button btnLimpar;
+=======
+>>>>>>> origin/master
     }
 }

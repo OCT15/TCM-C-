@@ -48,7 +48,11 @@ namespace EclairProject
             {
                 cc = new ClasseConexao();
                 ds = new DataSet();
+<<<<<<< HEAD
                 string sql = ("select Func.id_funcionario as ID, Func.nome as Nome, Func.senha as Senha, Func.dt_nascim as Nascimento, Func.endereco as Endereço, Func.telefone as Telefone, Func.celular as Celular, Func.cep as Cep, Func.cpf as CPF, Func.rg as RG, Func.email as Email from funcionario as Func where Func.id_funcionario like '" + textBox1.Text + "' or nome = '" + textBox1.Text + "' or senha = '" + textBox1.Text + "' or dt_nascim like '" + textBox1.Text + "' or endereco = '" + textBox1.Text + "' or telefone = '" + textBox1.Text + "' or celular = '" + textBox1.Text + "' or cep = '" + textBox1.Text + "' or cpf = '" + textBox1.Text + "' or rg = '" + textBox1.Text + "' or email = '" + textBox1.Text + "'");
+=======
+                string sql = ("select * from funcionario where id_funcionario like '" + textBox1.Text + "' or nome = '" + textBox1.Text + "' or senha = '" + textBox1.Text + "' or dt_nascim like '" + textBox1.Text + "' or endereco = '" + textBox1.Text + "' or telefone = '" + textBox1.Text + "' or celular = '" + textBox1.Text + "' or cep = '" + textBox1.Text + "' or cpf = '" + textBox1.Text + "' or rg = '" + textBox1.Text + "' or email = '" + textBox1.Text + "'");
+>>>>>>> origin/master
                 ds = cc.executarSQL(sql);
                 dataGridView1.DataSource = ds.Tables[0];
             }
@@ -71,16 +75,26 @@ namespace EclairProject
             }
             while (true);
 
+<<<<<<< HEAD
             frmInser_Func fIF = new frmInser_Func(var);
             fIF.Show();
             fIF.Location = new Point(448, 133);
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+=======
+            frmInser_Cli fIC = new frmInser_Cli(var);
+            fIC.Show();
+            fIC.Location = new Point(448, 133);
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+>>>>>>> origin/master
         {
             pr = new Persist();
             int r = e.RowIndex, // e > argumentos de evento                     ^
             c = e.ColumnIndex;
+<<<<<<< HEAD
             if (r < 0 || c < 0)
             {
 
@@ -117,5 +131,14 @@ namespace EclairProject
                 this.btnProcurar_Click(sender, e);
             }
         }
+=======
+            string v1 = dataGridView1.Rows[r].Cells[0].Value.ToString();
+            pr.setId(v1);
+            frmMant_Func fT = new frmMant_Func();
+            fT.Show();
+            fT.Location = new Point(448, 133);
+        }
+
+>>>>>>> origin/master
     }
 }

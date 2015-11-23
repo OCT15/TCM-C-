@@ -29,9 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPesq_Cli));
+<<<<<<< HEAD
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+=======
+>>>>>>> origin/master
             this.btnInserir = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -47,6 +50,7 @@
             // 
             // btnInserir
             // 
+<<<<<<< HEAD
             this.btnInserir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInserir.BackgroundImage")));
             this.btnInserir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnInserir.FlatAppearance.BorderSize = 0;
@@ -55,6 +59,13 @@
             this.btnInserir.Name = "btnInserir";
             this.btnInserir.Size = new System.Drawing.Size(60, 60);
             this.btnInserir.TabIndex = 0;
+=======
+            this.btnInserir.Location = new System.Drawing.Point(503, 97);
+            this.btnInserir.Name = "btnInserir";
+            this.btnInserir.Size = new System.Drawing.Size(66, 20);
+            this.btnInserir.TabIndex = 0;
+            this.btnInserir.Text = "inserir";
+>>>>>>> origin/master
             this.btnInserir.UseVisualStyleBackColor = true;
             this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
             // 
@@ -107,6 +118,7 @@
             // 
             // btnProcurar
             // 
+<<<<<<< HEAD
             this.btnProcurar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnProcurar.BackgroundImage")));
             this.btnProcurar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnProcurar.FlatAppearance.BorderSize = 0;
@@ -115,6 +127,13 @@
             this.btnProcurar.Name = "btnProcurar";
             this.btnProcurar.Size = new System.Drawing.Size(60, 60);
             this.btnProcurar.TabIndex = 3;
+=======
+            this.btnProcurar.Location = new System.Drawing.Point(387, 97);
+            this.btnProcurar.Name = "btnProcurar";
+            this.btnProcurar.Size = new System.Drawing.Size(66, 20);
+            this.btnProcurar.TabIndex = 3;
+            this.btnProcurar.Text = "procurar";
+>>>>>>> origin/master
             this.btnProcurar.UseVisualStyleBackColor = true;
             this.btnProcurar.Click += new System.EventHandler(this.btnProcurar_Click);
             // 
@@ -126,9 +145,15 @@
             this.lblconsulta.ForeColor = System.Drawing.Color.White;
             this.lblconsulta.Location = new System.Drawing.Point(139, 29);
             this.lblconsulta.Name = "lblconsulta";
+<<<<<<< HEAD
             this.lblconsulta.Size = new System.Drawing.Size(295, 38);
             this.lblconsulta.TabIndex = 40;
             this.lblconsulta.Text = "Pesquisar Clientes";
+=======
+            this.lblconsulta.Size = new System.Drawing.Size(247, 35);
+            this.lblconsulta.TabIndex = 40;
+            this.lblconsulta.Text = "Pesquisa Cliente";
+>>>>>>> origin/master
             // 
             // lblRetornar
             // 
@@ -156,6 +181,7 @@
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             this.btnBack.MouseLeave += new System.EventHandler(this.btnBack_MouseLeave);
             this.btnBack.MouseHover += new System.EventHandler(this.btnBack_MouseHover);
+<<<<<<< HEAD
             // 
             // label2
             // 
@@ -180,6 +206,8 @@
             this.label1.Size = new System.Drawing.Size(66, 15);
             this.label1.TabIndex = 120;
             this.label1.Text = "Pesquisar";
+=======
+>>>>>>> origin/master
             // 
             // frmPesq_Cli
             // 
@@ -188,8 +216,11 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(630, 417);
+<<<<<<< HEAD
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+=======
+>>>>>>> origin/master
             this.Controls.Add(this.lblRetornar);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblconsulta);

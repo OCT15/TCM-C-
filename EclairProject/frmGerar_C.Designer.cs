@@ -31,11 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGerar_C));
             this.lblRetornar = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
             this.button1 = new System.Windows.Forms.Button();
             this.btnOpen = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblTitle = new System.Windows.Forms.Label();
+=======
+>>>>>>> origin/master
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,6 +69,7 @@
             this.btnBack.MouseLeave += new System.EventHandler(this.btnBack_MouseLeave);
             this.btnBack.MouseHover += new System.EventHandler(this.btnBack_MouseHover);
             // 
+<<<<<<< HEAD
             // button1
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
@@ -123,6 +127,8 @@
             this.lblTitle.TabIndex = 118;
             this.lblTitle.Text = "Gerar Contrato";
             // 
+=======
+>>>>>>> origin/master
             // frmGerar_C
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -130,18 +136,25 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(630, 417);
+<<<<<<< HEAD
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.button1);
+=======
+>>>>>>> origin/master
             this.Controls.Add(this.lblRetornar);
             this.Controls.Add(this.btnBack);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmGerar_C";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+<<<<<<< HEAD
             this.Text = "t";
+=======
+            this.Text = "frmGerar_C";
+>>>>>>> origin/master
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -152,10 +165,13 @@
 
         private System.Windows.Forms.Label lblRetornar;
         private System.Windows.Forms.PictureBox btnBack;
+<<<<<<< HEAD
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnOpen;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblTitle;
+=======
+>>>>>>> origin/master
     }
 }

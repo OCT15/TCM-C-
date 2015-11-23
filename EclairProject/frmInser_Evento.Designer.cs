@@ -33,18 +33,30 @@
             this.btnBack = new System.Windows.Forms.PictureBox();
             this.lblconsulta = new System.Windows.Forms.Label();
             this.gpbTop1 = new System.Windows.Forms.GroupBox();
+<<<<<<< HEAD
             this.txtData = new System.Windows.Forms.MaskedTextBox();
+=======
+>>>>>>> origin/master
             this.txtID_Evento = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
             this.lblID = new System.Windows.Forms.Label();
             this.gpbTop2 = new System.Windows.Forms.GroupBox();
+<<<<<<< HEAD
             this.txtAcrescimo = new System.Windows.Forms.MaskedTextBox();
             this.txtInicio = new System.Windows.Forms.MaskedTextBox();
+=======
+>>>>>>> origin/master
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.gpbBot = new System.Windows.Forms.GroupBox();
             this.btnInserir = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
+<<<<<<< HEAD
+=======
+            this.txtData = new System.Windows.Forms.MaskedTextBox();
+            this.txtInicio = new System.Windows.Forms.MaskedTextBox();
+            this.txtAcrescimo = new System.Windows.Forms.MaskedTextBox();
+>>>>>>> origin/master
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.gpbTop1.SuspendLayout();
             this.gpbTop2.SuspendLayout();
@@ -82,6 +94,7 @@
             // 
             this.lblconsulta.AutoSize = true;
             this.lblconsulta.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.lblconsulta.Font = new System.Drawing.Font("Arial Black", 21F);
             this.lblconsulta.ForeColor = System.Drawing.Color.White;
             this.lblconsulta.Location = new System.Drawing.Point(201, 26);
@@ -89,6 +102,15 @@
             this.lblconsulta.Size = new System.Drawing.Size(231, 40);
             this.lblconsulta.TabIndex = 117;
             this.lblconsulta.Text = "Inserir Evento";
+=======
+            this.lblconsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblconsulta.ForeColor = System.Drawing.Color.White;
+            this.lblconsulta.Location = new System.Drawing.Point(201, 26);
+            this.lblconsulta.Name = "lblconsulta";
+            this.lblconsulta.Size = new System.Drawing.Size(216, 35);
+            this.lblconsulta.TabIndex = 117;
+            this.lblconsulta.Text = "Inserir Produto";
+>>>>>>> origin/master
             // 
             // gpbTop1
             // 
@@ -103,6 +125,7 @@
             this.gpbTop1.TabIndex = 122;
             this.gpbTop1.TabStop = false;
             // 
+<<<<<<< HEAD
             // txtData
             // 
             this.txtData.Location = new System.Drawing.Point(87, 48);
@@ -111,6 +134,8 @@
             this.txtData.Size = new System.Drawing.Size(190, 20);
             this.txtData.TabIndex = 116;
             // 
+=======
+>>>>>>> origin/master
             // txtID_Evento
             // 
             this.txtID_Evento.Enabled = false;
@@ -123,11 +148,19 @@
             // 
             this.lblNome.AutoSize = true;
             this.lblNome.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.lblNome.Font = new System.Drawing.Font("Arial Black", 11F);
             this.lblNome.ForeColor = System.Drawing.Color.White;
             this.lblNome.Location = new System.Drawing.Point(19, 46);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(49, 22);
+=======
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.ForeColor = System.Drawing.Color.White;
+            this.lblNome.Location = new System.Drawing.Point(19, 46);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(48, 22);
+>>>>>>> origin/master
             this.lblNome.TabIndex = 64;
             this.lblNome.Text = "Data";
             // 
@@ -135,11 +168,19 @@
             // 
             this.lblID.AutoSize = true;
             this.lblID.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.lblID.Font = new System.Drawing.Font("Arial Black", 11F);
             this.lblID.ForeColor = System.Drawing.Color.White;
             this.lblID.Location = new System.Drawing.Point(31, 14);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(28, 22);
+=======
+            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblID.ForeColor = System.Drawing.Color.White;
+            this.lblID.Location = new System.Drawing.Point(31, 14);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(27, 22);
+>>>>>>> origin/master
             this.lblID.TabIndex = 63;
             this.lblID.Text = "ID";
             // 
@@ -156,6 +197,7 @@
             this.gpbTop2.TabIndex = 123;
             this.gpbTop2.TabStop = false;
             // 
+<<<<<<< HEAD
             // txtAcrescimo
             // 
             this.txtAcrescimo.Location = new System.Drawing.Point(114, 48);
@@ -172,15 +214,25 @@
             this.txtInicio.Size = new System.Drawing.Size(163, 20);
             this.txtInicio.TabIndex = 120;
             // 
+=======
+>>>>>>> origin/master
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.label2.Font = new System.Drawing.Font("Arial Black", 11F);
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(10, 46);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 22);
+=======
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(10, 46);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(93, 22);
+>>>>>>> origin/master
             this.label2.TabIndex = 119;
             this.label2.Text = "Acrescimo";
             // 
@@ -188,11 +240,19 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.label1.Font = new System.Drawing.Font("Arial Black", 11F);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(31, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 22);
+=======
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(31, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 22);
+>>>>>>> origin/master
             this.label1.TabIndex = 118;
             this.label1.Text = "Inicio";
             // 
@@ -209,33 +269,73 @@
             // 
             // btnInserir
             // 
+<<<<<<< HEAD
             this.btnInserir.BackColor = System.Drawing.Color.White;
             this.btnInserir.FlatAppearance.BorderSize = 0;
             this.btnInserir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInserir.Font = new System.Drawing.Font("Arial Black", 8F);
+=======
+>>>>>>> origin/master
             this.btnInserir.Location = new System.Drawing.Point(27, 13);
             this.btnInserir.Name = "btnInserir";
             this.btnInserir.Size = new System.Drawing.Size(75, 23);
             this.btnInserir.TabIndex = 2;
             this.btnInserir.Text = "Inserir";
+<<<<<<< HEAD
             this.btnInserir.UseVisualStyleBackColor = false;
+=======
+            this.btnInserir.UseVisualStyleBackColor = true;
+>>>>>>> origin/master
             this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
             // 
             // btnLimpar
             // 
+<<<<<<< HEAD
             this.btnLimpar.BackColor = System.Drawing.Color.White;
             this.btnLimpar.FlatAppearance.BorderSize = 0;
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpar.Font = new System.Drawing.Font("Arial Black", 8F);
+=======
+>>>>>>> origin/master
             this.btnLimpar.Location = new System.Drawing.Point(225, 13);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(75, 23);
             this.btnLimpar.TabIndex = 13;
             this.btnLimpar.TabStop = false;
             this.btnLimpar.Text = "Limpar";
+<<<<<<< HEAD
             this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
+=======
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
+            // txtData
+            // 
+            this.txtData.Location = new System.Drawing.Point(87, 48);
+            this.txtData.Mask = "99/99/9999";
+            this.txtData.Name = "txtData";
+            this.txtData.Size = new System.Drawing.Size(190, 20);
+            this.txtData.TabIndex = 116;
+            // 
+            // txtInicio
+            // 
+            this.txtInicio.Location = new System.Drawing.Point(114, 18);
+            this.txtInicio.Mask = "99:99:99";
+            this.txtInicio.Name = "txtInicio";
+            this.txtInicio.Size = new System.Drawing.Size(163, 20);
+            this.txtInicio.TabIndex = 120;
+            // 
+            // txtAcrescimo
+            // 
+            this.txtAcrescimo.Location = new System.Drawing.Point(114, 48);
+            this.txtAcrescimo.Mask = "99:99:99";
+            this.txtAcrescimo.Name = "txtAcrescimo";
+            this.txtAcrescimo.Size = new System.Drawing.Size(163, 20);
+            this.txtAcrescimo.TabIndex = 121;
+            // 
+>>>>>>> origin/master
             // frmInser_Evento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

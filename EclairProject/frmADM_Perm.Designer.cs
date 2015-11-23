@@ -32,7 +32,11 @@
             this.lblCons_FC = new System.Windows.Forms.Label();
             this.lblGerar_B = new System.Windows.Forms.Label();
             this.btnGerar_B = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.btnCons_FxC = new System.Windows.Forms.Button();
+=======
+            this.btnCons_FC = new System.Windows.Forms.Button();
+>>>>>>> origin/master
             this.lblCons_Func = new System.Windows.Forms.Label();
             this.btnCons_Func = new System.Windows.Forms.Button();
             this.lblCad_Func = new System.Windows.Forms.Label();
@@ -51,7 +55,11 @@
             this.lblCons_FC.AutoSize = true;
             this.lblCons_FC.BackColor = System.Drawing.Color.Transparent;
             this.lblCons_FC.Font = new System.Drawing.Font("Arial Black", 8.25F);
+<<<<<<< HEAD
             this.lblCons_FC.ForeColor = System.Drawing.Color.Gray;
+=======
+            this.lblCons_FC.ForeColor = System.Drawing.Color.White;
+>>>>>>> origin/master
             this.lblCons_FC.Location = new System.Drawing.Point(228, 304);
             this.lblCons_FC.Name = "lblCons_FC";
             this.lblCons_FC.Size = new System.Drawing.Size(157, 15);
@@ -63,7 +71,11 @@
             this.lblGerar_B.AutoSize = true;
             this.lblGerar_B.BackColor = System.Drawing.Color.Transparent;
             this.lblGerar_B.Font = new System.Drawing.Font("Arial Black", 8.25F);
+<<<<<<< HEAD
             this.lblGerar_B.ForeColor = System.Drawing.Color.Gray;
+=======
+            this.lblGerar_B.ForeColor = System.Drawing.Color.White;
+>>>>>>> origin/master
             this.lblGerar_B.Location = new System.Drawing.Point(434, 304);
             this.lblGerar_B.Name = "lblGerar_B";
             this.lblGerar_B.Size = new System.Drawing.Size(83, 15);
@@ -72,9 +84,13 @@
             // 
             // btnGerar_B
             // 
+<<<<<<< HEAD
             this.btnGerar_B.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGerar_B.BackgroundImage")));
             this.btnGerar_B.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGerar_B.Enabled = false;
+=======
+            this.btnGerar_B.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+>>>>>>> origin/master
             this.btnGerar_B.FlatAppearance.BorderSize = 0;
             this.btnGerar_B.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGerar_B.Location = new System.Drawing.Point(445, 241);
@@ -84,6 +100,7 @@
             this.btnGerar_B.UseVisualStyleBackColor = true;
             this.btnGerar_B.Click += new System.EventHandler(this.btnGerar_B_Click);
             // 
+<<<<<<< HEAD
             // btnCons_FxC
             // 
             this.btnCons_FxC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCons_FxC.BackgroundImage")));
@@ -97,6 +114,19 @@
             this.btnCons_FxC.TabIndex = 101;
             this.btnCons_FxC.UseVisualStyleBackColor = true;
             this.btnCons_FxC.Click += new System.EventHandler(this.btnCons_FC_Click);
+=======
+            // btnCons_FC
+            // 
+            this.btnCons_FC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCons_FC.FlatAppearance.BorderSize = 0;
+            this.btnCons_FC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCons_FC.Location = new System.Drawing.Point(273, 241);
+            this.btnCons_FC.Name = "btnCons_FC";
+            this.btnCons_FC.Size = new System.Drawing.Size(60, 60);
+            this.btnCons_FC.TabIndex = 101;
+            this.btnCons_FC.UseVisualStyleBackColor = true;
+            this.btnCons_FC.Click += new System.EventHandler(this.btnCons_FC_Click);
+>>>>>>> origin/master
             // 
             // lblCons_Func
             // 
@@ -153,7 +183,11 @@
             this.lblGerar_NF.AutoSize = true;
             this.lblGerar_NF.BackColor = System.Drawing.Color.Transparent;
             this.lblGerar_NF.Font = new System.Drawing.Font("Arial Black", 8.25F);
+<<<<<<< HEAD
             this.lblGerar_NF.ForeColor = System.Drawing.Color.Gray;
+=======
+            this.lblGerar_NF.ForeColor = System.Drawing.Color.White;
+>>>>>>> origin/master
             this.lblGerar_NF.Location = new System.Drawing.Point(51, 124);
             this.lblGerar_NF.Name = "lblGerar_NF";
             this.lblGerar_NF.Size = new System.Drawing.Size(112, 15);
@@ -162,9 +196,13 @@
             // 
             // btnGerar_NF
             // 
+<<<<<<< HEAD
             this.btnGerar_NF.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGerar_NF.BackgroundImage")));
             this.btnGerar_NF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGerar_NF.Enabled = false;
+=======
+            this.btnGerar_NF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+>>>>>>> origin/master
             this.btnGerar_NF.FlatAppearance.BorderSize = 0;
             this.btnGerar_NF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGerar_NF.Location = new System.Drawing.Point(78, 61);
@@ -206,7 +244,11 @@
             this.lblGerar_FC.AutoSize = true;
             this.lblGerar_FC.BackColor = System.Drawing.Color.Transparent;
             this.lblGerar_FC.Font = new System.Drawing.Font("Arial Black", 8.25F);
+<<<<<<< HEAD
             this.lblGerar_FC.ForeColor = System.Drawing.Color.Gray;
+=======
+            this.lblGerar_FC.ForeColor = System.Drawing.Color.White;
+>>>>>>> origin/master
             this.lblGerar_FC.Location = new System.Drawing.Point(67, 304);
             this.lblGerar_FC.Name = "lblGerar_FC";
             this.lblGerar_FC.Size = new System.Drawing.Size(132, 15);
@@ -215,9 +257,13 @@
             // 
             // btnGerar_FC
             // 
+<<<<<<< HEAD
             this.btnGerar_FC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGerar_FC.BackgroundImage")));
             this.btnGerar_FC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGerar_FC.Enabled = false;
+=======
+            this.btnGerar_FC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+>>>>>>> origin/master
             this.btnGerar_FC.FlatAppearance.BorderSize = 0;
             this.btnGerar_FC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGerar_FC.Location = new System.Drawing.Point(103, 241);
@@ -244,7 +290,11 @@
             this.Controls.Add(this.btnManter_Func);
             this.Controls.Add(this.lblCons_Func);
             this.Controls.Add(this.btnCons_Func);
+<<<<<<< HEAD
             this.Controls.Add(this.btnCons_FxC);
+=======
+            this.Controls.Add(this.btnCons_FC);
+>>>>>>> origin/master
             this.Controls.Add(this.lblGerar_B);
             this.Controls.Add(this.btnGerar_B);
             this.Controls.Add(this.lblCons_FC);
@@ -264,7 +314,11 @@
         private System.Windows.Forms.Label lblCons_FC;
         private System.Windows.Forms.Label lblGerar_B;
         private System.Windows.Forms.Button btnGerar_B;
+<<<<<<< HEAD
         private System.Windows.Forms.Button btnCons_FxC;
+=======
+        private System.Windows.Forms.Button btnCons_FC;
+>>>>>>> origin/master
         private System.Windows.Forms.Label lblCons_Func;
         private System.Windows.Forms.Button btnCons_Func;
         private System.Windows.Forms.Label lblCad_Func;

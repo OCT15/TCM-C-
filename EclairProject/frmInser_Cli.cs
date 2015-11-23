@@ -65,6 +65,7 @@ namespace EclairProject
                 if (x == 1 || y == 1)
                 {
                     if (radioButton1.Checked)
+<<<<<<< HEAD
                     {
                         string sqlrB1 = ("select id_cliente from cliente where cpf_cnpj ='" + txtCPF.Text + "'");
                         cc = new ClasseConexao();
@@ -73,6 +74,16 @@ namespace EclairProject
                     }
                     if (radioButton2.Checked)
                     {
+=======
+                    {
+                        string sqlrB1 = ("select id_cliente from cliente where cpf_cnpj ='" + txtCPF.Text + "'");
+                        cc = new ClasseConexao();
+                        ds = new DataSet();
+                        ds = cc.executarSQL(sqlrB1);
+                    }
+                    if (radioButton2.Checked)
+                    {
+>>>>>>> origin/master
                         string sqlrB2 = ("select id_cliente from cliente where cpf_cnpj ='" + txtCNPJ.Text + "'");
                         cc = new ClasseConexao();
                         ds = new DataSet();
@@ -99,7 +110,22 @@ namespace EclairProject
                             cc = new ClasseConexao();
                             cc.executarSQL(sql);
                             MessageBox.Show("Operação Sucedida!");
+<<<<<<< HEAD
                             this.Close();
+=======
+                            txtNome.Text =
+txtSenha.Text =
+txtEnd.Text =
+txtDate_nasc.Text =
+txtEnd.Text = txtTelefone.Text =
+txtCel.Text =
+txtCPF.Text =
+txtCEP.Text =
+txtIE.Text =
+txtCNPJ.Text =
+txtIdade.Text =
+txtMail.Text = "";
+>>>>>>> origin/master
                         }
                         else
                         {
@@ -293,7 +319,11 @@ namespace EclairProject
             }
             else
             {
+<<<<<<< HEAD
                 MessageBox.Show("Email incorreto");
+=======
+                MessageBox.Show("Email inválido");
+>>>>>>> origin/master
                 ptbMail.BackColor = Color.Red;
                 txtMail.Text = "";
             }
@@ -307,7 +337,11 @@ namespace EclairProject
             }
             else
             {
+<<<<<<< HEAD
                 MessageBox.Show("Telefone incorreto");
+=======
+                MessageBox.Show("Telefone inválido");
+>>>>>>> origin/master
                 ptbTelefone.BackColor = Color.Red;
                 txtTelefone.Text = "";
             }
@@ -321,7 +355,11 @@ namespace EclairProject
             }
             else
             {
+<<<<<<< HEAD
                 MessageBox.Show("Telefone incorreto");
+=======
+                MessageBox.Show("Telefone inválido");
+>>>>>>> origin/master
                 ptbCel.BackColor = Color.Red;
                 txtCel.Text = "";
             }
@@ -335,7 +373,11 @@ namespace EclairProject
             }
             else
             {
+<<<<<<< HEAD
                 MessageBox.Show("CEP incorreto");
+=======
+                MessageBox.Show("CEP inválido");
+>>>>>>> origin/master
                 ptbCEP.BackColor = Color.Red;
                 txtCEP.Text = "";
             }
@@ -358,7 +400,11 @@ namespace EclairProject
 
         private void txtRG_Leave(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             if (ClasseValida.IsRG(txtRG.Text))
+=======
+            if (ClasseValida.IsIE(txtRG.Text))
+>>>>>>> origin/master
             {
                 ptbRG.BackColor = Color.MediumTurquoise;
             }
@@ -378,7 +424,11 @@ namespace EclairProject
             }
             else
             {
+<<<<<<< HEAD
                 MessageBox.Show("IE incorreto");
+=======
+                MessageBox.Show("IE inválido");
+>>>>>>> origin/master
                 ptbRG.BackColor = Color.Red;
                 txtRG.Text = "";
             }

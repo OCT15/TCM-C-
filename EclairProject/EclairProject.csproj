@@ -87,11 +87,19 @@
     <Compile Include="frmCadas_Evento.Designer.cs">
       <DependentUpon>frmCadas_Evento.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="frmInser_Forn.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmInser_Forn.Designer.cs">
       <DependentUpon>frmInser_Forn.cs</DependentUpon>
+=======
+    <Compile Include="frmCad_Forn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCad_Forn.Designer.cs">
+      <DependentUpon>frmCad_Forn.cs</DependentUpon>
+>>>>>>> origin/master
     </Compile>
     <Compile Include="frmCompra_Estq.cs">
       <SubType>Form</SubType>
@@ -117,6 +125,7 @@
     <Compile Include="frmCons_Evento.Designer.cs">
       <DependentUpon>frmCons_Evento.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="frmCons_FxC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +137,19 @@
     </Compile>
     <Compile Include="frmCons_Forn_Perc.Designer.cs">
       <DependentUpon>frmCons_Forn_Perc.cs</DependentUpon>
+=======
+    <Compile Include="frmCons_FC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCons_FC.Designer.cs">
+      <DependentUpon>frmCons_FC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCons_Forn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCons_Forn.Designer.cs">
+      <DependentUpon>frmCons_Forn.cs</DependentUpon>
+>>>>>>> origin/master
     </Compile>
     <Compile Include="frmCons_Func.cs">
       <SubType>Form</SubType>
@@ -153,6 +175,21 @@
     <Compile Include="frmFornecedores.Designer.cs">
       <DependentUpon>frmFornecedores.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+=======
+    <Compile Include="frmForn_Cons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmForn_Cons.Designer.cs">
+      <DependentUpon>frmForn_Cons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmForn_Per.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmForn_Per.Designer.cs">
+      <DependentUpon>frmForn_Per.cs</DependentUpon>
+    </Compile>
+>>>>>>> origin/master
     <Compile Include="frmGerar_B.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -244,6 +281,15 @@
       <DependentUpon>frmMant_Cli.cs</DependentUpon>
     </Compile>
     <Compile Include="frmGerar_FC.cs">
+<<<<<<< HEAD
+=======
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGerar_FC.Designer.cs">
+      <DependentUpon>frmGerar_FC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORetornoDeSplaton.cs">
+>>>>>>> origin/master
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmGerar_FC.Designer.cs">
@@ -283,6 +329,12 @@
     <EmbeddedResource Include="frmInser_Forn.resx">
       <DependentUpon>frmInser_Forn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCadas_Evento.resx">
+      <DependentUpon>frmCadas_Evento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCad_Forn.resx">
+      <DependentUpon>frmCad_Forn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCompra_Estq.resx">
       <DependentUpon>frmCompra_Estq.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -291,17 +343,28 @@
       <DependentUpon>frmCons_Calen.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCons_Calen.resx">
+      <DependentUpon>frmCons_Calen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCons_Estq.resx">
       <DependentUpon>frmCons_Estq.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCons_Evento.resx">
       <DependentUpon>frmCons_Evento.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="frmCons_FxC.resx">
       <DependentUpon>frmCons_FxC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCons_Forn_Perc.resx">
       <DependentUpon>frmCons_Forn_Perc.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="frmCons_FC.resx">
+      <DependentUpon>frmCons_FC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCons_Forn.resx">
+      <DependentUpon>frmCons_Forn.cs</DependentUpon>
+>>>>>>> origin/master
     </EmbeddedResource>
     <EmbeddedResource Include="frmCons_Func.resx">
       <DependentUpon>frmCons_Func.cs</DependentUpon>
@@ -315,6 +378,15 @@
     <EmbeddedResource Include="frmFornecedores.resx">
       <DependentUpon>frmFornecedores.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+=======
+    <EmbeddedResource Include="frmForn_Cons.resx">
+      <DependentUpon>frmForn_Cons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmForn_Per.resx">
+      <DependentUpon>frmForn_Per.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> origin/master
     <EmbeddedResource Include="frmGerar_B.resx">
       <DependentUpon>frmGerar_B.cs</DependentUpon>
     </EmbeddedResource>

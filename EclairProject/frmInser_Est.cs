@@ -12,6 +12,7 @@ namespace EclairProject
 {
     public partial class frmInser_Est : Form
     {
+<<<<<<< HEAD
         ClasseConexao cc;
         int id;
         public frmInser_Est(int var)
@@ -19,6 +20,11 @@ namespace EclairProject
             InitializeComponent();
 
             id = var;
+=======
+        public frmInser_Est()
+        {
+            InitializeComponent();
+>>>>>>> origin/master
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -35,6 +41,7 @@ namespace EclairProject
         {
             lblRetornar.Visible = false;
         }
+<<<<<<< HEAD
 
         private void frmInser_Est_Load(object sender, EventArgs e)
         {
@@ -90,5 +97,7 @@ namespace EclairProject
         {
             txtPreço.Text = "";
         }
+=======
+>>>>>>> origin/master
     }
 }
